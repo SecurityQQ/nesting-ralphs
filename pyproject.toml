@@ -11,3 +11,8 @@ dependencies = [
     "pytest>=9.1.1",
     "torch>=2.14.1",
 ]
+
+[dependency-groups]
+dev = [
+    "pillow>=13.0.0",
+]

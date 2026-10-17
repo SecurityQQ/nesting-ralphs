@@ -13,6 +13,12 @@ TRACE (`runs/trace.html`) replays the search history.
 > All numbers below are copied from `runs/results.json`, which `uv run python -m trace_critic.run` regenerates
 > deterministically (≈6 s on a laptop).
 
+<p align="center"><img src="assets/trace.gif" alt="TRACE replay of a real search episode" width="100%"></p>
+
+<sub>Replay of a real logged episode (`graph_learned_muon` on the sealed `median` task, simulated executor):
+the critic backtracks, a visibly-passing branch is flagged by the verifier (`FLAG_GAP`), repeats are dropped,
+and the run ends only when the independent pytest verifier passes. Regenerate: `uv run python scripts/make_gif.py`.</sub>
+
 ## Quick start
 
 ```bash
