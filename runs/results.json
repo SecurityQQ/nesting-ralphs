@@ -1,0 +1,255 @@
+{
+  "note": "Executor is a seeded SIMULATED policy, not an LLM. Small-scale mechanism check, not a statistical claim.",
+  "executor": "sim-policy-v1",
+  "splits": {
+    "train": [
+      "cart_discount",
+      "parse_duration",
+      "clamp_range",
+      "slugify"
+    ],
+    "valid": [
+      "moving_average"
+    ],
+    "test": [
+      "roman_to_int",
+      "median",
+      "top_words"
+    ]
+  },
+  "config": {
+    "N_TRAJ": 25,
+    "SRC_STEPS": 10,
+    "K_CONT": 6,
+    "BUDGETS": [
+      4,
+      8,
+      16
+    ],
+    "EVAL_SEEDS": 60,
+    "EVAL_BUDGET": 16,
+    "branching_k": 2,
+    "feat_dim": 44
+  },
+  "labeled_states": {
+    "train": 892,
+    "valid": 240,
+    "test": 563
+  },
+  "feature_selection_valid_mse": {
+    "full": 0.24160896241664886,
+    "struct": 0.044782888144254684
+  },
+  "feature_set": "struct",
+  "critic": {
+    "adamw": {
+      "train_seconds": 0.55,
+      "best_valid_mse": 0.044782888144254684,
+      "test": {
+        "n_states": 563,
+        "mse": 0.07141543678675571,
+        "pairwise_rank_acc": 0.5503658726451813,
+        "pairs": 6423,
+        "n_all_visible_pass": 70,
+        "mse_all_visible_pass": 0.053600280003841844,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "n": 30,
+            "mean_pred": 0.17249666154384613,
+            "mean_label": 0.27777777777777773
+          },
+          {
+            "bin": "0.2-0.4",
+            "n": 206,
+            "mean_pred": 0.3070068061351776,
+            "mean_label": 0.36893203883495146
+          },
+          {
+            "bin": "0.4-0.6",
+            "n": 135,
+            "mean_pred": 0.49083954095840454,
+            "mean_label": 0.5493827160493826
+          },
+          {
+            "bin": "0.6-0.8",
+            "n": 192,
+            "mean_pred": 0.7037795186042786,
+            "mean_label": 0.7534722222222222
+          }
+        ]
+      }
+    },
+    "muon": {
+      "train_seconds": 0.62,
+      "best_valid_mse": 0.044423263520002365,
+      "test": {
+        "n_states": 563,
+        "mse": 0.07184595210807755,
+        "pairwise_rank_acc": 0.562509730655457,
+        "pairs": 6423,
+        "n_all_visible_pass": 70,
+        "mse_all_visible_pass": 0.05485953064356323,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "n": 22,
+            "mean_pred": 0.18661828339099884,
+            "mean_label": 0.3181818181818182
+          },
+          {
+            "bin": "0.2-0.4",
+            "n": 219,
+            "mean_pred": 0.31779584288597107,
+            "mean_label": 0.3675799086757991
+          },
+          {
+            "bin": "0.4-0.6",
+            "n": 131,
+            "mean_pred": 0.4777883291244507,
+            "mean_label": 0.5330788804071247
+          },
+          {
+            "bin": "0.6-0.8",
+            "n": 188,
+            "mean_pred": 0.7117061018943787,
+            "mean_label": 0.7641843971631204
+          },
+          {
+            "bin": "0.8-1.0",
+            "n": 3,
+            "mean_pred": 0.8083990216255188,
+            "mean_label": 0.7222222222222222
+          }
+        ]
+      }
+    },
+    "ref_visible_pass_frac": {
+      "test": {
+        "n_states": 563,
+        "mse": 0.13675498567743616,
+        "pairwise_rank_acc": 0.43499922154756343,
+        "pairs": 6423,
+        "n_all_visible_pass": 70,
+        "mse_all_visible_pass": 0.30674603174603177,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "n": 1,
+            "mean_pred": 0.0,
+            "mean_label": 0.16666666666666666
+          },
+          {
+            "bin": "0.2-0.4",
+            "n": 152,
+            "mean_pred": 0.3042762875556946,
+            "mean_label": 0.4166666666666667
+          },
+          {
+            "bin": "0.4-0.6",
+            "n": 107,
+            "mean_pred": 0.5,
+            "mean_label": 0.6682242990654207
+          },
+          {
+            "bin": "0.6-0.8",
+            "n": 233,
+            "mean_pred": 0.7060086131095886,
+            "mean_label": 0.5608011444921317
+          },
+          {
+            "bin": "0.8-1.0",
+            "n": 70,
+            "mean_pred": 1.0,
+            "mean_label": 0.5357142857142857
+          }
+        ]
+      }
+    },
+    "ref_train_mean": {
+      "test": {
+        "n_states": 563,
+        "mse": 0.11776139424009642,
+        "pairwise_rank_acc": 0.0,
+        "pairs": 6423,
+        "n_all_visible_pass": 70,
+        "mse_all_visible_pass": 0.1071924859302681,
+        "calibration": [
+          {
+            "bin": "0.4-0.6",
+            "n": 563,
+            "mean_pred": 0.4091928005218506,
+            "mean_label": 0.5384843102427471
+          }
+        ]
+      }
+    }
+  },
+  "controllers": {
+    "ralph": {
+      "episodes": 180,
+      "verified_success_rate": 0.7666666666666667,
+      "success_ci95": [
+        0.7,
+        0.822
+      ],
+      "mean_executor_calls_per_episode": 9.466666666666667,
+      "calls_per_verified_success": 12.347826086956522,
+      "median_calls_when_successful": 6.5,
+      "verify_calls": 365,
+      "verify_fail_rate": 0.6219178082191781,
+      "loop_calls": 945,
+      "flag_gap_high_v": 0,
+      "human_queries": 0
+    },
+    "graph_rules": {
+      "episodes": 180,
+      "verified_success_rate": 0.7611111111111111,
+      "success_ci95": [
+        0.694,
+        0.818
+      ],
+      "mean_executor_calls_per_episode": 9.744444444444444,
+      "calls_per_verified_success": 12.802919708029197,
+      "median_calls_when_successful": 6.0,
+      "verify_calls": 218,
+      "verify_fail_rate": 0.37155963302752293,
+      "loop_calls": 974,
+      "flag_gap_high_v": 81,
+      "human_queries": 0
+    },
+    "graph_learned_adamw": {
+      "episodes": 180,
+      "verified_success_rate": 0.6222222222222222,
+      "success_ci95": [
+        0.55,
+        0.69
+      ],
+      "mean_executor_calls_per_episode": 10.155555555555555,
+      "calls_per_verified_success": 16.321428571428573,
+      "median_calls_when_successful": 6.0,
+      "verify_calls": 196,
+      "verify_fail_rate": 0.42857142857142855,
+      "loop_calls": 1013,
+      "flag_gap_high_v": 1,
+      "human_queries": 0
+    },
+    "graph_learned_muon": {
+      "episodes": 180,
+      "verified_success_rate": 0.6277777777777778,
+      "success_ci95": [
+        0.555,
+        0.695
+      ],
+      "mean_executor_calls_per_episode": 10.255555555555556,
+      "calls_per_verified_success": 16.336283185840706,
+      "median_calls_when_successful": 6.0,
+      "verify_calls": 196,
+      "verify_fail_rate": 0.42346938775510207,
+      "loop_calls": 1029,
+      "flag_gap_high_v": 1,
+      "human_queries": 0
+    }
+  },
+  "wall_seconds": 5.7
+}

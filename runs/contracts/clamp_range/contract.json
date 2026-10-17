@@ -1,0 +1,45 @@
+{
+  "task": "clamp_range",
+  "goal": "Fix clamp: clamp x into [lo, hi]; lo > hi raises ValueError; lo == hi is allowed.",
+  "version": "c1",
+  "tests_sha256_16": "065eb0542104de09",
+  "verifier_version": "pytest-v1",
+  "criteria": [
+    {
+      "criterion_id": "inside",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_inside"
+    },
+    {
+      "criterion_id": "below",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_below"
+    },
+    {
+      "criterion_id": "above",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_above"
+    },
+    {
+      "criterion_id": "invalid",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_invalid"
+    },
+    {
+      "criterion_id": "degenerate",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_degenerate"
+    },
+    {
+      "criterion_id": "float",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_float"
+    }
+  ]
+}

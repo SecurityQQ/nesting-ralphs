@@ -1,0 +1,45 @@
+{
+  "task": "slugify",
+  "goal": "Fix slugify: lowercase ASCII words joined by '-', no leading/trailing '-', truncated to max_len without a trailing '-'.",
+  "version": "c1",
+  "tests_sha256_16": "52f457c2b469a291",
+  "verifier_version": "pytest-v1",
+  "criteria": [
+    {
+      "criterion_id": "basic",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_basic"
+    },
+    {
+      "criterion_id": "punctuation",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_punctuation"
+    },
+    {
+      "criterion_id": "leading",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_leading"
+    },
+    {
+      "criterion_id": "truncate",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_truncate"
+    },
+    {
+      "criterion_id": "trailing",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_trailing"
+    },
+    {
+      "criterion_id": "exact_len",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_exact_len"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "task": "moving_average",
+  "goal": "Fix moving_average: mean over every full window; window < 1 raises ValueError; [] if fewer items than window.",
+  "version": "c1",
+  "tests_sha256_16": "2f9c81a283beb6b8",
+  "verifier_version": "pytest-v1",
+  "criteria": [
+    {
+      "criterion_id": "basic",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_basic"
+    },
+    {
+      "criterion_id": "full",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_full"
+    },
+    {
+      "criterion_id": "short",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_short"
+    },
+    {
+      "criterion_id": "zero_window",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_zero_window"
+    },
+    {
+      "criterion_id": "negative_window",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_negative_window"
+    },
+    {
+      "criterion_id": "empty",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_empty"
+    }
+  ]
+}

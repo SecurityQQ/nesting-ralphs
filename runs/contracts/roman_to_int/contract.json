@@ -1,0 +1,45 @@
+{
+  "task": "roman_to_int",
+  "goal": "Fix roman_to_int: standard subtractive notation; empty or invalid characters raise ValueError.",
+  "version": "c1",
+  "tests_sha256_16": "0a5f9de5448f0452",
+  "verifier_version": "pytest-v1",
+  "criteria": [
+    {
+      "criterion_id": "simple",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_simple"
+    },
+    {
+      "criterion_id": "subtractive",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_subtractive"
+    },
+    {
+      "criterion_id": "complex",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_complex"
+    },
+    {
+      "criterion_id": "empty",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_empty"
+    },
+    {
+      "criterion_id": "invalid_chars",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_invalid_chars"
+    },
+    {
+      "criterion_id": "max_value",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_max_value"
+    }
+  ]
+}

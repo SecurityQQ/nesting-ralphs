@@ -1,0 +1,45 @@
+{
+  "task": "parse_duration",
+  "goal": "Fix parse_duration: '1h30m15s' -> seconds; units h/m/s; empty or malformed input raises ValueError.",
+  "version": "c1",
+  "tests_sha256_16": "537b99ace8ff0d6b",
+  "verifier_version": "pytest-v1",
+  "criteria": [
+    {
+      "criterion_id": "minutes",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_minutes"
+    },
+    {
+      "criterion_id": "hours",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_hours"
+    },
+    {
+      "criterion_id": "combined",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_combined"
+    },
+    {
+      "criterion_id": "empty",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_empty"
+    },
+    {
+      "criterion_id": "garbage",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_garbage"
+    },
+    {
+      "criterion_id": "case_whitespace",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_case_whitespace"
+    }
+  ]
+}

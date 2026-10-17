@@ -1,0 +1,45 @@
+{
+  "task": "cart_discount",
+  "goal": "Fix cart_total: discount is a percentage in [0, 100] applied exactly once to the subtotal; result rounded to cents.",
+  "version": "c1",
+  "tests_sha256_16": "0e9382659e39f370",
+  "verifier_version": "pytest-v1",
+  "criteria": [
+    {
+      "criterion_id": "discount_once",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_discount_once"
+    },
+    {
+      "criterion_id": "qty",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_qty"
+    },
+    {
+      "criterion_id": "empty",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_empty"
+    },
+    {
+      "criterion_id": "invalid_negative",
+      "mandatory": true,
+      "visible_to_executor": true,
+      "check": "pytest::test_invalid_negative"
+    },
+    {
+      "criterion_id": "zero_discount_cents",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_zero_discount_cents"
+    },
+    {
+      "criterion_id": "invalid_over_100",
+      "mandatory": true,
+      "visible_to_executor": false,
+      "check": "pytest::test_invalid_over_100"
+    }
+  ]
+}
