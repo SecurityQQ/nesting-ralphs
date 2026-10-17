@@ -2,7 +2,11 @@
 
 <h1 align="center"><img src="assets/logo.png" alt="" width="96" align="center"> Nesting Ralphs</h1>
 
-**A learned critic of agent trajectories for budgeted search. The critic steers; it never certifies.**
+**A loss function for agent traces based on Ralph Wiggum and Russian Nesting Dolls principles.**
+
+Ralph: keep trying the same loop until checks pass. Nesting dolls: every loop is a doll with its own definition of done and budget; a learned critic picks which doll to open next. The critic steers; it never certifies.
+
+Live site: https://nesting-ralphs.vercel.app
 
 A Ralph-style executor proposes and executes steps. A controller keeps checkpoints, compares
 branches and reallocates attempts. A small critic `V(state, budget) ≈ P(verified success within budget)`

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffd90f">
+  <meta name="description" content="A loss function for agent traces based on Ralph Wiggum and Russian Nesting Dolls principles."><meta property="og:description" content="A loss function for agent traces based on Ralph Wiggum and Russian Nesting Dolls principles.">
+  <title>Nesting Ralphs · TRACE — A loss function for agent traces</title><meta property="og:title" content="Nesting Ralphs · TRACE"><meta property="og:image" content="banner.jpg">
+  <link rel="icon" href="favicon.png">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--paper:#f4f3ed;--ink:#252b25;--muted:#73796e;--line:#d9dcd1;--accent:#ef5a2c;--green:#386748;--mono:'IBM Plex Mono',monospace;--sans:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.4}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}::selection{background:#f8c6af;color:#252b25}.wrap{max-width:1320px;margin:auto;padding-left:56px;padding-right:56px}.mono,.eyebrow,.section-label,.panel-label,.principle-foot,.plot-top,.plot-bottom,.chart-legend,.decision,.equation-label,.equation-index,.board-note,.small-note,.experiment-note{font-family:var(--mono);font-size:10px;letter-spacing:.06em}.header{height:100px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-size:24px;font-weight:700;letter-spacing:-1px}.brand-mark{display:grid;place-items:center;color:var(--accent);font-size:36px;line-height:1;font-weight:400;transform:translateY(-2px)}.brand-detail{font-family:var(--mono);font-size:8px;line-height:1.4;letter-spacing:.05em;margin-left:9px;max-width:78px;font-weight:400}.header nav{display:flex;gap:32px;font-size:13px;color:#666e62}.header nav a:hover,.text-link:hover,.footer>a:hover{color:var(--accent)}.header-cta{border:1px solid #b9beb1;border-radius:4px;padding:11px 16px;font-size:12px}.header-cta span{margin-left:18px}.header-cta:hover{background:#e9eae1}.hero{padding-top:38px}.eyebrow{display:flex;align-items:center;gap:9px;font-size:9px}.orange-dot{height:6px;width:6px;border-radius:50%;background:var(--accent)}.eyebrow-divider{color:#a4aa9d;margin:0 4px}.hero-layout{display:grid;grid-template-columns:1.08fr 1fr;gap:40px;align-items:center;padding:44px 0 58px}.hero h1{font-size:clamp(48px,5.7vw,77px);font-weight:500;letter-spacing:-4.5px;line-height:1.03;margin:0 0 28px}.serif{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:400;color:var(--accent);letter-spacing:-.055em}.hero-description{color:#6a7165;line-height:1.75;font-size:15px;margin:0 0 28px}.hero-actions{display:flex;gap:26px;align-items:center}.button{border:0;border-radius:4px;padding:13px 19px;font-size:12px;font-weight:500;display:inline-flex;align-items:center;justify-content:space-between;gap:29px;min-height:43px;transition:background .15s,transform .15s}.button.primary{background:var(--accent);color:#fff}.button.primary:hover:not(:disabled){background:#d94b20}.button.secondary{border:1px solid var(--line);background:transparent;color:var(--ink)}.button.secondary:hover:not(:disabled){background:#e6e8dd}.text-link{font-size:12px}.text-link span{margin-left:10px}.small-note{color:#737b6d;letter-spacing:0;font-size:9px;margin:23px 0 0}.tiny-cross{color:var(--accent);font-size:16px;vertical-align:-1px;margin-right:5px}.landscape{min-width:0;border:1px solid var(--line);border-radius:7px;background:#edefe5;padding:14px 15px 13px;position:relative}.plot-top{display:flex;justify-content:space-between;font-size:9px;color:#6c7564;padding:0 3px 12px}.landscape svg{display:block;width:100%;overflow:visible}.svg-label{font-family:var(--mono);font-size:10px;fill:#57614e;letter-spacing:.7px}.svg-formula{font-family:var(--mono);font-size:15px;fill:#35422f;letter-spacing:-.4px}.plot-bottom{font-size:8px;color:#697461;display:flex;justify-content:center;gap:26px;padding-top:6px;letter-spacing:0}.legend-line{width:18px;height:0;border-top:2px solid;display:inline-block;vertical-align:middle;margin-right:5px}.orange{border-color:var(--accent)}.dashed{border-color:#92998a;border-top-style:dashed}.thesis-strip{display:flex;align-items:center;gap:30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0}.thesis-strip>.mono{flex-shrink:0;font-size:9px;color:var(--muted)}.thesis-strip p{font-size:14px;line-height:1.65;margin:0;max-width:800px}.thesis-strip strong{font-weight:550}.strip-arrow{font-size:24px;color:var(--accent);margin-left:auto}.principles{padding-top:65px;padding-bottom:75px}.section-label{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:9px;line-height:1.6;letter-spacing:.07em;margin-bottom:24px}h2{font-size:40px;letter-spacing:-1.8px;line-height:1.12;font-weight:500;margin:0}h3{font-size:20px;font-weight:500;letter-spacing:-.5px}.principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:32px}.principle-grid article{padding:0 33px;border-right:1px solid var(--line)}.principle-grid article:first-child{padding-left:0}.principle-grid article:last-child{padding-right:0;border-right:0}.principle-top{display:flex;justify-content:space-between;align-items:center}.principle-top>span:first-child{font-family:var(--mono);font-size:10px;color:#828979}.symbol{font-family:Georgia,serif;font-style:italic;color:var(--accent);font-size:28px;line-height:1}.check-symbol{font-family:var(--sans);font-style:normal}.principle-grid h3{margin:18px 0 12px}.principle-grid p{line-height:1.7;font-size:13px;color:#72796c;margin:0;max-width:320px}.principle-foot{margin-top:24px;color:#69725f;font-size:8px}.playground-section{background:#e9ece2;padding:57px 0 66px;border-top:1px solid #dce0d2;border-bottom:1px solid #dce0d2}.simulation-tag{background:#dce1d2;color:#536148;padding:3px 7px;border-radius:3px;font-size:8px}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:29px}.section-heading p{color:#727b68;font-size:12px;line-height:1.7;margin:0}.lab{border:1px solid #cdd3c2;background:var(--paper);border-radius:7px;overflow:hidden;box-shadow:0 8px 24px #35412804}.lab-toolbar{padding:13px 17px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);background:#f8f8f3}.scenario-group{display:flex;gap:4px}.scenario{border:0;border-radius:4px;color:#69725f;background:transparent;padding:10px 13px;font-size:11px}.scenario:hover{background:#e9ece3}.scenario.active{background:#293b2b;color:#fff}.reset-button{background:none;border:0;font-size:11px;color:#6e7765;white-space:nowrap}.reset-button span{font-size:18px;vertical-align:-1px;margin-right:4px}.lab-prompt{display:flex;align-items:center;gap:21px;padding:21px 28px}.lab-prompt .mono{font-size:9px;color:#818774}.lab-prompt p{margin:0;font-size:14px;font-weight:500}.prompt-icon{margin-left:auto;color:#939a88}.contract{margin:0 28px 22px;border:1px solid #dde0d5;border-radius:4px}.contract summary{display:flex;justify-content:space-between;align-items:center;gap:20px;list-style:none;padding:12px 14px;font-size:11px;cursor:pointer}.contract summary::-webkit-details-marker{display:none}.contract-count{font-family:var(--mono);font-size:8px;color:#818a76;margin-left:11px}.expand-symbol{font-size:17px;color:#7b866d}.contract[open] .expand-symbol{transform:rotate(45deg)}.contract-body{padding:0 14px 14px;border-top:1px solid var(--line)}.contract-body ul{padding-left:17px;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;font-size:12px;color:#58644e}.contract-body p{font-size:11px;color:#7c8473;line-height:1.7;margin:8px 0 0}.lab-main{display:grid;grid-template-columns:.95fr 1.05fr;border-top:1px solid var(--line)}.trace-column{padding:23px 28px 26px;border-right:1px solid var(--line);display:flex;flex-direction:column}.panel-label{display:flex;justify-content:space-between;gap:14px;color:#7e8772;font-size:8px;letter-spacing:.045em}.trace-nodes{margin:21px 0;flex:1;display:flex;flex-direction:column;gap:7px}.trace-node{display:flex;gap:12px;align-items:center;text-align:left;background:transparent;border:1px solid transparent;border-radius:4px;padding:10px 12px;width:100%;min-height:52px;position:relative;color:#777e6f}.trace-node:hover{background:#eceee5}.trace-node.future{opacity:.5}.trace-node.selected{background:#fbe6da;border-color:#edb79c;color:#422e22;opacity:1}.node-number{font:10px var(--mono);border:1px solid #c8cebc;border-radius:50%;width:25px;height:25px;flex:0 0 25px;display:grid;place-items:center;background:var(--paper);z-index:1}.selected .node-number{background:var(--accent);border-color:var(--accent);color:white}.past .node-number{background:#e0e8d9;border-color:#b5c8a8;color:#4c6840}.trace-node:not(:last-child)::after{content:'';position:absolute;left:24px;top:39px;height:26px;border-left:1px solid #cdd4c2}.node-text{display:flex;flex-direction:column;gap:4px;flex:1}.node-text strong{font-size:12px;font-weight:500}.node-text small{font:8px var(--mono);color:#858c7c}.node-score{font:11px var(--mono);color:inherit}.trace-controls{display:flex;gap:8px;margin-top:3px}.trace-controls .secondary{padding:10px 15px}.trace-controls .primary{flex:1}.analysis-column{padding:23px 28px}.chart-wrap{margin:17px 0 0}.chart-wrap svg{display:block;width:100%;overflow:visible}.chart-label{font:9px var(--mono);fill:#929987}.chart-legend{display:flex;justify-content:space-between;gap:10px;font-size:8px;color:#87907b;letter-spacing:0}.step-detail{margin-top:23px;border-top:1px solid var(--line);padding-top:19px;min-height:184px}.detail-top{display:flex;justify-content:space-between;align-items:center}.decision{font-size:8px;letter-spacing:.06em;padding:5px 8px;border-radius:3px;background:#e4e9db;color:#536747}.decision.replan{background:#f9e3cc;color:#9f5c17}.decision.reject{background:#f2d8d2;color:#a74732}.decision.verified{background:#d6e7d2;color:#345f34}.loss-value{font:12px var(--mono);color:var(--accent)}.step-detail h3{font-size:19px;margin:12px 0 8px}.step-detail>p{font-size:12px;line-height:1.75;color:#79816e;margin:0;min-height:43px}.evidence-row{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:15px;padding-top:12px;border-top:1px dashed var(--line);font-size:11px;color:#646f58}.evidence-row .mono{font-size:8px;color:#939a88}.lab-footer{display:flex;gap:6px;align-items:flex-start;border-top:1px solid var(--line);padding:13px 26px;background:#f7f7f0}.lab-footer p{font-size:11px;line-height:1.65;color:#7a826f;margin:0}.lab-footer .tiny-cross{line-height:1.2}.method{padding-top:72px;padding-bottom:73px}.method-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:78px;align-items:start}.method-copy h2{font-size:43px;margin-bottom:24px}.method-copy>p{font-size:13px;line-height:1.85;color:#737c69;margin:0 0 13px}.research-note{margin-top:28px;padding-left:16px;border-left:2px solid var(--accent)}.research-note>.mono{font-size:8px;color:#929986}.research-note h3{font-size:15px;margin:9px 0}.research-note p{font-size:11px;line-height:1.75;color:#818976;margin:0}.equation-board{background:#27372a;color:#e8eddf;border-radius:6px;padding:24px 26px;min-width:0}.board-title{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #4b5948;padding-bottom:17px;align-items:center}.board-title .mono{font-size:8px;color:#b1bca5;letter-spacing:.04em}.board-title>span:last-child{color:#f7a078;font-size:24px}.equation-row{display:flex;gap:17px;padding:21px 0 0}.equation-index{font-size:8px;color:#7d9175;padding-top:2px}.equation-label{display:block;color:#97ab8b;font-size:8px;margin-bottom:8px}.equation-row code{font-family:var(--mono);font-size:clamp(10px,1.1vw,13px);color:#e1e9d6;letter-spacing:-.03em}.equation-row:nth-child(4) code{color:#ffac83}.board-note{color:#9aaa8f;font-size:9px;letter-spacing:0;line-height:1.8;border-top:1px solid #4b5948;padding-top:15px;margin:23px 0 0}.board-bottom{display:flex;justify-content:space-between;gap:14px;font-size:10px;margin-top:17px;color:#c8d5bc}.experiment{border-top:1px solid var(--line);padding-top:41px;padding-bottom:53px}.experiment-layout{display:grid;grid-template-columns:.95fr 1.05fr;gap:65px}.experiment h2{font-size:35px}.experiment-intro{margin:0;font-size:13px;color:#717c67;line-height:1.8}.comparison{display:grid;grid-template-columns:1fr 30px 1fr;gap:15px;margin:24px 0}.comparison .mono{font-size:8px;color:#8b9580;display:block}.comparison strong{display:block;font-weight:500;font-size:17px;margin:9px 0}.comparison p{font-size:11px;color:#7f8974;line-height:1.7;margin:0}.versus{font:italic 16px Georgia,serif;color:#9da68f;padding-top:25px}.orange-text{color:var(--accent)!important}.metrics{display:flex;flex-wrap:wrap;gap:7px}.metrics span{font:8px var(--mono);border:1px solid #d2d9c7;border-radius:3px;padding:6px 8px;color:#6f7b62}.experiment-note{font-size:9px;line-height:1.8;letter-spacing:0;color:#8c9580;margin:16px 0 0}.reading{border-top:1px solid var(--line);padding-top:26px;padding-bottom:35px}.reading>.mono{font-size:8px;color:#8c9581}.reading>div{display:flex;justify-content:space-between;gap:25px;margin-top:20px}.reading a{font-size:16px;line-height:1.5}.reading a span{display:block;font:9px var(--mono);color:#8d9781;margin-top:4px}.reading a:hover{color:var(--accent)}.footer{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:24px;padding-bottom:30px}.footer .brand{font-size:18px}.footer .brand-mark{font-size:27px}.footer p,.footer>a:last-child{font-size:10px;color:#8a947f}.skip{position:absolute;top:-80px;left:16px;padding:12px;z-index:99;background:var(--ink);color:white}.skip:focus{top:12px}
+@media(min-width:1450px){.hero h1{font-size:82px}.hero-layout{padding-top:55px;padding-bottom:65px}}
+@media(max-width:1050px){.wrap{padding-left:32px;padding-right:32px}.brand-detail{display:none}.hero-layout{gap:22px}.hero h1{font-size:61px;letter-spacing:-3.5px}.hero-actions{gap:16px}.hero-description{font-size:13px}.plot-bottom{gap:12px;font-size:7px}.method-layout{gap:35px}.scenario{padding:9px;font-size:10px}.trace-column,.analysis-column{padding-left:20px;padding-right:20px}.section-heading h2{font-size:34px}.experiment-layout{gap:35px}}
+@media(max-width:760px){.wrap{padding-left:23px;padding-right:23px}.header{height:77px}.header nav{display:none}.header-cta{font-size:10px;padding:10px}.header-cta span{margin-left:10px}.brand{font-size:21px}.hero{padding-top:27px}.eyebrow{font-size:8px;gap:7px}.hero-layout{grid-template-columns:1fr;gap:32px;padding:31px 0 32px}.hero h1{font-size:clamp(46px,10vw,70px);letter-spacing:-3px}.hero-description{font-size:14px}.small-note{font-size:8px}.landscape{max-width:580px;width:100%;margin:auto}.plot-bottom{font-size:8px}.thesis-strip{gap:12px;flex-wrap:wrap;padding:19px 0}.thesis-strip>.mono{width:100%}.thesis-strip p{font-size:12px;max-width:90%}.strip-arrow{font-size:20px}.principles{padding-top:40px;padding-bottom:44px}.section-label{font-size:8px;gap:10px;margin-bottom:18px}.section-label>span:last-child{text-align:right}h2{font-size:33px}.principle-grid{grid-template-columns:1fr;margin-top:26px}.principle-grid article{border-right:0;border-bottom:1px solid var(--line);padding:20px 0!important}.principle-grid article:first-child{padding-top:0!important}.principle-grid article:last-child{border-bottom:0;padding-bottom:0!important}.principle-grid h3{margin-top:9px}.principle-grid p{max-width:100%}.principle-foot{margin-top:14px}.playground-section{padding:35px 0 40px}.simulation-tag{font-size:7px;max-width:135px}.section-heading{display:block;margin-bottom:22px}.section-heading h2{font-size:33px}.section-heading p{margin-top:13px;font-size:11px}.lab-toolbar{padding:11px;display:block}.scenario-group{justify-content:space-between;gap:3px}.scenario{font-size:9px;padding:9px 6px}.reset-button{display:block;margin:8px 1px 0 auto}.lab-prompt{padding:18px 16px;gap:12px;align-items:flex-start}.lab-prompt p{font-size:12px;line-height:1.6}.lab-prompt .mono{padding-top:4px;font-size:8px}.prompt-icon{display:none}.contract{margin:0 16px 17px}.contract-body ul{grid-template-columns:1fr}.lab-main{grid-template-columns:1fr}.trace-column{border-right:0;border-bottom:1px solid var(--line);padding:20px 16px}.trace-nodes{margin:15px 0}.trace-node{min-height:48px;padding:8px 10px}.trace-node:not(:last-child)::after{left:22px;top:36px}.analysis-column{padding:23px 16px}.step-detail{min-height:0}.chart-wrap{max-width:500px;margin-left:auto;margin-right:auto}.chart-legend{font-size:7px}.lab-footer{padding:12px 15px}.method{padding-top:42px;padding-bottom:42px}.method-layout{grid-template-columns:1fr;gap:27px}.method-copy h2{font-size:37px}.equation-board{padding:20px}.equation-row code{font-size:11px;overflow-wrap:anywhere}.board-bottom{font-size:9px}.experiment{padding-top:30px;padding-bottom:34px}.experiment-layout{grid-template-columns:1fr;gap:22px}.experiment h2{font-size:33px}.reading>div{display:grid;grid-template-columns:1fr 1fr;gap:25px}.footer{flex-wrap:wrap;gap:12px}.footer p{order:3;width:100%;font-size:9px;margin:0}.footer>a:last-child{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+
+:root{--paper:#bfe6ff;--ink:#1b1b1b;--muted:#3d4f63;--line:#1b1b1b;--accent:#e8352b;--yellow:#ffd90f;--sky:#8fd3ff;
+--green:#2f9e44;--mono:'Space Mono',monospace;--sans:'Nunito',-apple-system,sans-serif;--comic:'Luckiest Guy','Nunito',sans-serif;
+--pop:4px 4px 0 #1b1b1b;--pop-sm:3px 3px 0 #1b1b1b}
+body{background:var(--sky) radial-gradient(#ffffff55 1.4px,transparent 1.5px) 0 0/22px 22px;font-weight:600}
+::selection{background:var(--yellow);color:#1b1b1b}
+h1,h2,h3,.brand,.comparison strong{font-family:var(--comic);font-weight:400!important;letter-spacing:.5px!important}
+.hero h1{letter-spacing:1px!important;line-height:1.02;color:#fff;-webkit-text-stroke:3px #1b1b1b;paint-order:stroke fill;text-shadow:5px 5px 0 #1b1b1b}
+.hero h1 .serif{color:var(--yellow);font-family:var(--comic);font-style:normal;letter-spacing:1px}
+.serif{font-family:var(--comic);font-style:normal;color:var(--accent);letter-spacing:.5px}
+h2{letter-spacing:.5px!important;color:#1b1b1b}
+.header{border-bottom:4px solid #1b1b1b;background:var(--yellow);margin-top:18px;border:4px solid #1b1b1b;border-radius:18px;box-shadow:var(--pop);height:86px}
+.header.wrap{max-width:1232px;padding-left:22px;padding-right:22px}
+.brand{font-size:28px;color:var(--accent);-webkit-text-stroke:1.2px #1b1b1b;paint-order:stroke fill}
+.brand img{width:58px;height:58px;border-radius:50%;border:3px solid #1b1b1b;background:#fff}
+.brand-detail{color:#1b1b1b;-webkit-text-stroke:0;font-family:var(--mono);font-weight:700}
+.header nav{color:#1b1b1b;font-weight:800}
+.header-cta,.button{border:3px solid #1b1b1b!important;border-radius:999px!important;box-shadow:var(--pop-sm);font-weight:800;transition:transform .12s,box-shadow .12s}
+.header-cta{background:#fff}
+.header-cta:hover,.button:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:5px 5px 0 #1b1b1b}
+.button.primary{background:var(--accent)}
+.button.secondary{background:#fff}
+.banner{margin:26px auto 0;max-width:1232px;border:4px solid #1b1b1b;border-radius:22px;overflow:hidden;box-shadow:var(--pop);background:#8fd3ff}
+.banner img{display:block;width:100%;height:auto}
+.hero-description,.section-heading p,.principle-grid p,.method-copy>p,.experiment-intro,.comparison p,.thesis-strip p{color:#1f2d3d!important;font-weight:600}
+.small-note,.section-label,.panel-label,.principle-foot,.plot-top,.plot-bottom,.chart-legend,.board-note,.experiment-note{color:#1f2d3d!important}
+.orange-dot{background:var(--accent);border:2px solid #1b1b1b;width:12px;height:12px}
+.eyebrow{font-weight:700;color:#1b1b1b}
+.ralph-quote{display:inline-block;background:#fff;border:3px solid #1b1b1b;border-radius:18px;padding:8px 14px;font-family:var(--comic);font-size:18px;box-shadow:var(--pop-sm);transform:rotate(-2deg);margin:0 0 22px}
+.landscape,.lab,.equation-board,.research-note,.contract,.thesis-strip,.principle-grid article,.comparison>div,.results-card{background:#fffdf2!important;border:4px solid #1b1b1b!important;border-radius:18px!important;box-shadow:var(--pop)}
+.landscape{background:#fff8d6!important}
+.thesis-strip{padding:20px 24px;margin-top:6px}
+.principle-grid{gap:22px}
+.principle-grid article{padding:22px 24px!important}
+.symbol{font-family:var(--comic);font-style:normal;color:var(--accent);font-size:34px}
+.playground-section{background:var(--yellow);border-top:4px solid #1b1b1b;border-bottom:4px solid #1b1b1b}
+.simulation-tag{background:#fff;border:2px solid #1b1b1b;color:#1b1b1b;font-weight:700}
+.lab{overflow:hidden}
+.lab-toolbar,.lab-footer{background:#ffe97a;border-color:#1b1b1b}
+.lab-main,.trace-column,.lab-toolbar,.lab-footer,.step-detail,.contract-body{border-color:#1b1b1b!important}
+.scenario{color:#1b1b1b;font-weight:800;border:2px solid transparent;border-radius:999px}
+.scenario.active{background:var(--accent);color:#fff;border-color:#1b1b1b;box-shadow:var(--pop-sm)}
+.trace-node{color:#1f2d3d;font-weight:700}
+.trace-node.selected{background:#ffe97a;border:3px solid #1b1b1b;color:#1b1b1b;box-shadow:var(--pop-sm)}
+.node-number{border:2px solid #1b1b1b;font-weight:700}
+.selected .node-number{background:var(--accent);border-color:#1b1b1b}
+.past .node-number{background:#b2f2bb;border-color:#1b1b1b;color:#1b1b1b}
+.decision{border:2px solid #1b1b1b;font-weight:700;background:#d0ebff;color:#1b1b1b}
+.decision.replan{background:#ffd8a8;color:#1b1b1b}.decision.reject{background:#ffc9c9;color:#1b1b1b}.decision.verified{background:#b2f2bb;color:#1b1b1b}
+.loss-value{color:var(--accent);font-weight:700}
+.equation-board{background:#1b4f8a!important;color:#fff}
+.equation-row code{color:#fff}.equation-row:nth-child(4) code{color:var(--yellow)}
+.equation-label,.equation-index,.board-title .mono,.board-bottom{color:#bfe6ff!important}
+.board-title>span:last-child{color:var(--yellow)}
+.board-note{color:#d0ebff!important}
+.research-note{padding:18px 20px!important;border-left:4px solid #1b1b1b!important}
+.metrics span{border:2px solid #1b1b1b;background:#fff;color:#1b1b1b;font-weight:700;border-radius:999px}
+.comparison>div{padding:16px}
+.versus{font-family:var(--comic);font-style:normal;color:var(--accent);font-size:24px}
+.experiment,.reading,.footer{border-color:#1b1b1b}
+.reading a span{color:#1f2d3d}
+.footer .brand img{width:40px;height:40px}
+.results{padding-top:30px;padding-bottom:60px}
+.results-card{padding:24px 26px}
+.results-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start;margin-top:22px}
+.rtable{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;margin-top:10px}
+.rtable th,.rtable td{padding:9px 10px;border-bottom:2px dashed #1b1b1b33;text-align:left}
+.rtable th{font-family:var(--mono);font-size:10px;text-transform:uppercase;color:#1f2d3d}
+.rtable td.num{font-family:var(--mono);font-weight:700;white-space:nowrap}
+.rtable tr.best td{background:#b2f2bb}
+.verdict{background:#ffc9c9;border:3px solid #1b1b1b;border-radius:14px;padding:12px 14px;font-weight:800;margin:0 0 14px;box-shadow:var(--pop-sm)}
+.results ul{margin:12px 0 0;padding-left:20px;line-height:1.7;font-size:14px}
+.gif-card img{display:block;width:100%;border:3px solid #1b1b1b;border-radius:12px}
+.gif-card p{font-size:12px;margin:10px 0 0;line-height:1.6}
+.hero-tagline{font-family:var(--comic);font-size:24px;line-height:1.25;margin:-6px 0 14px;color:#1b1b1b}.hero-tagline b{color:var(--accent);font-weight:400}
+.principles-mini{margin:0 0 18px;padding:12px 16px 12px 32px;background:#fffdf2;border:3px solid #1b1b1b;border-radius:14px;box-shadow:var(--pop-sm);font-size:14px;line-height:1.6;max-width:560px}
+.sim-flag{display:inline-block;background:var(--yellow);border:2px solid #1b1b1b;border-radius:999px;padding:3px 10px;font-family:var(--mono);font-size:10px;font-weight:700}
+@media(max-width:900px){.results-grid{grid-template-columns:1fr}.header{margin-top:10px}}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@400;600;700;800;900&family=Space+Mono:wght@400;700&display=swap">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="TRACE home"><img src="logo.png" alt=""> Nesting Ralphs<span class="brand-detail">TRACE · RECURSIVE OPTIMISATION</span></a>
+    <nav aria-label="Main navigation"><a href="#idea">The idea</a><a href="#playground">Playground</a><a href="#method">Method</a><a href="#results">Results</a><a href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+    <a class="header-cta" href="#playground">Explore the loop <span aria-hidden="true">↗</span></a>
+  </header>
+  <div class="wrap"><div class="banner"><img src="banner.jpg" alt="Nesting Ralph matryoshka dolls, each one opening into a smaller Ralph loop"></div></div>
+  <main id="main">
+    <section class="hero wrap" id="idea">
+      <div class="eyebrow"><span class="orange-dot"></span> RESEARCH NOTE 001 <span class="eyebrow-divider">/</span> DONE MEANS DONE</div>
+      <div class="hero-layout">
+        <div class="hero-copy"><div class="ralph-quote">“I’m learnding!”</div>
+          <h1>A loss function<br>for agent <span class="serif">traces.</span></h1>
+          <p class="hero-tagline">based on <b>Ralph Wiggum</b> and <b>Russian Nesting Dolls</b> principles</p><ul class="principles-mini"><li><b>Ralph:</b> keep trying the same loop until checks pass.</li><li><b>Nesting dolls:</b> every loop is a doll with its own definition of done and budget; a learned critic picks which doll to open next.</li></ul><p class="hero-description">Teach agents to measure progress.<br>Use every attempt to choose a better next step.<br>Let independent checks decide when it’s done.</p>
+          <div class="hero-actions"><a href="#playground" class="button primary">Follow a trace <span aria-hidden="true">↓</span></a><a href="#method" class="text-link">Read the mechanism <span aria-hidden="true">↗</span></a></div>
+          <p class="small-note"><span class="tiny-cross">+</span> A research prototype. The playground uses illustrative data; measured results are below.</p>
+        </div>
+        <div class="landscape" aria-label="Illustration of an agent searching a loss landscape and changing direction after a failed branch">
+          <div class="plot-top"><span>THE SEARCH SPACE</span><span>τ → z → V<sub>φ</sub></span></div>
+          <svg id="landscape-svg" viewBox="0 0 580 390" role="img" aria-labelledby="landscape-title"><title id="landscape-title">An agent trajectory moves through a loss landscape toward a verified result.</title><defs><pattern id="dot-grid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="#b5b8ad"/></pattern></defs><rect width="580" height="390" fill="url(#dot-grid)"/><g id="contours" fill="none" stroke="#d2d6ca" stroke-width="1.1"></g><path d="M74 295L150 256L225 273L285 202L365 175L456 92" fill="none" stroke="#f15a2b" stroke-width="2.8"/><path d="M150 256L169 173L228 148" fill="none" stroke="#a6aaa0" stroke-width="1.6" stroke-dasharray="5 6"/><circle cx="228" cy="148" r="5" fill="#f4f3ed" stroke="#a6aaa0" stroke-width="1.5"/><path d="M223 143L233 153M233 143L223 153" stroke="#a6aaa0" stroke-width="1.3"/><g fill="#f4f3ed" stroke="#f15a2b" stroke-width="2.5"><circle cx="74" cy="295" r="6"/><circle cx="150" cy="256" r="6"/><circle cx="225" cy="273" r="6"/><circle cx="285" cy="202" r="6"/><circle cx="365" cy="175" r="6"/></g><circle cx="456" cy="92" r="18" fill="#f15a2b" fill-opacity=".12"/><circle cx="456" cy="92" r="7" fill="#f15a2b"/><g class="svg-label"><text x="48" y="328">PROMPT</text><text x="176" y="128" fill="#858a80">dead end</text><text x="292" y="230">replan</text><text x="410" y="60">VERIFIED FINISH</text></g><rect x="297" y="280" width="223" height="60" rx="5" fill="#faf9f5" stroke="#d9dcd2"/><text x="313" y="302" class="svg-label" fill="#7b8074">LEARNED PROGRESS</text><text x="313" y="326" class="svg-formula">ΔV = V(zₜ₊₁) − V(zₜ)</text></svg>
+          <div class="plot-bottom"><span><i class="legend-line orange"></i> selected trajectory</span><span><i class="legend-line dashed"></i> abandoned branch</span></div>
+        </div>
+      </div>
+      <div class="thesis-strip"><span class="mono">THE HYPOTHESIS</span><p>A learned estimate of progress can guide recursive search toward <strong>verified completion</strong> at a lower compute cost.</p><span class="strip-arrow" aria-hidden="true">↗</span></div>
+    </section>
+
+    <section class="principles wrap" aria-labelledby="principles-title">
+      <div class="section-label"><span>01 / THE PROBLEM</span><span>ONE PROMPT. THREE UNKNOWNS.</span></div>
+      <h2 id="principles-title">“Done” needs a definition.</h2>
+      <div class="principle-grid">
+        <article><div class="principle-top"><span>01</span><span class="symbol">ƒ</span></div><h3>What counts as done?</h3><p>Turn intent into a contract: explicit criteria, hard constraints, and visible assumptions.</p><div class="principle-foot">PROMPT → CONTRACT</div></article>
+        <article><div class="principle-top"><span>02</span><span class="symbol">Δ</span></div><h3>Are we getting closer?</h3><p>Estimate the value of each state. Recognise repeated failures and choose a different branch.</p><div class="principle-foot">TRACE → PROGRESS ESTIMATE</div></article>
+        <article><div class="principle-top"><span>03</span><span class="symbol check-symbol">✓</span></div><h3>Does the result hold up?</h3><p>Test the actual outcome against the contract. A confident score is a prediction; verification is evidence.</p><div class="principle-foot">RESULT → INDEPENDENT CHECKS</div></article>
+      </div>
+    </section>
+
+    <section class="playground-section" id="playground">
+      <div class="wrap">
+        <div class="section-label"><span>02 / THE TRACE PLAYGROUND</span><span class="simulation-tag">ILLUSTRATIVE DATA · NO LIVE MODEL</span></div>
+        <div class="section-heading"><h2>Watch the decision change.</h2><p>Same goal. Three trajectories.<br>Step through the evidence behind each decision.</p></div>
+        <div class="lab">
+          <div class="lab-toolbar"><div class="scenario-group" role="group" aria-label="Choose a scenario"><button class="scenario active" data-scenario="progress" aria-pressed="true">01 Healthy progress</button><button class="scenario" data-scenario="loop" aria-pressed="false">02 Loop & replan</button><button class="scenario" data-scenario="false" aria-pressed="false">03 False finish</button></div><button class="reset-button" id="reset" aria-label="Reset the selected trace"><span aria-hidden="true">↺</span> Reset</button></div>
+          <div class="lab-prompt"><span class="mono">GOAL</span><p>“Fix the cart discount calculation. Preserve the existing behaviour.”</p><span class="prompt-icon" aria-hidden="true">↵</span></div>
+          <details class="contract"><summary><span>Definition of done <span class="contract-count">4 checks</span></span><span class="expand-symbol" aria-hidden="true">+</span></summary><div class="contract-body"><ul><li>Discount applies exactly once.</li><li>An empty cart returns zero.</li><li>Invalid discounts are rejected.</li><li>Zero discount preserves the subtotal.</li></ul><p><strong>Illustrative contract:</strong> the fixture’s documentation specifies valid discounts as 0–100%. No policy is inferred from the prompt alone. These checks remain fixed during the run.</p></div></details>
+          <div class="lab-main">
+            <div class="trace-column"><div class="panel-label"><span>AGENT TRAJECTORY</span><span id="step-count">01 / 05</span></div><div id="trace-nodes" class="trace-nodes" aria-label="Select a trace step"></div><div class="trace-controls"><button class="button secondary" id="previous" aria-label="Previous trace step">←</button><button class="button primary" id="next">Next step <span aria-hidden="true">→</span></button></div></div>
+            <div class="analysis-column"><div class="panel-label"><span>PREDICTED REMAINING DIFFICULTY</span><span>h = 1 − V<sub>φ</sub></span></div><div class="chart-wrap"><svg id="loss-chart" viewBox="0 0 500 225" role="img" aria-label="Illustrative predicted loss over agent steps"></svg></div><div class="chart-legend"><span><i class="legend-line orange"></i> learned heuristic</span><span>Lower is more promising</span></div><div class="step-detail" aria-live="polite" aria-atomic="true"><div class="detail-top"><span id="decision" class="decision">CONTINUE</span><span id="loss-value" class="loss-value">h = 0.78</span></div><h3 id="step-title"></h3><p id="step-description"></p><div class="evidence-row"><span class="mono">VERIFIER</span><span id="verification"></span></div></div></div>
+          </div>
+          <div class="lab-footer"><span class="tiny-cross">+</span><p id="scenario-note"></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method wrap" id="method">
+      <div class="section-label"><span>03 / THE MECHANISM</span><span>A LEARNED CRITIC. AN EXPLICIT CONTROL LOOP.</span></div>
+      <div class="method-layout"><div class="method-copy"><h2>Learn the signal.<br><span class="serif">Optimise the trace.</span></h2><p>Encode the goal, contract, accumulated trace, and actual tool results into a state representation. Train a value model to estimate the chance of verified success within a fixed continuation budget.</p><p>The controller uses that estimate to select a continuation or revisit an earlier decision. The verifier retains the final say.</p><div class="research-note"><span class="mono">WORKING METAPHOR</span><h3>“Muon for Recursive Optimisation”</h3><p>A stateful optimiser for agent decisions. The prototype trains the critic’s hidden matrix with Muon (Newton–Schulz) + AdamW as an ablation; it found no difference vs AdamW. No differentiability through tool calls is claimed.</p></div></div>
+      <div class="equation-board"><div class="board-title"><span class="mono">FROM OBSERVATION TO UPDATE</span><span aria-hidden="true">↙</span></div><div class="equation-row"><span class="equation-index">01</span><div><span class="equation-label">ENCODE THE STATE</span><code>zₜ = E(goal, contract, trace≤ₜ, tools)</code></div></div><div class="equation-row"><span class="equation-index">02</span><div><span class="equation-label">ESTIMATE SUCCESS</span><code>V<sub>φ</sub>(zₜ, B) ≈ P(verified success | zₜ, B)</code></div></div><div class="equation-row"><span class="equation-index">03</span><div><span class="equation-label">MEASURE A CHANGE</span><code>ΔV = V<sub>φ</sub>(zₜ₊₁, B) − V<sub>φ</sub>(zₜ, B)</code></div></div><div class="equation-row"><span class="equation-index">04</span><div><span class="equation-label">LEARN FROM ROLLOUTS</span><code>L<sub>train</sub> = (V<sub>φ</sub>(zₜ, B) − ŷₜ)²</code></div></div><p class="board-note">ŷₜ is the fraction of verified successes across sampled continuations. Compare estimates at the same continuation budget B. The plotted values above are synthetic.</p><div class="board-bottom"><span>Backprop trains the critic.</span><span>Search updates the trace.</span></div></div></div>
+    </section>
+
+    <section class="experiment wrap" id="experiment"><div class="section-label"><span>04 / MAKE IT FALSIFIABLE</span><span>THE EXPERIMENT TO RUN NEXT</span></div><div class="experiment-layout"><h2>Does better direction<br>beat another attempt?</h2><div><p class="experiment-intro">Keep the executor, task set, verifier, and total compute budget fixed. Change only the rule that selects the next step.</p><div class="comparison"><div><span class="mono">BASELINE</span><strong>Ralph loop</strong><p>Continue the current trajectory with failure feedback.</p></div><span class="versus">vs</span><div><span class="mono orange-text">PROPOSED</span><strong>TRACE controller</strong><p>Rank continuations and revisions with a learned value model.</p></div></div><div class="metrics"><span>Verified success</span><span>False-done rate</span><span>Total compute</span><span>Human queries</span></div><p class="experiment-note">Count abandoned branches, verifier calls, and training data collection separately. Evaluate on held-out tasks. A first small run with a simulated executor is reported below.</p></div></div></section>
+
+    
+    <section class="results wrap" id="results">
+      <div class="section-label"><span>05 / WHAT WE MEASURED</span><span class="sim-flag">SIMULATED EXECUTOR · NOT AN LLM</span></div>
+      <h2>Me fail English? <span class="serif">That's unpossible.</span></h2>
+      <div class="results-grid">
+        <div class="results-card">
+          <p class="verdict">Hypothesis not supported (yet): at equal budget the learned critic verified 63% of sealed test episodes vs 77% for plain Ralph.</p>
+          <span class="mono">SEALED TEST TASKS: roman_to_int, median, top_words · 180 EPISODES / CONTROLLER · BUDGET 16 EXECUTOR CALLS</span>
+          <table class="rtable"><tr><th>Controller</th><th>Verified</th><th>95% CI</th><th>Calls / success</th><th>Verify-fail</th></tr><tr class='best'><td>Bounded Ralph (repeat the loop)</td><td class='num'>0.767</td><td class='num'>[0.70, 0.82]</td><td class='num'>12.3</td><td class='num'>0.62</td></tr><tr class=''><td>Graph search + fixed rules</td><td class='num'>0.761</td><td class='num'>[0.69, 0.82]</td><td class='num'>12.8</td><td class='num'>0.37</td></tr><tr class=''><td>Graph search + learned critic (AdamW)</td><td class='num'>0.622</td><td class='num'>[0.55, 0.69]</td><td class='num'>16.3</td><td class='num'>0.43</td></tr><tr class=''><td>Graph search + learned critic (Muon+AdamW)</td><td class='num'>0.628</td><td class='num'>[0.56, 0.69]</td><td class='num'>16.3</td><td class='num'>0.42</td></tr></table>
+          <span class="mono" style="display:block;margin-top:20px">CRITIC ON 563 HELD-OUT STATES</span>
+          <table class="rtable"><tr><th>Model</th><th>MSE ↓</th><th>Pairwise rank acc.</th></tr><tr><td>Critic, AdamW</td><td class='num'>0.071</td><td class='num'>0.55</td></tr><tr><td>Critic, Muon+AdamW</td><td class='num'>0.072</td><td class='num'>0.56</td></tr><tr><td>Ref: visible pass fraction</td><td class='num'>0.137</td><td class='num'>0.43</td></tr><tr><td>Ref: constant train mean</td><td class='num'>0.118</td><td class='num'>—</td></tr></table>
+          <ul>
+            <li>The critic predicts state value better than the non-learned references, but ranks sibling branches barely above chance — and ranking is what the controller needs.</li>
+            <li>Graph search wastes fewer verifier calls on false finishes than plain Ralph.</li>
+            <li>Muon vs AdamW: no measurable difference for this tiny head.</li>
+            <li>Labels: 892 train / 240 valid / 563 test states, each from 6 real continuations checked by pytest.</li>
+          </ul>
+        </div>
+        <div class="results-card gif-card">
+          <span class="mono">TRACE REPLAY · REAL LOGGED EPISODE</span>
+          <img src="trace.gif" alt="Replay of a logged search episode: backtrack, FLAG_GAP, dropped loops, verified finish" style="margin-top:10px">
+          <p>Node colour = critic V. Red ring = visible checks pass but the verifier says no (FLAG_GAP). Green ring = independent pytest verifier passes. The critic steers; it never certifies.</p>
+          <p><a class="button primary" href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer" style="margin-top:8px">Code + data on GitHub <span aria-hidden="true">↗</span></a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reading wrap"><span class="mono">BUILT ON IDEAS FROM</span><div><a href="https://ghuntley.com/ralph/" target="_blank" rel="noopener noreferrer">Ralph <span>Persistent execution ↗</span></a><a href="https://github.com/zou-group/textgrad" target="_blank" rel="noopener noreferrer">TextGrad <span>Textual feedback ↗</span></a><a href="https://arxiv.org/abs/2502.10325" target="_blank" rel="noopener noreferrer">AgentPRM <span>Learning from rollouts ↗</span></a><a href="https://kellerjordan.github.io/posts/muon/" target="_blank" rel="noopener noreferrer">Muon <span>Optimiser inspiration ↗</span></a><a href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer">Nesting Ralphs <span>Code &amp; data ↗</span></a></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#"><img src="logo.png" alt=""> Nesting Ralphs</a><p>Recursive Agents Hackathon · Research prototype · 2026 · MIT</p><a href="#main">Back to the idea ↑</a></footer>
+<script>
+const scenarios = {
+  progress: {
+    note: 'The heuristic guides the search. Only the final independent checks authorise VERIFIED — even when predicted loss is already low.',
+    steps: [
+      {label:'Inspect the contract',kind:'read · initialise',h:.78,action:'CONTINUE',title:'Start with observable requirements.',description:'Read the existing behaviour and the four fixed checks. The value model has little evidence about a successful repair yet.',verification:'Not run · no completion evidence'},
+      {label:'Reproduce the discount bug',kind:'run · collect evidence',h:.63,action:'CONTINUE',title:'A failing test can be progress.',description:'A minimal example shows the discount is applied twice. The result is still wrong, but the cause is now much more specific.',verification:'1 / 4 checks pass'},
+      {label:'Apply a targeted patch',kind:'edit · test hypothesis',h:.37,action:'CONTINUE',title:'Repair the duplicated operation.',description:'Remove the second discount application. The observed change supports the current approach, so the controller continues.',verification:'2 / 4 checks pass'},
+      {label:'Check boundary conditions',kind:'verify · find residual errors',h:.16,action:'VERIFY',title:'Low predicted loss is not done.',description:'The main example works, but invalid discounts are still accepted. Verification produces a concrete remaining requirement.',verification:'3 / 4 checks pass'},
+      {label:'Validate the completed repair',kind:'verify · close the contract',h:.04,action:'VERIFIED',title:'Finish on evidence.',description:'The repaired implementation passes all four checks in the fixed contract. Completion is scoped to those requirements.',verification:'4 / 4 checks pass · contract satisfied'}
+    ]
+  },
+  loop: {
+    note: 'Small fluctuations are not proof of a loop. Here the repeated failure and unchanged evidence support a REPLAN decision; the revised branch is then tested.',
+    steps: [
+      {label:'Inspect the contract',kind:'read · initialise',h:.78,action:'CONTINUE',title:'Establish the same starting point.',description:'The task and acceptance checks are unchanged. The agent begins by inspecting the discount computation.',verification:'Not run · no completion evidence'},
+      {label:'Suspect a rounding error',kind:'edit · hypothesis A',h:.60,action:'CONTINUE',title:'Test an initial hypothesis.',description:'The agent changes the rounding operation. This is a plausible attempt, but the failing case still needs to be explained.',verification:'1 / 4 checks pass'},
+      {label:'Try another rounding patch',kind:'edit · repeated hypothesis',h:.59,action:'VERIFY',title:'More activity, almost no new evidence.',description:'Another rounding patch returns the same failure. The small change in predicted loss is not enough to establish useful progress.',verification:'1 / 4 checks pass · same failure'},
+      {label:'Detect the repeated failure',kind:'control · revisit decision',h:.62,action:'REPLAN',title:'Revisit the cause, not the wording.',description:'Repeated outcomes and a flat value estimate trigger a return to the earlier checkpoint. A new hypothesis targets duplicate discount application.',verification:'1 / 4 checks pass · repeated failure'},
+      {label:'Follow the alternate branch',kind:'edit · hypothesis B',h:.23,action:'CONTINUE',title:'A different approach produces evidence.',description:'Removing the duplicated operation fixes the main case. This branch now has better observed results and a more promising estimate.',verification:'3 / 4 checks pass'},
+      {label:'Verify the repaired branch',kind:'verify · close the contract',h:.05,action:'VERIFIED',title:'The alternate branch earns completion.',description:'After the remaining validation fix, all four independent checks pass. The cost of abandoned attempts still counts.',verification:'4 / 4 checks pass · contract satisfied'}
+    ]
+  },
+  false: {
+    note: 'The value model can be wrong. A confident finish is rejected when the independent verifier finds a contract violation. Prediction never overrides a failed hard check.',
+    steps: [
+      {label:'Inspect the contract',kind:'read · initialise',h:.78,action:'CONTINUE',title:'Fix the contract before searching.',description:'The four acceptance checks stay fixed. The executor cannot remove an inconvenient requirement to make the task appear complete.',verification:'Not run · no completion evidence'},
+      {label:'Patch the happy path',kind:'edit · incomplete repair',h:.48,action:'CONTINUE',title:'One example starts working.',description:'The common discount case produces the expected total. This is useful evidence, but it does not cover all requirements.',verification:'1 / 4 checks pass'},
+      {label:'Claim “all done”',kind:'submit · optimistic prediction',h:.08,action:'VERIFY',title:'Confidence is a claim.',description:'The agent reports success and the heuristic is overly optimistic. The controller requests independent checks before accepting the result.',verification:'Full verification pending · no approval'},
+      {label:'Reject premature completion',kind:'verify · expose missing behaviour',h:.57,action:'REJECTED',title:'A real check overrides the estimate.',description:'Negative discount values are accepted. The verifier rejects completion and the new evidence increases predicted remaining difficulty.',verification:'2 / 4 checks pass · invalid input fails'},
+      {label:'Repair the missing validation',kind:'edit · evidence-driven revision',h:.19,action:'CONTINUE',title:'Fix the observed violation.',description:'The next attempt adds the required validation and checks the empty-cart path. Feedback targets a concrete failure in the contract.',verification:'3 / 4 checks pass'},
+      {label:'Run every check again',kind:'verify · close the contract',h:.04,action:'VERIFIED',title:'Accept the result after verification.',description:'The full fixed suite passes. The final report includes evidence and remains scoped to the tested contract.',verification:'4 / 4 checks pass · contract satisfied'}
+    ]
+  }
+};
+let scenario = 'progress';
+let step = 0;
+const $ = id => document.getElementById(id);
+
+function drawLandscape() {
+  let paths = '';
+  for (let ring = 0; ring < 15; ring++) {
+    let d = '';
+    const radius = 25 + ring * 18;
+    for (let i = 0; i <= 140; i++) {
+      const a = i / 140 * Math.PI * 2;
+      const wobble = 1 + .12 * Math.cos(a * 3 + ring * .12) + .08 * Math.sin(a * 2);
+      const x = 394 + Math.cos(a) * radius * 1.24 * wobble;
+      const y = 157 + Math.sin(a) * radius * .77 * wobble;
+      d += `${i ? 'L' : 'M'}${x.toFixed(2)},${y.toFixed(2)} `;
+    }
+    paths += `<path d="${d}Z"/>`;
+  }
+  $('contours').innerHTML = paths;
+  // Clip the generated terrain to the SVG canvas without clipping the outer panel.
+  $('landscape-svg').style.overflow = 'hidden';
+}
+
+function renderChart(steps) {
+  const w = 500, left = 32, right = 18, top = 17, bottom = 191;
+  const x = i => left + i * (w - left - right) / (steps.length - 1);
+  const y = h => top + (1 - h) * (bottom - top);
+  let markup = '<defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ef5a2c" stop-opacity=".13"/><stop offset="100%" stop-color="#ef5a2c" stop-opacity="0"/></linearGradient></defs>';
+  [1,.75,.5,.25,0].forEach(v => {
+    markup += `<line x1="${left}" y1="${y(v)}" x2="${w-right}" y2="${y(v)}" stroke="#dfe3d6" stroke-width="1" stroke-dasharray="3 4"/><text x="0" y="${y(v)+3}" class="chart-label">${v.toFixed(2)}</text>`;
+  });
+  const seen = steps.slice(0,step+1);
+  const points = seen.map((s,i) => `${x(i)},${y(s.h)}`).join(' ');
+  if (step > 0) markup += `<path d="M${x(0)},${bottom} L${points.replaceAll(' ', ' L')} L${x(step)},${bottom} Z" fill="url(#chart-fill)"/><polyline points="${points}" fill="none" stroke="#ef5a2c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`;
+  markup += `<line x1="${x(step)}" y1="${top}" x2="${x(step)}" y2="${bottom}" stroke="#ef5a2c" opacity=".23"/>`;
+  steps.forEach((s,i) => {
+    markup += `<text x="${x(i)}" y="215" text-anchor="middle" class="chart-label">τ${i}</text>`;
+    if(i <= step) markup += `<circle cx="${x(i)}" cy="${y(s.h)}" r="${i===step?5:3.5}" fill="${i===step?'#ef5a2c':'#f4f3ed'}" stroke="#ef5a2c" stroke-width="2"/>`;
+  });
+  $('loss-chart').innerHTML = markup;
+  $('loss-chart').setAttribute('aria-label',`Illustrative loss through step ${step+1}: ${seen.map(s=>s.h.toFixed(2)).join(', ')}. Lower values predict a more promising state.`);
+}
+
+function render() {
+  const data = scenarios[scenario];
+  const current = data.steps[step];
+  $('trace-nodes').innerHTML = data.steps.map((s,i) => `<button class="trace-node ${i===step?'selected':i<step?'past':'future'}" data-step="${i}" aria-pressed="${i===step}" aria-label="Step ${i+1}: ${s.label}"><span class="node-number">${i<step?'✓':i+1}</span><span class="node-text"><strong>${s.label}</strong><small>${s.kind}</small></span><span class="node-score">${i<=step?s.h.toFixed(2):'—'}</span></button>`).join('');
+  $('step-count').textContent = `${String(step+1).padStart(2,'0')} / ${String(data.steps.length).padStart(2,'0')}`;
+  $('step-title').textContent = current.title;
+  $('step-description').textContent = current.description;
+  $('loss-value').textContent = `h = ${current.h.toFixed(2)}`;
+  $('decision').textContent = current.action;
+  $('decision').className = 'decision ' + ({REPLAN:'replan',REJECTED:'reject',VERIFIED:'verified'}[current.action]||'');
+  $('verification').textContent = current.verification;
+  $('scenario-note').textContent = data.note;
+  $('previous').disabled = step===0;
+  $('next').disabled = step===data.steps.length-1;
+  $('next').innerHTML = step===data.steps.length-1 ? 'Trace complete <span aria-hidden="true">✓</span>' : 'Next step <span aria-hidden="true">→</span>';
+  document.querySelectorAll('[data-scenario]').forEach(b=>{
+    const active=b.dataset.scenario===scenario;
+    b.classList.toggle('active',active);
+    b.setAttribute('aria-pressed',String(active));
+  });
+  renderChart(data.steps);
+}
+document.querySelectorAll('[data-scenario]').forEach(b=>b.addEventListener('click',()=>{scenario=b.dataset.scenario;step=0;render();}));
+$('trace-nodes').addEventListener('click',e=>{const node=e.target.closest('[data-step]');if(node){step=Number(node.dataset.step);render();const target=$('trace-nodes').querySelector(`[data-step="${step}"]`);target.focus({preventScroll:true});}});
+$('next').addEventListener('click',()=>{if(step<scenarios[scenario].steps.length-1){step++;render();}});
+$('previous').addEventListener('click',()=>{if(step>0){step--;render();}});
+$('reset').addEventListener('click',()=>{step=0;render();});
+drawLandscape();
+render();
+
+</script>
+</body>
+</html>
