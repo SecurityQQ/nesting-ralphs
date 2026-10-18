@@ -205,6 +205,15 @@ h2{letter-spacing:.5px!important;color:#1b1b1b}
           </ul>
         </div>
       </div>
+      <div class="results-card" style="margin-top:26px">
+        <span class="mono">REAL EXECUTOR · nemotron:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B · CRUSOE SERVERLESS INFERENCE</span>
+        <p class="verdict" style="background:#fff3bf">With Nemotron as the executor, every controller verified all 30 sealed test episodes: the fixtures are too easy for a real LLM, so the critic has almost nothing to learn.</p>
+        <table class="rtable"><tr><th>Controller</th><th>Verified</th><th>Calls / episode</th><th>Verify-fail</th></tr><tr><td>Bounded Ralph (repeat the loop)</td><td class='num'>1.00</td><td class='num'>3.6</td><td class='num'>0.14</td></tr><tr><td>Graph search + fixed rules</td><td class='num'>1.00</td><td class='num'>4.9</td><td class='num'>0.19</td></tr><tr><td>Graph search + learned critic (AdamW)</td><td class='num'>1.00</td><td class='num'>5.5</td><td class='num'>0.19</td></tr><tr><td>Graph search + learned critic (Muon+AdamW)</td><td class='num'>1.00</td><td class='num'>5.3</td><td class='num'>0.09</td></tr></table>
+        <ul><li>1012 Nemotron calls (thinking off, JSON reply), 2 unparseable. All replies are cached for exact replay.</li>
+        <li>Plain Ralph is cheapest here, because graph search pays for two branches per expansion.</li>
+        <li>Nemotron still trips on hidden checks: 9–19% of the time the visible checks passed but the verifier failed the full contract.</li>
+        <li>Next step: harder tasks with free-form edits, so a learned critic has something to rank.</li></ul>
+      </div>
       <p style="margin-top:22px"><a class="button primary" href="app/">Open the TRACE app <span aria-hidden="true">↗</span></a></p>
     </section>
 

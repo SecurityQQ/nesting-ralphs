@@ -118,6 +118,11 @@ def results_section():
     pi = json.loads((ROOT / "runs/pi_audit.json").read_text())["summary"]
     sy = json.loads((ROOT / "runs/synth_audit.json").read_text())["summary"]
     au = sy["manual_precision_audit"]
+    nemo = json.loads((ROOT / "runs/nemotron/results.json").read_text())
+    nc = nemo["controllers"]
+    nrows = "".join(f"<tr><td>{names[k]}</td><td class='num'>{v['verified_success_rate']:.2f}</td>"
+                    f"<td class='num'>{v['mean_executor_calls_per_episode']:.1f}</td><td class='num'>{v['verify_fail_rate']:.2f}</td></tr>"
+                    for k, v in nc.items())
     lr, la = ctrl["ralph"]["verified_success_rate"], ctrl["graph_learned_muon"]["verified_success_rate"]
     n_ep = ctrl["ralph"]["episodes"]
     return f"""
@@ -166,6 +171,15 @@ def results_section():
             <li>Why it matters: even curated reasoning traces need an independent check before they count as “done”.</li>
           </ul>
         </div>
+      </div>
+      <div class="results-card" style="margin-top:26px">
+        <span class="mono">REAL EXECUTOR · {nemo['executor']} · CRUSOE SERVERLESS INFERENCE</span>
+        <p class="verdict" style="background:#fff3bf">With Nemotron as the executor, every controller verified all {nc['ralph']['episodes']} sealed test episodes: the fixtures are too easy for a real LLM, so the critic has almost nothing to learn.</p>
+        <table class="rtable"><tr><th>Controller</th><th>Verified</th><th>Calls / episode</th><th>Verify-fail</th></tr>{nrows}</table>
+        <ul><li>{nemo['executor_stats']['api_calls']} Nemotron calls (thinking off, JSON reply), {nemo['executor_stats']['parse_fail']} unparseable. All replies are cached for exact replay.</li>
+        <li>Plain Ralph is cheapest here, because graph search pays for two branches per expansion.</li>
+        <li>Nemotron still trips on hidden checks: 9–19% of the time the visible checks passed but the verifier failed the full contract.</li>
+        <li>Next step: harder tasks with free-form edits, so a learned critic has something to rank.</li></ul>
       </div>
       <p style="margin-top:22px"><a class="button primary" href="app/">Open the TRACE app <span aria-hidden="true">↗</span></a></p>
     </section>

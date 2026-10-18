@@ -1,0 +1,212 @@
+{
+  "note": "Executor: nemotron:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B on Crusoe Serverless Inference. Small run (few episodes per task); a mechanism check, not a statistical claim.",
+  "executor": "nemotron:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "splits": {
+    "train": [
+      "cart_discount",
+      "parse_duration",
+      "clamp_range",
+      "slugify"
+    ],
+    "valid": [
+      "moving_average"
+    ],
+    "test": [
+      "roman_to_int",
+      "median",
+      "top_words"
+    ]
+  },
+  "config": {
+    "N_TRAJ": 4,
+    "SRC_STEPS": 8,
+    "K_CONT": 3,
+    "BUDGETS": [
+      4,
+      8
+    ],
+    "EVAL_SEEDS": 10,
+    "EVAL_BUDGET": 16,
+    "branching_k": 2,
+    "feat_dim": 44
+  },
+  "labeled_states": {
+    "train": 50,
+    "valid": 12,
+    "test": 35
+  },
+  "feature_selection_valid_mse": {
+    "full": 3.1613169539923547e-06,
+    "struct": 0.0004894498852081597
+  },
+  "feature_set": "full",
+  "critic": {
+    "adamw": {
+      "train_seconds": 0.06,
+      "best_valid_mse": 3.1613169539923547e-06,
+      "test": {
+        "n_states": 35,
+        "mse": 0.01932966409905042,
+        "pairwise_rank_acc": 0.5,
+        "pairs": 6,
+        "n_all_visible_pass": 3,
+        "mse_all_visible_pass": 0.0,
+        "calibration": [
+          {
+            "bin": "0.8-1.0",
+            "n": 35,
+            "mean_pred": 0.9906660914421082,
+            "mean_label": 0.9428571428571428
+          }
+        ]
+      }
+    },
+    "muon": {
+      "train_seconds": 0.07,
+      "best_valid_mse": 1.3723741176363546e-05,
+      "test": {
+        "n_states": 35,
+        "mse": 0.019607184800396405,
+        "pairwise_rank_acc": 0.5,
+        "pairs": 6,
+        "n_all_visible_pass": 3,
+        "mse_all_visible_pass": 0.0,
+        "calibration": [
+          {
+            "bin": "0.8-1.0",
+            "n": 35,
+            "mean_pred": 0.9846279621124268,
+            "mean_label": 0.9428571428571428
+          }
+        ]
+      }
+    },
+    "ref_visible_pass_frac": {
+      "test": {
+        "n_states": 35,
+        "mse": 0.22579364700922894,
+        "pairwise_rank_acc": 0.5,
+        "pairs": 6,
+        "n_all_visible_pass": 3,
+        "mse_all_visible_pass": 0.0,
+        "calibration": [
+          {
+            "bin": "0.2-0.4",
+            "n": 12,
+            "mean_pred": 0.2916666567325592,
+            "mean_label": 0.9166666666666666
+          },
+          {
+            "bin": "0.4-0.6",
+            "n": 12,
+            "mean_pred": 0.5,
+            "mean_label": 0.9166666666666666
+          },
+          {
+            "bin": "0.6-0.8",
+            "n": 8,
+            "mean_pred": 0.7083333730697632,
+            "mean_label": 1.0
+          },
+          {
+            "bin": "0.8-1.0",
+            "n": 3,
+            "mean_pred": 1.0,
+            "mean_label": 1.0
+          }
+        ]
+      }
+    },
+    "ref_train_mean": {
+      "test": {
+        "n_states": 35,
+        "mse": 0.016076193827684063,
+        "pairwise_rank_acc": 0.0,
+        "pairs": 6,
+        "n_all_visible_pass": 3,
+        "mse_all_visible_pass": 0.0015999921798801608,
+        "calibration": [
+          {
+            "bin": "0.8-1.0",
+            "n": 35,
+            "mean_pred": 0.9600000381469727,
+            "mean_label": 0.9428571428571428
+          }
+        ]
+      }
+    }
+  },
+  "controllers": {
+    "ralph": {
+      "episodes": 30,
+      "verified_success_rate": 1.0,
+      "success_ci95": [
+        0.886,
+        1.0
+      ],
+      "mean_executor_calls_per_episode": 3.6,
+      "calls_per_verified_success": 3.6,
+      "median_calls_when_successful": 3.0,
+      "verify_calls": 35,
+      "verify_fail_rate": 0.14285714285714285,
+      "loop_calls": 28,
+      "flag_gap_high_v": 0,
+      "human_queries": 0
+    },
+    "graph_rules": {
+      "episodes": 30,
+      "verified_success_rate": 1.0,
+      "success_ci95": [
+        0.886,
+        1.0
+      ],
+      "mean_executor_calls_per_episode": 4.866666666666666,
+      "calls_per_verified_success": 4.866666666666666,
+      "median_calls_when_successful": 4.0,
+      "verify_calls": 37,
+      "verify_fail_rate": 0.1891891891891892,
+      "loop_calls": 60,
+      "flag_gap_high_v": 7,
+      "human_queries": 0
+    },
+    "graph_learned_adamw": {
+      "episodes": 30,
+      "verified_success_rate": 1.0,
+      "success_ci95": [
+        0.886,
+        1.0
+      ],
+      "mean_executor_calls_per_episode": 5.533333333333333,
+      "calls_per_verified_success": 5.533333333333333,
+      "median_calls_when_successful": 5.0,
+      "verify_calls": 37,
+      "verify_fail_rate": 0.1891891891891892,
+      "loop_calls": 73,
+      "flag_gap_high_v": 7,
+      "human_queries": 0
+    },
+    "graph_learned_muon": {
+      "episodes": 30,
+      "verified_success_rate": 1.0,
+      "success_ci95": [
+        0.886,
+        1.0
+      ],
+      "mean_executor_calls_per_episode": 5.266666666666667,
+      "calls_per_verified_success": 5.266666666666667,
+      "median_calls_when_successful": 5.0,
+      "verify_calls": 33,
+      "verify_fail_rate": 0.09090909090909091,
+      "loop_calls": 69,
+      "flag_gap_high_v": 3,
+      "human_queries": 0
+    }
+  },
+  "wall_seconds": 116.4,
+  "executor_stats": {
+    "api_calls": 1012,
+    "valid": 1315,
+    "parse_fail": 2,
+    "cache_hits": 305
+  }
+}

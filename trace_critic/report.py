@@ -47,7 +47,7 @@ def _episode_svg(ep, w=520, h=150):
     return "".join(out)
 
 
-def write_html(results, curves, episodes):
+def write_html(results, curves, episodes, out=RUNS):
     ctrl = results["controllers"]
     rows = "".join(
         f"<tr><td>{k}</td><td>{v['verified_success_rate']:.3f}</td><td>{v['success_ci95']}</td>"
@@ -62,12 +62,12 @@ def write_html(results, curves, episodes):
         f"<details><summary>{html.escape(k)} — {'VERIFIED' if ep['success'] else 'UNRESOLVED'} · {ep['calls']} calls</summary>"
         f"{_episode_svg(ep)}<pre>{html.escape(json.dumps(ep['events'], indent=0)[:3000])}</pre></details>"
         for k, ep in episodes.items())
-    doc = f"""<!doctype html><meta charset="utf-8"><title>Nesting Ralphs · TRACE</title><link rel="icon" href="../assets/favicon.png">
+    doc = f"""<!doctype html><meta charset="utf-8"><title>Nesting Ralphs · TRACE</title><link rel="icon" href="ASSETS/favicon.png">
 <style>body{{font:14px/1.45 system-ui;max-width:980px;margin:24px auto;padding:0 16px}}
 table{{border-collapse:collapse}}td,th{{border:1px solid #ddd;padding:4px 8px;font-size:13px}}
 .warn{{background:#fff7e6;border:1px solid #f5c26b;padding:8px}}pre{{font-size:11px;max-height:240px;overflow:auto}}</style>
-<img src="../assets/banner.jpg" alt="" style="width:100%;border-radius:8px">
-<h1><img src="../assets/logo.png" alt="" width="56" style="vertical-align:middle"> Nesting Ralphs · TRACE</h1>
+<img src="ASSETS/banner.jpg" alt="" style="width:100%;border-radius:8px">
+<h1><img src="ASSETS/logo.png" alt="" width="56" style="vertical-align:middle"> Nesting Ralphs · TRACE</h1>
 <p class="warn"><b>{html.escape(results['note'])}</b> Executor: <code>{html.escape(results['executor'])}</code>.
 All numbers below are read from <code>runs/results.json</code>.</p>
 <p>The critic steers; it never certifies. Only the independent pytest verifier sets VERIFIED.</p>
@@ -79,4 +79,5 @@ All numbers below are read from <code>runs/results.json</code>.</p>
 <table><tr><th>model</th><th>MSE</th><th>pairwise rank acc</th><th>MSE (all visible pass)</th><th>train s</th></tr>{crit}</table>
 <h2>Training curves</h2>{_curve_svg(curves)}
 <h2>Episode replays</h2>{eps}"""
-    (RUNS / "trace.html").write_text(doc)
+    rel = "../assets/" if out == RUNS else "../../assets/"
+    (out / "trace.html").write_text(doc.replace("ASSETS/", rel))

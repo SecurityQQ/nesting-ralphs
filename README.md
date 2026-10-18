@@ -13,7 +13,7 @@ branches and reallocates attempts. A small critic `V(state, budget) ≈ P(verifi
 is trained on real rollout outcomes. An independent pytest verifier on a frozen contract decides success.
 TRACE (`runs/trace.html`) replays the search history.
 
-> Status: small-scale mechanism check. **The executor in the reported run is a seeded simulated policy, not an LLM.**
+> Status: small-scale mechanism check. The main results table uses a seeded **simulated** executor. A second run with **NVIDIA Nemotron on Crusoe** is reported in its own section below.
 > All numbers below are copied from `runs/results.json`, which `uv run python -m trace_critic.run` regenerates
 > deterministically (≈6 s on a laptop).
 
@@ -88,6 +88,33 @@ Critic quality on 563 held-out test states:
      (full vs structural) is now chosen on the **valid** family only (`feature_selection_valid_mse` in results).
 - Likely next steps: a pairwise/ranking loss between sibling branches, labels from the *same* controller that
   consumes them (labels here come from Ralph continuations, i.e. a different policy), and a real LLM executor.
+
+## Real executor: NVIDIA Nemotron on Crusoe
+
+```bash
+echo "CRUSOE_INFERENCE_API_KEY=..." >> .env      # Intelligence API key (not the Cloud API key)
+uv run python -m trace_critic.run --executor nemotron   # -> runs/nemotron/
+```
+
+The executor is `nvidia/NVIDIA-Nemotron-3-Super-120B-A12B` on Crusoe Serverless Inference (`api.inference.crusoecloud.com/v1`), with thinking disabled.
+With thinking on, the model spent its whole token budget reasoning and returned no answer.
+Each proposal is one call. The model sees the goal, the source, the **visible** check results and the edit options, and replies with JSON `{"site", "option"}`.
+It never sees hidden checks, critic scores or the verifier. Replies are cached in `runs/nemotron_cache.jsonl`, so the run replays exactly.
+The run made 1012 API calls; 2 replies were unparseable and counted as charged no-ops. Config: `NEMOTRON_CFG` in `run.py`.
+
+| Controller (Nemotron, 30 sealed test episodes each, budget 16) | Verified success | 95% CI | Executor calls / episode | Verify-fail rate |
+|---|---|---|---|---|
+| Bounded Ralph | 1.000 | [0.886, 1.000] | 3.60 | 0.143 |
+| Graph + rules | 1.000 | [0.886, 1.000] | 4.87 | 0.189 |
+| Graph + critic (AdamW) | 1.000 | [0.886, 1.000] | 5.53 | 0.189 |
+| Graph + critic (Muon+AdamW) | 1.000 | [0.886, 1.000] | 5.27 | 0.091 |
+
+**Honest reading: these fixtures are too easy for Nemotron.**
+- Every controller verified every episode.
+- 86 of 97 labeled states have label q = 1.0, so the critic has almost nothing to learn: a constant predictor matches it.
+- Plain Ralph is the cheapest, because graph search pays for K=2 branches per expansion.
+- Nemotron still gets caught by hidden checks: the verify-fail rate is 9–19%, meaning visible checks passed but the full contract did not.
+- Testing the hypothesis with a real LLM needs harder tasks with free-form edits. That is the next step.
 
 ## Real data: HF Agent Traces and PleIAs/SYNTH
 

@@ -9,6 +9,7 @@ import math
 import random
 import time
 import zlib
+from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
 
@@ -24,15 +25,27 @@ K_CONT = 6          # continuations per state
 BUDGETS = (4, 8, 16)
 EVAL_SEEDS = 60     # episodes per held-out task per controller
 EVAL_BUDGET = 16    # executor calls per episode (all controllers)
+POOL = 1            # parallel episodes (1 keeps the simulated run byte-identical)
+OUT = RUNS          # output directory
+# Smaller config for a real LLM executor (every proposal is an API call).
+NEMOTRON_CFG = dict(N_TRAJ=4, SRC_STEPS=8, K_CONT=3, BUDGETS=(4, 8), EVAL_SEEDS=10, POOL=24)
 
 
 def seed_of(*xs):
     return zlib.crc32("|".join(map(str, xs)).encode())
 
 
+def pmap(fn, items):
+    if POOL <= 1:
+        return [fn(x) for x in items]
+    with ThreadPoolExecutor(POOL) as ex:
+        return list(ex.map(fn, items))
+
+
 def collect(task_name, executor, split):
-    rows = []
-    for t in range(N_TRAJ):
+    from .search import verified
+
+    def source(t):
         rng = random.Random(seed_of("src", task_name, t))
         root = make_node(task_name, TASKS[task_name].root)
         log = []
@@ -41,29 +54,32 @@ def collect(task_name, executor, split):
         uniq = {}
         for s in states:
             uniq.setdefault((s.artifact, s.history), s)
-        for si, s in enumerate(uniq.values()):
-            from .search import verified
-            if verified(s):
-                continue  # terminal: no label needed
-            B = BUDGETS[seed_of(task_name, t, si) % len(BUDGETS)]
-            succ = valid = 0
-            for k in range(K_CONT):
-                try:
-                    ok, *_ = ralph(s, executor, B, random.Random(seed_of("cont", task_name, t, si, k)))
-                    succ += ok
-                    valid += 1
-                except RuntimeError:
-                    pass  # invalid_run: excluded from label, reported
-            if valid == 0:
-                continue
-            rows.append(dict(task_id=task_name, split=split, trajectory_id=f"run-{t:02d}", state_id=f"state-{si:02d}",
+        return [(t, si, s) for si, s in enumerate(uniq.values()) if not verified(s)]  # terminal: no label needed
+
+    jobs = [j for js in pmap(source, range(N_TRAJ)) for j in js]
+
+    def label(job):
+        t, si, s = job
+        B = BUDGETS[seed_of(task_name, t, si) % len(BUDGETS)]
+        succ = valid = 0
+        for k in range(K_CONT):
+            try:
+                ok, *_ = ralph(s, executor, B, random.Random(seed_of("cont", task_name, t, si, k)))
+                succ += ok
+                valid += 1
+            except Exception as e:  # invalid_run (verifier or infra failure): excluded from label, reported
+                print("invalid_run:", type(e).__name__, str(e)[:120])
+        if valid == 0:
+            return None
+        return (dict(task_id=task_name, split=split, trajectory_id=f"run-{t:02d}", state_id=f"state-{si:02d}",
                              artifact_hash=s.artifact, prefix_len=len(s.history), observed_checks=s.observed,
                              policy_id=executor.policy_id, continuation_budget={"executor_calls": B},
                              labels={"kind": "rollout_outcome", "successes": succ, "valid_rollouts": valid,
                                      "invalid_runs": K_CONT - valid},
                              verifier_version=VERIFIER_VERSION, contract_version="c1",
                              _x=features(s, B).tolist(), _q=succ / valid))
-    return rows
+
+    return [r for r in pmap(label, jobs) if r is not None]
 
 
 def XY(rows):
@@ -115,8 +131,10 @@ def evaluate(executor, critics):
     res, episodes = {}, {}
     for cname, scorer in ctrls.items():
         agg = dict(episodes=0, success=0, calls=0, calls_success=[], vcalls=0, verify_fail=0, loops=0, gaps=0)
-        for task in TEST:
-            for s in range(EVAL_SEEDS):
+
+        def run_ep(ts, scorer=scorer):
+            task, s = ts
+            if True:
                 rng = random.Random(seed_of("eval", task, s))
                 root = make_node(task, TASKS[task].root)
                 if scorer is None:
@@ -144,6 +162,10 @@ def evaluate(executor, critics):
                     r = dict(success=ok, calls=calls, vcalls=vcalls, loops=loops, gaps=0, events=evs)
                 else:
                     r = graph_search(root, executor, EVAL_BUDGET, rng, scorer)
+            return task, s, r
+
+        for task, s, r in pmap(run_ep, [(t, s) for t in TEST for s in range(EVAL_SEEDS)]):
+            if True:
                 agg["episodes"] += 1
                 agg["success"] += r["success"]
                 agg["calls"] += r["calls"]
@@ -187,10 +209,18 @@ def to_sts(ep):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--executor", choices=["sim", "nemotron"], default="sim")
+    ap.add_argument("--model", default=None)
     args = ap.parse_args()
     t0 = time.time()
-    executor = SimulatedExecutor() if args.executor == "sim" else NemotronExecutor()
+    global OUT
+    if args.executor == "sim":
+        executor = SimulatedExecutor()
+    else:
+        executor = NemotronExecutor(args.model)
+        globals().update(NEMOTRON_CFG)
+        OUT = RUNS / "nemotron"
     RUNS.mkdir(exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
     for t in TASKS:
         get_contract(t)
     print("verifier warm-up artifacts:", warm_cache(list(TASKS)))
@@ -199,7 +229,7 @@ def main():
     for split, names in (("train", TRAIN), ("valid", VALID), ("test", TEST)):
         rows[split] = [r for n in names for r in collect(n, executor, split)]
         print(split, "labeled states:", len(rows[split]))
-    with open(RUNS / "labels.jsonl", "w") as f:
+    with open(OUT / "labels.jsonl", "w") as f:
         for split in rows:
             for r in rows[split]:
                 f.write(json.dumps({k: v for k, v in r.items() if not k.startswith("_")}) + "\n")
@@ -235,21 +265,24 @@ def main():
     ctrl, episodes = evaluate(executor, critics)
     results = dict(
         note=("Executor is a seeded SIMULATED policy, not an LLM. Small-scale mechanism check, not a statistical "
-              "claim." if args.executor == "sim" else "Executor: " + executor.policy_id),
+              "claim." if args.executor == "sim" else
+              f"Executor: {executor.policy_id} on Crusoe Serverless Inference. Small run (few episodes per task); "
+              "a mechanism check, not a statistical claim."),
         executor=executor.policy_id, splits={"train": TRAIN, "valid": VALID, "test": TEST},
         config=dict(N_TRAJ=N_TRAJ, SRC_STEPS=SRC_STEPS, K_CONT=K_CONT, BUDGETS=BUDGETS,
                     EVAL_SEEDS=EVAL_SEEDS, EVAL_BUDGET=EVAL_BUDGET, branching_k=2, feat_dim=FEAT_DIM),
         labeled_states={k: len(v) for k, v in rows.items()},
         feature_selection_valid_mse=fsel, feature_set=feat_set,
-        critic=crit_metrics, controllers=ctrl, wall_seconds=round(time.time() - t0, 1))
-    (RUNS / "results.json").write_text(json.dumps(results, indent=2))
-    (RUNS / "loss_curves.json").write_text(json.dumps(curves))
-    (RUNS / "episodes.json").write_text(json.dumps(episodes))
-    (RUNS / "traces").mkdir(exist_ok=True)
+        critic=crit_metrics, controllers=ctrl, wall_seconds=round(time.time() - t0, 1),
+        executor_stats=dict(getattr(executor, "stats", {})))
+    (OUT / "results.json").write_text(json.dumps(results, indent=2))
+    (OUT / "loss_curves.json").write_text(json.dumps(curves))
+    (OUT / "episodes.json").write_text(json.dumps(episodes))
+    (OUT / "traces").mkdir(exist_ok=True)
     for k, ep in episodes.items():
-        (RUNS / "traces" / (k.replace("|", "__") + ".jsonl")).write_text(to_sts(ep))
+        (OUT / "traces" / (k.replace("|", "__") + ".jsonl")).write_text(to_sts(ep))
     from .report import write_html
-    write_html(results, curves, episodes)
+    write_html(results, curves, episodes, OUT)
     print(json.dumps({k: {kk: v[kk] for kk in ("verified_success_rate", "success_ci95", "calls_per_verified_success",
                                               "verify_fail_rate", "loop_calls")} for k, v in ctrl.items()}, indent=1))
     print("critic test mse:", {k: round(v["test"]["mse"], 4) for k, v in crit_metrics.items()})

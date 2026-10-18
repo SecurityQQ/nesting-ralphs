@@ -1,0 +1,1012 @@
+{"key": "9f89031a3e3bdaedccca760ab9c6dee006ef1fc58dcc9104b77a80007852e8cc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1359714550, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "927b9024e1962bba292696ae3f4d5dce4aba11b5737a8ac4da2ed339f7522431", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1787650627, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "ad607e9d2644cc4e39205f3ecce008f77d9250f6b8d73d92c2de907230fd9c1e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1655344497, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "804345b0da037d6b94d1b9170601f0c717109e2dc8329e47ed0cdbd228b49042", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 845706582, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "8fd0b2cc4095aef33668602d3478f9ea65b206ce06194531b35e7491c54893a0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 242838868, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "6b3c012a00778c716b3c7672cf46b4265f14777993477e293aa3d63e79ebd641", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1594654892, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "9083702e19b14734cf6f3ee02bb3d76099c0e8f3491caf430d0af747988f4e6a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1043770036, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "5d438b70e0d6f929054bf7748ab8541fc64ab2381ad7f586656f16eeef1514a5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 897188363, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "820d79f702c0b8f5cab6c82faa47f2f8f8dabcbed4d3fece850d20db7eac81ca", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1344032498, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "cac83f0eead64e3bf8e7fe57843eeb1ee280d0b014c9f0be54fff3563e916e63", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1668075251, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "599d181751e21fdb32e74194b871561411c95a45ec7a2fbc6952118ff1c68f49", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2091995479, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "749c2b2ef8f555a02e0bd35450c413c7ed48746e850ec4b18241ad285634eaeb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1458676543, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "da021d28e057f235acc2623cfc211a396e892db92115eddbced8c15728de7dc0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2051353820, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "4c0dc0addcee4d97afdaf78e81a52ceb410cafc9b1bc39b170df5129efc508e3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 283729670, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "5f9f8255f9b9585b0624f17ad39bbf859caca1208728c10f26fe721fb70bebe1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 339330265, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "055ab822e28fa1d0022c144a6a7e1ab5cc6440a20078dcbc571dc8e16af0efa5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1208093106, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "f74d36f1d8521ccab8fda00e7481f7964887423a9337f2d77392c9d1b2ae1d1a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1038596318, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "1c760791522b1633361e90ff46c05f89a52298761a29506453b9bd29a6574b46", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1357486220, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6749801210bc715a41624c2f5d278f3a08481d381eb98d34d51f6839e59348da", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1286772880, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "db782a5891b1bf249c1432f9fbb6a1e5a4b55357ac1d59fe5666ba2292fa33c6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 974336144, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8b0bfb24736e79eb4a50e1cff1fcdd9399a043cbfb7854b6ffb358fa88cce470", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1755188148, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2160ce877de8d6052123e74e6fe891049068d992ff208267be98674ec6350dbe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 667592183, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c07dd0d4c18571ed46947cc1b506e813aae824cfb555ba7de9c2d2e25cbb9ac6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1649457910, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b89d060ccba4e242867bbfcb9ef7b82b0d7b45625f187ccd106b422579c1e0e7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 686790051, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "e7bc2d868c8bcb37624480c35d17951de8db26e5e3d1db15474e773f70dd227c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1110438979, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "ffaf62ae0eb9716437de445c78bbe5286a24bf2664a17e0f409ae1d0bcbb31ce", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 16999536, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "cd5bf446ab9d7d9981f5cedb82e1a743f0007a75678a9511a1581fca79da6c30", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 235515639, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ef25743d52b01fcd2b168bcde8555ab1e0c04f994a0d76c2247c2f1796c5c883", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2106143076, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2100641cbfdcfc8080b9fb42f4997865d5e7d941126874fb6b70e96a837b1f34", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1721154571, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "f61ab7dd42103c01652dfe0db15cae0b0bc6c57c846f9580e92664d12000a271", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1405796639, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "70453bfb939c60631d9ebb0dda4c4a501fd18e43e4f36de9f8f868fe09066fda", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 464302438, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "08bd180b07ea091bd769ed04419e6e89ba462bbaef6dee3d0930735e7789ba26", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1012208823, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "3da942b6dd0358fe772843602fdda5955d16d981b654532462d986c207b5c94e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1449216448, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "3eefc80ecf153c466ac64ad495d4ef91e982b304004755d010ffd798befee0c0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1574880930, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "024bfd71d2e42fa3ea21c5810c04332f97632b9efae2e057c535596edd3859c9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1506548301, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "11d3afac8698b19cbdea4a2fecda9506968c80c2617e6e2b0d61f6fde9f6d8b9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2127153070, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "4e1a61b96cfe8d4dabb4142276297dcf60264bbeeb78e3270a1023caf167c62a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1778639120, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "075c818f4c265689e32a1d38ec4f80e796a24ffac10914b37f34c164bd0fc5fb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1688117333, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7a57475395544bf2be003dfd9cf8760a8cc5262594ed5fcb758f65146ee21d64", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 667154474, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "cd8e245530590b06cc2f588b95425ab22e68e74c487e8597285568b84a0d3c97", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1767451502, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6c96ae4923e9ee909c3a1d469d77091b13d1c49d502018d7c5e22d2dcb3d2ef5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1251502552, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "efac0a651831737eb229ee49dcf86f78fdc5b0df46a8027cc193b676901723dc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 28450313, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "31d9326039ce560972a9efad92818b04c8200bc90b56d4fdc4594403e47ea163", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 262237944, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "af48d1446c5821cb29ef36ed2ba444d7180f103d3f087ad1e80660274b19aece", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1086753818, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "148e060004e9e45113fb3d497ec2a4869c463578f15390427fc4976ecb1ff9eb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2036631055, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b74cb5c0de14de01e5fd00477076c54210f13fb6413a1e5b1fb206102662e026", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1039758513, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d11f3d847ecb5d49950a15b487ae512452ac878066fd7b16966a2835947b755e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 539658270, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "aa8a2acf1a59e4dc26f8f2ac19cbce0e8ca6c2a2014534cfda82219f8b519d42", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 12571413, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "26438f018f07109a7418ce7433294fa80f05029cc70a4625e28451875b81bc3f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1688851917, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "4c4e71cd66b74f752834c3a4d44bd311328d186c3004fdafe81b4110cbc67f85", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 68978594, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "c2d639b34063bb8f157d7061a6d8a4487a17df66afb6e9a5f23d885677a10a7b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1447751343, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "49bde530f2b118a3c285813c76ea7940c275d63857abcbd25c3c5a8016002894", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1829060589, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "f9aca815db5c871c8b0c705b1cd8d1c765edc4ac42f7ff57e955328d5f87d8a7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 595386829, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "cb9db08208cd64701552a0a475f71cdbc766b6c59935d5e3a985d72840bac223", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1385441408, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "07ec4035a451fe0b13313588e88e96e1c593a83d3b3854cf1b77ef74ff43b658", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 411152266, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "5730bd244222a168e9c13b960dddc64beac141373d70ff475d66aecb11b89350", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 879126400, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "db39b7ff00f48f9767016e195b8125184a3bf5b437c2a124f8e11d9eff90837d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1556082984, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6bc08ded4d57fb58048780a3764ebbac0120f73ad94869622a1a27504c581fe5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 584241800, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "78731460a62253a6d000b7081ca2d5f89a82523bc488425558bb1a1765a4108e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1742085052, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "86b230ce68180f0d935bd561f29c3b344ea0773f4a968cde809f0f1823c510ab", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 824732016, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c0b0b43475fc2a528942816e2f3e1873b0b6cb8c7db82653856d9013b5f7408c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 618736780, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "1f1a2efbe015de057ee2f8f6a01c9592c9087c1281255caf8b0d771861eba58b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1468339849, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "0e33685aa2086054c08685cc38f1379cd5a249a6deb003801770ded71196e561", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 140889833, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "8a6d5c6783001e1fdc94c8402a4771c900827272aae1944f0c53e057b9db867a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1591536836, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b9bb2a75bd6a7d5a79cef152df9321be99c3db09cca1628f287864d64ca830ef", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2138766531, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "2288c3c275037ecabf003fa11f5f727837a74da7e0a339a007bbad2668da0054", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1303628809, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "ada762f93d503c215c51b1a3d6cc0783c88528326552131206660110b49a6e55", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 842639665, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "809c9321de63556262926041be4718a5fae21ac3ee1a49eae1970779b4f1bd08", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 311926849, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "69bde5eac598098beee80b11a1448480a1abad4449dd7301978c9d393c1cf6d0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 890581591, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "38bfe4ac36a98ae7546508b367aa7ea71871369399d5cae004dedfa73946b525", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 948611499, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b966c6e2c9a850fd35c9492ed74936c98b8fd36536196dada8af6292d6eeb0ae", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 371590345, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "1b153c20945e1cda7015607a047bb945f1c069041daa45a7b39a07dddee21656", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 256694833, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "78d191a8f64d07287d1a400faf6eecd337b5e5b54afdd76c0b97bac57fd13e7b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 302071539, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "13cc0fb2ce2a69480acf2c4666f5f6a3f58ff9bf63b48f32407172b477f70357", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1867477129, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b203bdb736760b00c9febfafab9ae7dd6e64cba3b1fbda30a487a194bf05a73d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 808238253, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "9b7051ef40818275c46f86b981a5d5094869ae455e42134d7c33f08f63768105", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2038260852, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "6a3848ecbc33e23d84e46ffd215aac8d1ea6d073d08d6a52af611c9cc15fa18c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1368116641, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "3add66f25dab901bacf43bd0c8b0d01643b35761b1a3e1f683e8db79d2fc7f7f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1596145230, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "ea664b0967eff86e0e0d528d6f7750d7771f3ca8ac064233a3757707f862cbde", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1166811116, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "cf376e9a3c1d7ab9b27c3158bc472cd84a9d1c8506927b413af0b336cdfa26a1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1388773033, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "41c7611525e69d73d628bb58293e86fd30340188407294886c7279b21d8d7773", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 472296140, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "f5579ecde1c67572aa1524f6b00a73d22eb7fa95e156d363a0214f260278112a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 854491952, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "2e7a27c7b5871f788474c948e6d21e4703f6444b051922b522aa5a35786455e4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1244759542, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "7517bc71779bb9f34c219e05cb99dba1d9a72823357229b993dc28f622d8c83b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2124637689, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "422d5a99dbadca85531bb6dbbfce741ab75f5431cc5cac745fdac3edf0ea9c74", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2009711619, "reply": "We need to analyze the problem: The function `cart_total(items, discount_pct=0)` should compute subtotal = sum(price * qty). Then apply discount exactly once: discount is a percentage in [0,100] applied exactly once to the subtotal. Result rounded to cents.\n\nThe current code:\n\n```python\ndef cart_total(items, discount_pct=0):\n    \"\"\"items: list of (price, qty). discount_pct in [0, 100], applied once.\"\"\"\n    if not 0 <= discount_pct <= 100:\n        raise ValueError('discount_pct out of range')\n    subtotal = 0\n    for price, qty in items:\n        subtotal += price * qty\n    return int(subtotal * (1 - discount_pct / 100))\n```\n\nIssues:\n\n1. The discount is applied as `subtotal * (1 - discount_pct / 100)`."}
+{"key": "4beb0c4be8dde5be74625103004c734debc3ffa966d5128df3a8d313d04f86ba", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1991479625, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7835b6fa314af07d0abb730d4b092a2089439be5e54dfd7bcce3924da6dcdc56", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1348975553, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "3f82f9c85719d05b7cfb3deecdf5764abe8f2a494bad9ea628607c594a5ae989", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 914681136, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "28059a1251a79f9ffcdab455819ac63ab6a318aa99057fc6021f1f82ce12ae2a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 15457876, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "605ac5d58dfbaba9d1a0b08f052383821b9ef01b4f72c346e47bf1e487a51bf1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1312631849, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "cce72ab25786305d5688b692ed137b3cb37deaf2187bbacd8fa5fcf5deca7726", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 562963761, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "cbef4396e92d81575472fc86499749798dc11346ced0c51d4b8bbc6d77bdc589", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1317895620, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7e549f08c4ab67ba5f3c27edaa997f1929d6f6463473e972ea04593644d0da94", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 695294391, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "6b5c062aa873608f0b6dc9da094806b04059661cd825c389f7e063468ce0312f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2037524994, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "ac6ab48356293c2edb5e34d532b186007a5d96af577fe797b7a161b68148bff6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1944284548, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "7ce72273dd10b768b0b1f63b1e5c413fa17f5de00c080629de8026d2436f51e9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1991236301, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "12200db0438a3073c817353a42b2ad8ae9a60a0240c79ccf7c85640d220658e0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1627671834, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "e8d7cb44df026f6a4eb1e5c68a75c9a7628bd9624d146368998df1db4a7b600d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 398110841, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8035ecc17c5edfee7c958cd8b094679e63d1a51be012f2cdcda354b9e1d9e046", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 311630973, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8ea1755df8423a1ba20953498d8c8667dd6c3400a30516c68082ae3bb32b0064", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 45903751, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "bd4a1327dd8abffb5bcba2b668d0a356f5fa74dbb2777eefc1d096b22481725c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 385261666, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "f102a711e5c90886f5edca504cdb8b6046e560d7fd630d75e80b8629639fd30d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 796094659, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "512d8940d622b770da60eb0698ccf3c1b3a0aef2fe605c726fb7992897bdfc86", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 16197537, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "f239fe60d54c309123f5292dda63452d87a36a729dd4e096f95b18b9b4beb117", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1003756726, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "b10cd3496d03c74d77ae7449f7ea77d8a7bb13db800f6146ae53231f4c208b39", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1668672918, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "935c682b47b2466ca79fd62b6925d7090ef42c81c55d8dc93df5a5b8aa815cc1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 60615378, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "66b3bae1b17866f4929c22496af64bcb14ee10910838c6ef22278df0490e3565", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1490142393, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "6a07cf163f6503b594c5005d89163188d2c6f665207b05592b6d3d57f1870c28", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 714651795, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "76a48f18eb0eb94d95759b40f6cd90436b6854e207ff179f92554b51b0d5839b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1067041210, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "fd6ac1ee7ef5c1bd2da24554719ae540b4a8b454de1d81bf733c61417b13cebe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 421227493, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7b9f8a81c75d026612a5e67bfdcd684c150ab390ae60b1442e4e411e58e6d7f3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 287343179, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "903a6b3c48ffe15eae4e87f2dd7d48f871abbc5ffe5e1d4f486c08768bcb8ce4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1692288600, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "1b8cf5fd0ce3b0fac4549a8f27ba2a1d5a4cc018b7be066ba47920a5e3da95ed", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 239948165, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "b08ea2c62e9cd8ac2cf35afa48f4da2072550e09b5723280b0688be003741097", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2126102240, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "bba10504e242fc781170ebf345c3c83521390f16e5fc6815e6157d375322fc29", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1941908823, "reply": "{\n  \"site\": 2,\n  \"option\": 0\n}"}
+{"key": "6e2a16db5fb065ae985adee33592974c4e44d63d931c30e2cb55ea9efa4fb4ae", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1070330313, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6c5db3ada95d6d379b86c27e225dad41c23a61ed507ef42d8b7a48468d96e79b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 741398794, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a46e8d1dbc94a620f81a1c0a5d649333355aa111262b1925d5fc0538e1419e20", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 664690174, "reply": "{\n  \"site\": 0,\n  \"option\": 2\n}"}
+{"key": "958cc176a33425c1e485b0c6f4f8a848d801cc5c3a9601d1eb3d87bf92e0b065", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1289427224, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "66c51cfc3a54cb8d42eec0c3d122823ffda3a95e97f998f75fd5da276a2d5129", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 384938220, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "83af1d77463fee3e23fd7a6c4e193a34b30f4b3c545a9a83acd5754e57f5b9a7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1123253392, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "8c39b85bebe8b5c996f1b13f72a64c1e324850130dee30e15176767f4063b92b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 558331547, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "91db5154a9ba48cb11c549b0f2f91505c4f60fd6821e25b60831c8099ebdbacf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 73208462, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "117179e0b212574fea62a86aac2e97bb3c635841b6408cb9dd044e5ea3abead1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1970090587, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "c56dbf78488f62a18a71caf386db14dc66ce8b28052093b98a5219c61862f2bf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 362638896, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "1860519b4857c7eac5310c33cebffceaa081518cf04963b0c24d04b3050f7530", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1761695428, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ca710fbed5f0872e747cdb51ac77767068e0e0d385758018138b640e70e93394", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1783342487, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "b7ea6d28d4cf9993d74cb7e2d25477173e3688bf197029cfc75eeb9d6f7312c1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 906626202, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b5ca18b768407e89560d6dbbdca0e4527f3f5b4c333371abf9337fd0d9ef7e90", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1000051964, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d7f6605ecc5afb1a215401371d65a6ab242e8370925687eac048dd46a1c979e5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1699259739, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4bc84ab52c2f23d55ecade4bd6422c4d147ae7d0c05c95777033b680dac19b4c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1225555162, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "2e399f38eebc0c27848150f3e10103d3c1a4748fd4fd6800d171af5421c8463f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 762979147, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "e2911289e7f4a04b59b98294df805b5e3492a1a15d60b53e86e0f7224f34e3d1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1563825701, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "e70fc219274fc12c842b494ae1b3b95eda216c6e89e2d42dc0e473de52a7c21b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 508799006, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "b69e3b61366b5cd29563e0fa2149a00ba29dd75416a37d4a587dbbca17b27385", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2087191656, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7f581cd4ce2c51a0f2a2357cded015a3df07b21dfa29d4d6721988682340cae8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 831746852, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "d81c12dc245b0f2ca6723d108b36b2c7ffab2f6cf178b9eb87168037306ae970", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 422738339, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7c2ed44cec59ddc8f4537366dbe9e99821503cfe1e76ca871fc6b3ad20118c95", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1276872252, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "aaec6df2e68714ca6da9c5ed3934e27ed80a2f4b8f52b0927c89ab45fd2fa9e4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1255078247, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "b79906ae8e16c4056f68dfe5e35d462c43f6f9beaf5fff4cf4074cd634690fee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1452056002, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "6be9e37d59633cff559d62dbf2755614bfb79ba775efd4def80fc9ff27d50fd8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 779746269, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "568d9e4997e7e8145bc7781a168fafc311cbafa1eceaed042c483bcae9ce5622", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1261881697, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "29127c22680daa5b02c5ab3eb919e8bc9ba13b5dd4a860249883423a9a6cc1cc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 85609111, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "82925610e6a5d5d757ca211e1c561a4e20158bb9ab7e1efbbe3c7541939f56f0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1423146128, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2076cb7210effd353449a4f7cb03b8381f21341dba6516955a4de1596503caf6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1836737989, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "e74e0e7785d589c5b83bf2d5353d1d94b8cb64ef202892a5ade7459e3bb6ef4b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1492927457, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "d6684b3bfee1846e7d86827cd52e10a0a83a4d2206c9e3fbcd0f611f0ab76e4d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1727884225, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "c60de9c87b3d1728d039535667114c3ed68cd16de9aadc3c08177d6169f9fd4d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1310723576, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b4263f90d7be6f1240628991f6dadc8f8c113b61006e91c19cdc380022db2270", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1115215460, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "58e3ca00731317155ae6925372c4fd28f21f38dcca5526558da2cddcd36d6ebe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 522717900, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "8b0cc70574f9651ea436b3b7ba119b4f906517f44eccfaa31c1837cfd6c03baa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 991949615, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "55931a6d95097af901f921083f027dada989ca5cb7a5f0d9505ca7f9f0ae0d40", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1356688618, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "da3d12401b2ccfd60403f1dff55d05fb898281d0f24a0900bbd5a914feb5b368", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 163656801, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "792eb24c74df5cc16c32eb9ba1eb9c76d2b6771e86413a31b8c5768aff202bd9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2073731016, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "bf8a6aed8ca9742c9fc8cf697da8fdc4a0fe97e3eae46bb13491a87fd5f7b80b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 664656587, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "0f1e1019a88bdaf19a3775c0b5178463680b0b27bbf54a1566e34e1ff9f65694", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 711848888, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "ff40b854970fbc0aa3e1ee23868c6ebaaa02a94efc0579ca9afd6d17812ad65c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1395674462, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "c930bc528324fae45eec12c0ba98d15cbc9e3a336acf6b3a61e01dbbd2e46d6a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 535963284, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "809038000a77845a0db43f0036851033468dac00380c4106a870fdbe897cfd84", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1824517215, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b63c2fdc3fc48149b669b30fac41ce7d2d61f2ba876073b002ea6dd7766d1532", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 268455803, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "2da31887ba3f25dcc690df3b4df68cf5f5d86da7df2637ca51a1c14bdf1b3725", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1311093754, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "87d79cebb832c757624f51cc53f6b5d95d516b3419d59b7715ba519bd6c66a5f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 905092846, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a0dbf1d5f45840eabb3610e17fba2561455da47f58311f59f08b7abf4d5a83ac", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1327456354, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "967326dfc7d61207467cef86ca155b180f15866b50e5f55f87014ccfabbbfbe4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1000867862, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "f98eb7debfab990dc56929de7588c211b8bf8a1f7487061936568bf5a93ce35d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1696887742, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "a3481f369182576582226132e4da6d27b918c6799235da73dbb18242f877f7b8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 945337225, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "6238d127156f81b6897e0dc8bd1cc7c98819da84cba875dd1b6a767455e03bac", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 145456019, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "cb7717eefc1c680761ea9022a66fbf85b530f46889c6188ac53b885371eb5a92", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 838379840, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "615147a28fdc7683ec58e2c5f8eb38bc62cac029e7c28862c8bbe504a1e69018", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 823493612, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "997ae973d08015dbbc4c6ca7ea8450a89f1446823b51fd4c280fd1a2d9372dc4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 386123237, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "56a48d3049cb5b55c7b3f0f214ae8328db1581a388a4b34c10574bde53682799", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 388494934, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "85cb24ae7c7fd9bef304f2e893163d62581173fa15d42da9a4a67be3bfdbc3c8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 121793264, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "b38b7daf38a84db5748499003392ffae53abf22c4f1c4f0d093b6c0afeea89d2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 420408071, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "04ff1677000b53c0879c62225a8a4ec5b34a54ce564a8f91577ebd668e10cd34", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1438777442, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b06bf602caeec2a5608f4edd01075df24f7953dd6bd373781666e9d21077fc95", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 31873962, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "28f97b703f0143391a3f6cc6b524f05c2c31d571043d491e62d765c77a408839", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1259438244, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "4eb130fa45a8d6a7749d7d1d6dfe6fc1a6a788d5c02247219f075df907afcd07", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1382834585, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "db474b00c6a1d361aabd65380cecb2d10469f8a5d2d76da7ff42a9168519418a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1359429846, "reply": "{\n  \"site\": 1,\n  \"option\": 2\n}"}
+{"key": "fe41a20203b439e3f587a648bd35ab44331a665931684aa37a609e9e59f2f597", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 458178063, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "f98b0d9580b76822a79bde640e5782a3ca440706b4f7d5a9ff5ca1c1c9c31686", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 771128116, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "04c21bcd2725710003c031bd2fb4e3cb930433979f0e28c6eddd451b710c3e91", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 714623155, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8e3a146a20a4ee2ace9f155f883c56be57cd87f5c8becf3455a6bf1f2def7aa1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1514132338, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ef0f156654258201babcb5f92f5c00b1702bf63d29d086d6278d7559f240d32e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1453782720, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d632097ffb6a805cf12738af6df45ac5974108ec4be10ad381b0ef095af9fffd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 265371713, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "18157d2918621a4145a72739484b8402ae4666ce1deff2f44e88855e2f9306a2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1448769935, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "11dac4fec022d678ea44b72f23ff520d232fbce47e59d0168b55de5e42554f20", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 355388062, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "ec6e6a7bfd1852eecfd275fb0f1bd84d4a73c3c194cb9feb3ecdabf991b57dc4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 936565103, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a19180028f2a6706130bed2261a08cc4c7478718a449c65a2ba08c7edc3f0fae", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1262390678, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "42c428556ca972c0f1d1e7e43450759f99278eaad1e5b1556df16ab6c8ff4927", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 549551184, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "69b8acafd370193e76ee73e5f83d149ff5913c83ee4605abe3f51b5e9b658739", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1101832452, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c40642da433959c02b6066d560e664a48dd81e1a81f64d0dc4c9d85ef6b57088", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 648961166, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "b26c62a2f72b63fc9a552cb66e23b3f33883d39b7699cb3e79bbfa171aaf4d38", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1224819620, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "76975fc991b1a30b8e336a8c474ce8a7e4e3a1990565e36686a4318ef3ad7cfd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 921499068, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "3c3f1ebe0bf91ce38b640530900e80ffe437be096ba645099532c77bb87d601a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1349974941, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "f43d000c88567c05b1b63026c982b712d0767117654315fb77e38311a75fdecd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1100236901, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "0539cff850422b6df306df33003d9e90833d2978b0e3f9008a01fe6926ed16c1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1386877786, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "3f741ce4f1e0ba19746ff5fb19427ba79ce1492a3debf17ba14985686280d4ae", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1051892375, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "565a3963e66198f70e858da2e5c4509b9ed19aadfc230ffb53de715f3f9b5dac", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 726425616, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "aefef7e31a3fc1b06a89277ce2219a0598f18ae151f84aca78d0c100e2ed2a6e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 689687599, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "c2fcee4a679a3c0a3f22ccdaac70004edbf6e7d6f4a124771cf7cab92d8f6749", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 188206041, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "500cfb1b2f61abadbf29783c84159ac17f9e8f5f0e78f76d6062dfeb6c8f0050", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1325370579, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "ae7bb53c66e69c329d42cc678240805b8faa7ac58daed5703ad244d5728166cc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1937385495, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "89bb65749a18fbb63282112e95cc24d73d9362b3d951211020d0587da6843fad", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1913470173, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "ad4876900dcad18123911b73bc3e39657519efc4848f4f64110ea31b24b61a10", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 788208044, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "2a03145fe1beaa18e4beb268a349d56c0d526f1e2e0c1b22d88d6ba3fcd4eb5e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1796360823, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a5ac1a6d0847d9b0d4c4a67a78b5a54e1a3e31bbae96ad3b32a090d24e88b3f4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1901343119, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "5cf10bb6fc4d08f2f28974635ea06491ad958c631be6cce799924d5261ce1609", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1027703298, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "54269075f732925dc0fce06eae454ce0f85837fc25c953db72e89593f6828d27", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1399510517, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a3b763f76fa3cdc51fd36e0b431da0830addaf26a700967d4f1bc08026d39b44", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 536900498, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "150f7473bb96015504fc88c869e710604c20912f3e2a339a54db37f76cdc1bb5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 42835929, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "028cdbd54849911c3785cdcc635968564502080fa01a8a9123771b6f6bfe9689", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1369495513, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "eef911b81e9c7b9a406450ad1813924a90ef2799688287cd606e4e08998bc1cd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 968449002, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "2db396fb6a6aaa5d9a71c5f50ae2a2b616b28a56ab0f2508f91b950b97251781", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2016926657, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "74e84b23f65602a873dba0e8dff6b95cccc765bb3c5150296e969187d9afe538", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 799807291, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "e497deb1d90677ee1f2fe609bba7facee6ac553d7e5dcd7995e91ab89b2433ad", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 605350989, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "5499353753d51a1cf1c8bc50c1ddab2231d01ef312da13844a1e6f45b92f5656", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 997751140, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "763c0e7aa147ec2cedd97b8a6390097027e06d2d2a510ab0abe5fe00c2e75d2c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2048420976, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "be2fb838e104fd8634e6f091efe6049e1b73595b591df8e83287d32e3cd3ae07", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 122348733, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "cc978a68ed8c2e678baa69f8b712f0e7ed4a498a09897b3da40869534683ec3e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 395726292, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "6970aefdf0cebe891099b992d5615d99c94035e045d3bb4c73e8e188d770da3c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 467270966, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "45df1ad86bdd0a4e4735c3547c3d31cb217f1a40137d52923a42c95b8da67649", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1505943889, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "346d5ae3a0f03c1f76a4e0631806e5db8bb2d9b86c6d79459d8fad72308bb2c2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1921865509, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "5b262c58bd14b58b65be6049d89618cda7ff1423f5278dca137044f01b2ddcc2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 445594936, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "28d1c8662148a7d53bc973846c97658a6c17701635531053c912ac81ddd9ab0f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1436235336, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9e6c542834b2b5108c806f010de58eac430e5635fe0dfcd7102f8cf613efb318", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 295479873, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4b2b97a33c13bdf5a9856015cdd4fde1b626db951b8cc229696ff4594984cffd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1193301822, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b6f47318389be62d14d87b15fcab67e1f91c7320d7609c8b0578dadd43acd3b1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 446721325, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "367de3c5d63344fcd1ce3ecd8a592567aa6436cb7e35edb53db76fc2ccb18a76", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 319563150, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "86511bec11cf4e7c132fd170e0778a67dfc3d9828be79cd378ca499592576c5a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1124744463, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "eca85fd56a2319f82de08b4d92283630cc293d7b6b55e329621b609522ddf50a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1481021180, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "bcb6a849890c860fc1992474a8dc25d4633e7396b5c2a7bd705e10e24ef23a99", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1448797261, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ee30f0d34eef0cd6abf1b22f0609b093a1d9572a3d9d2fdd1eee4e3e74be9c93", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1895120853, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "11e623df95cd93eb0f686daf5a9d777eca9881fa979e88b20f862184c6145cc2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1836227643, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "55be26f2693e66e0738ca965232f47622a306abc4d9c4a16638bd64bbfe36d93", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1702474808, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ad1f0be7f66bdabaabe2578d7e075058e0e1025cc417143d41c076f9cc5d3dee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 318802586, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "86c465e086ef9789a1e5771c0593dec2f925f88f730a73a557af7f22976a3ee4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 530716500, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "052aa66375b3e5d42c71fe0aaf62a10d1f62d077acef81ca3504f78a72c4089b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1953973609, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2713791384089eeb3d509938578d1b7cc73cc0fc3bfa1a589800e19f0251298a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 254207523, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7b0a91fa6d3434a7a82040cd30c65bc5cacf673262cbd9e9e3fbf255ef6132cd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 521534990, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "f9fcb98f3cd668782d47f11d1826b86836378b9eca2cfa69740c425cb2b3c34f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1987731362, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "763e4460ca304089637f6f56fc7a1501eba3648df45dc92ae2c1f9f798bbf3da", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 322582284, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "252abd3d28d0e7cebbd882913e86617c17bc188b8eeec0c426c2bb298440e8c8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 368495055, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "0aac0d39ee5e5a14fa113760dc1160fad5659426683a8bdc2279ed4ba8c03f86", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1787437599, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6c47c84fd30d47ca1d937132695eac8486052c9347aef5255ae3a26c00430da7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 295421891, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "01e09db199380eaf4fc617798db90ba34021b6a88089f63cbef32de668a6d5f8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1253009053, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4566f6c0791b648721797d7cacbb177e3f46ad80c378b8549402ca7e38c2b0fb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1265824801, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "425d8215b052953c15d2a68b0339da9dae52b3394a6e8789e731964557aacab8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1457807386, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "f12fb24e20eb1ae95081cc042d6f355232d25dc7c633e3b85e99e39f1b4debee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 871332207, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a9321562186f39f1449fbc14edf6372081720ceec927f792cf18259fff635ab9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2018399238, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4066a1b79c9482c67369f5ec57844a8d9558bfd71d8508312000a690ec746322", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 630204324, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "d843ea74704c8e0910d0df62fa7f40fa02ada71ce27a8b9a18bf6f47ca172168", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 857274474, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7cdbcedf78cc0991cec23fdfed9a6f72ff8d2aedb7d9ec78225ee9379a958757", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 534640126, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "e09587bcfe5391095d2ea48b640bfb9304839666e75a22a675fb23b1dec931fb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2127599672, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "4fa85f24213bb89be52a8d2aa9ce191bafba6cbf3a926a013d74301a69833df4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 763235234, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "c56a344a846fe5259a62ff5ac9eddf99370ad493d9a0a183aac44f61f0ccb0f4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 907139778, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "9fbacdc289103b76c1b8b4611783eccce0a3e44237060ae5afdca3b4ad4d6c57", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 389413372, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "258648df52ff2a113ba0724344b26b783b94ce003acfcb58c66d1d317e6ea3fd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 44368076, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "99521cef9c659e9b35f2fbc51e0d8cbf807993cd6ffdcef76360d652f27c59b5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 214200744, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5d07de3cbd94b4b217ede04e1e61855141e29efdfc973ac39078f4271cf589e9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 238715594, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5a2a4f117ff02365cc0fae57caea0933438d149ae4d39290e0f96b49c7dfc0d9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1230169792, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0861d133d1fd420c9b971e5dc5c0b2e12d1f0f2808e53fde5bb9383a7b25d2f4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 816728190, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c83c5d4c53814dfa213091951a97bd8b335fc7a07615fc035af06ee0123f0a4c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 353867667, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "dec4edd76167ca736a3120470c4d68bc0680da7f48d9124bc8348808d192e784", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1537509374, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "fb59c7f91ee8c1d86f9b9e0892fe16b0d2e198b9e52913b6cd2ee14030370076", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 749562882, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "f21411c7ff35ebb1e03c1bc2921c60b9e39e77920f51d5cb408bab5caf4040ef", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1772273099, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "65eeefc8aaf891f5a40e9ec5b9a37930501b5e455f395c1dba3c7df8e066394e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1234082932, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5eb4424ac0fd70960615cc4b6b8e7456957e32695cb3ac16cdd15f98188422e9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1409341347, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "b0d09212135ef73ff3ac2f5690e1015675c97eaac5e0a839ad01411fde87deb8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1259524232, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a1efe285dc003486b3e220d160a40c9bdac39d154e87f42963c74290d0110489", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1291892075, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ca4619d106c12e5256203825211d6e74aa3fba53bc605aad579433076cf3927a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1113316636, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "93d14deea062cc1a9a8c85c9ac1ed7c3390633723e1d899174dc133dfb0476ec", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1016318560, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d7ced5eaf945f7d203ca66ede52dd0302102eda93ec18e43dc152227e3a38aca", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1036028915, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c2542f813b581b7546df16ab235f2c9d13b99eb49287e0e207aaaf46d3a226b9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1418536976, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9426996d5f6fe7a6fa89fd7ae3763b127a9bbac190d2535be4e83e248da5e02c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1127223344, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "0c2d56eb08ae84ac23cd6025f246092e6f1fdb4abcc59b3adb6bebadb99857fa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1340980836, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "bf0a01b273e6d3e58400aa65ba61bfd592cf07ac07e1c8d54e6ac231a2f7dc39", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1863952696, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "02a6a3a5bb6f8211ce9facb54e06aa52176c3c1c80e62f3d6fd741b2e270e329", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 735245863, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c678fb6afcf2b0e289041fcac9ee9c24f3d6b3f41194c4fca0e9c1eeed3fb790", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1449897528, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "779573cd70e09a4aa4f56d0555b2ab82c5413cbaf7640d95f2fe1f6076565208", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 935793574, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ed2e2f1662da2e43105e7657fb849f2c8de3f7a4a7a812840c4c742a4b641380", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1896877118, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "34cc724b491b8175cc7d8b0629fe5646ad925541a9de35a4e8ff01a462c87605", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 37894934, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "282fbc97bad8fd1ef2fcd704eb72ce30e87eef3b6157f348099ca3999a69be4e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 301886222, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "774b25171fcdacb54d6e152d420cb8f8f2dc1042adb8f6b295cea6510886e43d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1594471760, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5bf15028b6370460a4e2e6aded39c212265c40520a426a997f29449c0fa33d04", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 983065416, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "c119f1bb129550a9cf3425622c4a6d557bbf4a126e28eba2bd8cf2b076674721", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2119109872, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c2cff39fedd14cbb78f616af78ef5c9268e9a7260dfe60830f318da514f1cbbf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 161014802, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "640c8ccf774fafb64e06c9633f37fb41acc4d32da8136ede381db4bd4ce4ab50", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 330655447, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "1362936b538a991f5ee62a88962d2e375e95c3d32626159c127d17b0ac584ea7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1556628372, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "fe036c7f420af834d507eb8c0d8d741b606d4ec0c9ce91bb45c7fae605be8da3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1563182923, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "e73acdbf3bd4ae048a36d8f374b17da58e2615040b8b2edda270e05a2941c985", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 999585315, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "bb43d58a53e495f9999934e186a726dfd2f306b79def6c39dc9a97debfbd3f4c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 952983573, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "3acf2cef8faa88ff68eaf94112178ce71423042e59cbf6c369821ec0125765ed", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1880760865, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "8eea842ba0996f43a2cad97053089eac4f59833fc09ecb16f97126ce8177e170", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1708362407, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "069fb22bd993b1f5431ce9ee761dba253d416635ebb8adeec28adb18c7eeb2c8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2109992486, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f73eb197267493ba03ee8a8662649e828ee5791273e57b64df3d4c41f4a659ad", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2078514827, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "70f289844ed0e0983140465bcdb3030e8fb0efe3f3ca3ddfa734d0d9900a6425", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 269473152, "reply": "{\n  \"site\": 0,\n  \"option\": 0\n}"}
+{"key": "ff78a2de1337de27d834c8aa56c0df39df2b4c4c277da443c7ab8c3305312f91", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2065072645, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "1c103ab1d517f0b1baedc6645cd1ba478dc7554f3fe1895906933d9074f42857", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1436515525, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "2ba7f47cb6e7a26e5cb056837f986a4421ef41ec4b2772e228fafcf2481398b8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1172613123, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5a5a95312e61f8bc21c5475a74e026e995614c9ab7f1f4953948d7d18cc80525", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 691641683, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "1f30ea8bf2500530d336a46ef48fc20d60c872227cf2e8387209f4eda86de5b3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 179411316, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "393f206e10e4c74caf1d50064c610bc990c0049d8762b3915401551ca2d1b6d0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 675192714, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "d4437de0558a6b01cab453e260de3c280d889b1a437a0092beb4b565ce26ac5b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1006128517, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "bbb8044d3e598cc9ceb6fbe330dd81cee4b9e5ec59083dd0526da9ed7716640a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1730530967, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "3aa7e353a9f2a09284df98eddb150bdb0ffab2656b4e9935f5804aa69a62f76c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1113902599, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7d48cc5778d3b4f8bf99cd95ed448d7ee3a9805ff213ea0d6075c274ce950c2b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1006438064, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "5583f8772320f866618ae504adcdcd3becc8f8fbed04c63511553b1c8182d888", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 496933301, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9070bb0a5bb9e75c4dea1ebd6523a084d6829d4a3423222be981a56e0f5822ff", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1328931264, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "697622e67dbbb8555269bc6a69aa6260f4c1c63dc406818e923572908ae55c3f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1193669492, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "df945dc05d331eb16f3f89ddcb79672b496529fe6c5cde4725c23df68cfbac55", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1425820925, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "abc0e2001ff86bd8eefd84c889f8427b3f9d3c1d8d48ee578d9f936268c4a1f4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 134657040, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ff8da4e1c0a291201165fff8e2e2144926910b85eda5324c7d93cdb7be9f9340", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 555884467, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "071cc6511767497b96fb6a64cbe07cdbdff8e4cdfaf52ac4291afb82aeaba698", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 16819438, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "21576cda465f750c4cc50dac0e4e4907bec4b4a4925e8959fb5f3cbb0a9ea361", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1288763233, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "b3dd31b8ed78a90252c7569f310203f5b3026d3f3f16a67257b0322f54684a2a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1865706685, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "228bfd159dcc6b553bc80087169d32baae0de239409ee3f3af5642b438eabcc6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1595340568, "reply": "{\n  \"site\": 0,\n  \"option\": 2\n}"}
+{"key": "7fd0076e0728d9b65ee11fca059495626f78aaa6a30c0a8c30acffa0d4565c1f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 595205541, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a193c0fd877558c36457e441a83437884e75c917a2f9f58b3200da1841d2f44b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 846612277, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7d0e8bf3f2299fb3258a39942334b9db6ac3ed7cc464e9fc2206fdd4d18081ca", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1451304290, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "b173c29a60a9950d1d0d66978e9b9a8d5d596ba1dd82a098a0ef7c6480152b26", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2116725721, "reply": "{\"site\": 0, \"option\": 0}"}
+{"key": "163599690b6e65641a6e3bf545d9598705851d4dba1ff4433cc314f15cdaeeee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2112353378, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2a1faefa91aa9e3e0b84460d1317fcaa78efad351cdaa4897d560b058dd870e8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1115852303, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "cded50c61800165e239ded55a44453f5d990b2eb452a5fd198617f037719f198", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 918168629, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "86ae99d23221bfdab1ce574d9243ecbb0aa4ac65b8caf7cad3c5a6ca4e69cc42", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2016178144, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "76237d9dae480acb625ef1cc57a2156a06141632692b272fca508f58a4ee6d07", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 298449846, "reply": "{\"site\": 0, \"option\": 0}"}
+{"key": "394b5842a75d1cc5cc862ed3dd00d632749a95af610897f88b279970f05c5c33", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1914240958, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "3e0ed03b35ea3d02e74ba0ea25b5a2d243a7462357120eba56abdebf9b748be9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 666994498, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a88af3d4e19c57a589bd0eb08098ef9ae1b2a9292c3168c7d92cb0195bffdd77", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1193435265, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "e8c493329111de0d63cc96ff1255ef4df1c8ef57d4a075948ce2259222c6544e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1766323259, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "31d3feef7b2240f3721dd68dded1958c10d123ead17a3943977bfe11c3ca5800", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 770489518, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "eab90cdc620505d6d6994dfc69e960fcfc76fed911877f010cf728eb17a002f5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 480067721, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "265827a5b196805fad52d707a7c51c676e8b420a1c568134bf439670f7478722", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 722752876, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "468964a9b703704a8e55f1d330a9bb29f152f3d4a569373e8bae0900cf6029b4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1262736581, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "efda333f283181087e259085b01c1e2b52e507688e8da70c940f37468a8c2b79", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1028139947, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "416accd6dec176a7c0a456ee45f287ef8dcb19bdb81c33ffd9c6aa00c04fbe8e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1911181362, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "87a9cdee8e62e07cc01ca02ebbef641afe1c34fc0aa129d2eb804f74e7d04649", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1761061474, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "12121616c5bfdffea581f891cd0a5d5349ef81780a5805d89074e8f89397da20", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1492820201, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9aa3549319733f929432b2993f3380453961489a7dc02159b25e10ac34feed01", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 169171307, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "00f88f6230a6c2b700aaaaf961492e6dc1caa77ca473f2dded2c9b9cc2c2a284", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1374163539, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "54c4332668826f133fc42b9936d9e8bd00dc86fc0cad905070fcec67ff17f7b7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 196857251, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "0a76b5fa672ebddad1d64fdc443b5c465c3e136769e847c2f41cf1a337ebd867", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1202744582, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "fe4b03f53e96d72ec911b3caa47d9573a3ad78ff8683c2aaf56545d492c43979", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1156105545, "reply": "{\n  \"site\": 0,\n  \"option\": 0\n}"}
+{"key": "b7b1cf3e38b6bbcbc07e867b0ab9964e58d35465b86b888e01e4fa9a14a66360", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1910438404, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "8ed302a1c301df9bdbc2d7511b8797571156cd6578f746a2e8c1d1c2b77d4831", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 100384050, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "48fb95391c2439221182f10b3306aef8dde8a3d3bf7b38ff6cd7ee7ceff8cc68", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 347524430, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d43eca5aa338e767d0f7fa66c31ccc5e7a43829d329d900e3e7203434334a64d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 115743094, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "698ac2e72bc8aeb0f213a1349ee3fa1e2a5becaddf1e7a85893d2a9d96d3db29", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 859889246, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "fbbbc098073ddb30b225fa662b7f67b577285d2a1ee62e6709204f4f9f966fec", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1573008293, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e4f77874dfb994f489f9a1a5e2ce2bfa11a29267f3e6b5a43f7452f59efa160c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1183881667, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "1fd5909699b269a17ebea192b97dcd8c32dbd5ab86ab7a9382ef5007da4bb7cd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1370503364, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "81dbd19f8dae3cecf4b3c6ece79a4b1eb6a4321d408212995e23be19a8a065c0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1864731549, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "6b540987b7b93fc5cde30bf5d9282225b7bf50db9d62c69fffe4567092d57364", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 187409157, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "6d456ed94a400f723218a4560584c26bd4aea85b7863921a689df47344a14de5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 650677054, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "fd83d9f8a3e1dbeca377124a5bc8cb022d734d701cc94de73731c603bb07fa26", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1129855683, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e28e81a73969cbdb4dd42a82201f0a8842b4b715f044a8326532dc2a9027a818", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1194536615, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "e25f1f29564d1d8e315f35f2253a361ab8f732fb36a714b91f6c2d1ddf581ff4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2031471373, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "6fa8dcd8c2f9cd924cab0494c0d4b6d8f539c48d3da6e7ce6d10991196d15f8d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 390718856, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "ba631cdd23e513c7ff0567859c6394429f654d0a87562b431eeb83bc45787389", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 542300583, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "0b969dacfe2b4b6991d98f5d01b4477e58e72f2f682c21f80fdf3a8bd58a8d9b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1116939357, "reply": "{\"site\": 0, \"option\": 0}"}
+{"key": "cc6366925550f18abd9d408cd99ab275dafe3145efd21c48cb31fd00de5ef698", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 949790204, "reply": "{\"site\": 2, \"option\": 2}"}
+{"key": "97b59f4dea4cab60d5413ad7a9b940147520805a4eb45ac9f6c134786a2fb5ee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1543081587, "reply": "{\"site\": 0, \"option\": 0}"}
+{"key": "82411464304b8d4e4da182e1b730eb07502a11ed8113ea191d09007eba2c192b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2064260111, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "6235e7a0c7b4e397f412e1e35960242388d6a71c98ecf0a2085de7df65d7e6b8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1086578693, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "79f6a617ad5d23616aa8f2f5f0e9b44e3191f30b155606c6224353ef411d3c0c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 826782046, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "5f72abe0833b6e6908cca5d17d5d205485b4d4ed3b04ae76cf08f3b096492342", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 615186146, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "81987bae8ded401d841e2de4b3b0ae6bdf05c686cb30757b7af4cf2b9aee4a76", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 173016924, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "cfc966bad9ff3a6616c8bca059018372057ea62db0f87cec94a9523da7ee5b6f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 312340370, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "3cca08d7fcdf1dcd987e419e548e293493266ce30f71f8c2506bdd7786e398ea", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 293217313, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "68d3da6a56ccaf3a9ee16580efb453b0f6fc7bed9c59011d7e7100394964949c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1964609864, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "744f2bf5638f471ca8d000e1bf10b2a1c2d6e1dc7ed025a0896ef4fecc9f4851", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1076723506, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a8dedc109e7a776927ba7c73c15f59bd70e6e013aa54082b6b449192184b6c9d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1331772266, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c9925869fb818aa178a5dd53598821dc4c0e5f9b174e8886c8840bd4e8d56e61", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1981587280, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "827563aee00aca0e2f631462af92458eabde6cfb3dba22de6c6d549699f1d0a3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 262425968, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "25ced76261fc76dbeb710dfddcc44c7cd3b6d02cd877b42043e357ed00c08b3e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1302885310, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "edbd1253abea4c8acd29ad19749b9727771ed3a8ff2d4f8f2dc963b2dce66142", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2016322654, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ea850e13841ae2131091f60e8ca75e8d9add9f91b6a3e7b901f028da12b507bb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 660401716, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "19c23c5138c1c689ae20466d70fa7df61ae641ffa7f0c70d94d6dd5ec7f1e0d0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 846561173, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a18e9571e444f71acabe9ae1edbe34a58582af9866da0f3917d250a87b66c2d9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1501792164, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7415a184c338d8a8663abfc971cce3f5a067ed119e08055294d37e9d38f79efe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 135347856, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "a8687427046ad73cc606c5ea33e905a96a4e053ab3124f681c9231d772c3462e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 354982870, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "4a035137cec4f9b66538fd2357599b1bf389d6423a48d6fb6d9a50c41c8e5fc0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1864640417, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "0552f1ceb4ff183e68e93a5357df5c2242e8289978e5976297b12dc8f71d9f3a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 775973240, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a5cd687d0d510a7a1e978b95011fa394af480bbb70cd4e87768f1a07ea80d569", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1923111358, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "12fdd7017dcc434e9e5aa8a74fa76907a7da0fabfd6d3397d54b37128c1107fc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 454159852, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "66f3b926ac290a400944df590bf65ccacdc7212cfbd68f678e7a338a714ee34d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 600249493, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "bde0ca9e31560a335b1416a54dd43b1c9f01bc66d04008e087a31be7fb59deb9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 327116104, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "15834d9ea908cd81ed5ab25f49ac22b987ff530c053e343890c78c8f946c4b64", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 702802121, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "868e4e731626345304284c0ed2e69c458b8cf1df50be6758cf417e54a0d6f4b9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1225637022, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "575e7852928c7cf045605189318f83c8d97b4fefc1a9629e4eda51c84ecf6d45", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1982002430, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "869e43114380d3c7bd6707b1576adad5e5560a275bdeedff9453faa21540367c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1127909464, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "fa8f6e473ee272298a8d0021bc1b3decaea16650f1a9c4e3658ec436b6198f2e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1097431922, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "70ab70600ed09f4a1fd4da74b1781db4e51017dbf92b6dd2f2c493bd465ceb12", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1200106570, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "f3258abe4ed095efc620243d673467489be0fdcd0c61d3a76a08fba51dfa8696", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1615382490, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "3b7fe03c60f04e6d3aca1dd649d4e3e29d94fbdedc3b50565794ea1781675fdb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 66946147, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6da46e46f09634457478ba88b91f1a906a21a7755f3d19322abe72757ecd1b7e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 120803425, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "90b185d663cfa5b06492886399eac3ee7a61547973022f7e1f190fc7cf32bc15", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 557351103, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "d5854a56dfbf997313b8de3cc2afafae43dc0a22bdb209e2ced55b1716df6cec", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 90839610, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a18fddb1f2c2d310f7f890fde3281cd4f3c446e136988147c5a6925b0aa8dbdc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1940372840, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "126e2c4513e2ba301fc3866bb72c654dc829ab6724ccbc18b14747860dc2f65d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 604044650, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "83682813d3ae676369b7c8de5b1167fc228fcd3be83a31c699c67c578f7545c1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1014156903, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "875e7037a26ebef11cce50b5fad2d51941f12a1644726582701fd6426f44b1d9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1531718538, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "b69c7faff65e708dd0b1adb781201f7de266e696bbc29576707277419e66990a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1144287741, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f23c1c58cf273d6e08ae4648772ca924ab9b5d6e7c8309434b2a7fe5d0b5d071", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 229855373, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "edd6143fa8667539e164d876697245dea9205597d84dc2b295deff5461e623fe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1341124435, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "cf1babba339d9a391f3f7fa47e63f9eee8b954e5653068fde627b38472510d4e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 262655130, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "4b014ccd72c9029d3ab19330e2e790489b00877f19e855fbc3dda43bd69fed39", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1260010611, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "122dfca0c6473838a344856b6346d4c5a3ec4414a9079cccdbf64bc7f1514f33", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 556145114, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b171e1ef8da59e4b0e66a457157fa6416ee1929ab96ae297185bc52ee306c195", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1043174237, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "f8afaf20263cf44df0ea573f42946ef626e70b4769b8e76adf83fdf566bb4218", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 240642064, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7b529a092e3a0706ea1526fd7973414c50e47f1ba0ee42d03e57bd3c609cfe13", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 226670440, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "447f965af476625d2487291fb7fff61af6cc32f0816ef613f5d4e8537f938aeb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 408940724, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "db79319bd4bd1ea8467cdf0e20f4b4c4e62a54ebc1f72aff41507b5749b1ef46", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1893783843, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5055c93539c97b7a991d08b9fed053311ff4591344c149cf1485730f195ea732", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1602304225, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5cd52283f88135895b5fe3e59ee0a1045fd12cf55b6ad97d62a674f63a662750", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 711028417, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "c9ae2893bf1aec4ffbae17d0288a7a3adbcb4ffcc8c3ebcb93bb4c196aa52b56", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1411626304, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a7553055622d7b2e22fd1384bcf2f008388102f6d27d9863eaa28439b91f85eb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2004025816, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "485c03ce8b7701c1efc027b002735cd9847023ddf8d22efa3e16d6882068b887", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 385174604, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "d49414d589b4c6e4888862754a0d9f810cfea8dc31e93153fbe6a4b35c4379c5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 818046649, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "517ce614c6e2f4faa429650b6757804f05e810c8de8e7193b2bcf8c6b11de6e7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1659366574, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "f4b5eff84a7c0254c39756570dc4ab0071bd7fb3553b3d4b85461375ddaeb9cb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2062042052, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "8959397561d4a80aa18aca196a58db85e96343c86549b241243fbf082a867120", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 265085317, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "dee14a5d3ead1ae779d2463e79cfa4c0fc3625d276ef6f7f89e7f6b1535ad8a4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 226662897, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c944f1514b2938da2ea7c2e88e2bcf47ea241e5cb56783e47784ad9f3fdc6632", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 213245129, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "1d5aa038ba4d88a95e5d1a6e365732fd2ecb73b8edc8dcbba57b3a5938bb4daa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 109811221, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "e318d0be2939f3040b17ab8ad77b54b63d1cc7a0ad00620dd9a3e2e3dcc65020", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1083680636, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "37d6d47cc3a49c0fb22d1d273c7402e45e6a521a9e11ca50185e0557d7f5fac8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 175124577, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "e05f63b94fb4eff0d6ddf0a19bc5be391032284c57588780b982248ea89806f0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 457868453, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "6184c409735b686b4296fb1c50a00f5e80e01ca71328ca98da3c59ae3d9c9401", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1746239247, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "6fc1a8d853e6cb47a7a93abaf19c1ff55d55819e2597a56ab47466beead6e5d6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 897974862, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "e7ee60323189e9091508070ff483fe260dd2f09e4b9d7b30e34548d065ba9e4d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1912015691, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "5332d82cddcc5b293f066633d94f67fd871b846ec0df0a3f4fb4ec9461da3689", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1353352038, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "64f693a408e59ddbf819c85cdcc775e7692506e7bbf7ac3c707d040d2c9da347", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1797470714, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "0e60d01867935a5a946fd28582fb70bfbe6d82cae9d75b5b74343ffdd48c9895", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 19269640, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a83afb157731a387faeacc28b573c1f176b695e36b2087e1977a9dcf2ace0e39", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 950413470, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7341d8fd1fd7c9887384e8b624ec1bb59daae007e3e4fa5902349580038f8b53", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1749455282, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "471b710082debbc7abf0b3492c6ae23a72ceaabda336abfa3bdc049aeb5a777e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1604615333, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ebb8154befbccea730812e0c73761f1fa1de35db53df60402edd7ddfc0f95fd0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1634456464, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "28eccc3b32ff2871d67f0ec840556279a65cc55faaaf0fdf29a62ce249bbbf3c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1407094051, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9bb649521e467ce5db6b13db8ea89a582f542944c50145f5159c12f00ddee5cd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 775567301, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "58484bb16da50a50713355a43ff51282fb299d92e93b113c7f95e70fba1a6cf5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 772726927, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "39d0cbd523d6d038eff28f65d381ba176fb079096012fc129b94836d20c4dcc1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1125186724, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "3a1f3827d0cf79bed7549675b352aab01f363489a190ecaf86e90ff5b40d385e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1481586995, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a044f03b16074fbc979dbdc554c811c6f1aae793b7ccd39a6ec0d870fee5a8e5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 914193949, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "fdb3ebbca9f179ff92d2d0122b80a1939cb4515f7b354ffcd6ca95388290d21a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1348724337, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "991bb2d7da0712deec5fe046618251848273253793d4851ac0654b8932f936c5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1600183005, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8f7160bae3889110a82c50631fc77e3b3fd43d0d8f14d681fe5a74212075d490", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1554470202, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "6f32cb097aa5a2d88514cfa540414d145368f543b60a5c155c1388cf5ef3f1f0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 986586319, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "0285a8fe9457effd08a1e56b85408ca9e3ea9f87319a97e6581782d210a1b142", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1270849028, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "54b5f9e89eeb46f7b47cb0975308a3e4cd9ea4c59d8208c39bd7201aa97e8765", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1626194714, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a47abd4dcc383c2075c08aa1e3aebad606941cedd5b3f5a8a7c710b637fae192", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 730073572, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "6ec41ea0c72a9cc2a5c29a2a344d2d1cf8404810c3afe968b02cee1cc8dc5bcb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 305665358, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "c8feb720087fb32917d59edd8ee806deec83b065a3b26432f11e4a692f11eac0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1745429576, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "951aa30829a21bfb18cc97b1b3bf0b4552dfa3190e464c6c104ce0e834f6ecd5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 101866925, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "73c292736a4620178411f4878e974c15025cb597e3533d989e5c9f2fad574d61", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1848994904, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "bc72f40f1c50c51514e863d0a3708cae019a1b1309816740c2c0aa6746afc59a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1276593809, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "eefe3f8000ede003a165909d334620abfd4fdc16919e2442c51cc157dd9b176f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1423308058, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "bdf453955f739e96157b7847ac981e9548690a2ea016d103b3409f1d5527dd22", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 80912788, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "e22da1f1cce38fcf5ee2d7be72e8fe49b7115dbf4be82d8f11036bc2b4017b77", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2119791707, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d19a6d3f1e5a554a94baf94e5a89226a755153f9b7414ee6bc83ec696ab23eb5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1189206452, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2455ad57538b99705fd2872fdac33eba2b34587e336a542523486c6cff1c2452", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1737364055, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "47fc61d3c2aef22f64ad033deda4e8b37241098b2b1e329e1b9a57067b1379e1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2132784043, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "d17c29328d1c6a7d73811508b1cc5d253c6484d59eefea5d82bce2eb9755ac2c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 194387391, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "bbb65221a89728dba69a74478b226d59489c6d7504ec8fda5a0eaed84f310d6f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 173385105, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "eb09e18a99dee461cb29460c83bb51c131a7bbe468af639120ab795dc2f15d18", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1641910902, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "c8d04048fa6fe408a74f359600ec91437276a7fb083c160cb97b7ba5dcc58fd5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1512855449, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "ffb83a369a4569904f4f788b1ecf0465a5f723ed5cb4800abf0f96ba81b69499", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 945885942, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "c9ab432b55bc301892016213d649113d63150f48076254f188ade14e17187445", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 125667681, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f7adae9307b608c770de5546e81c2ac066f4759f5ef460c650ab8168bafae9ac", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 615530718, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "bdebb3923de2fd70be49b0813515cf0b057b53a98fb650201e7d0df17d492fbf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 535113169, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "fe861c0b12d5fc50dbbedad2d8ddb5a6ab52a010062d783d753cb4a3c1e69591", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1420987452, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9169b4e23b75402d361b1f6d11d55096e9121a46fb03812f073d0a2dc68e57e6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 563139552, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "219400ceba22c8bf782f87517472e1ab42305ebbc5bc28e98e69a81a8f463a54", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 408437387, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "adc74de2523b81e2b49a6d3465484d80493be199ef09c0896f677d4a1ef7d5d4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 597273724, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "01dd6f0c0ab0b38e78f0c8472ed311a7c606fbb51fb27aae234f6c0821fd5380", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 830497299, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "268dd5c03328f70d006fad93c6eade19774f558bd46c31e44a0c7b4badce406f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1276538713, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "9f07519fa2dd86938f232573ca21530b9a98c7dcb9c4316b7f6d1735fb298247", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 800985964, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c159e09aa4edc8b658091c6e9a410567ef977233ee5c8ca92facc738845fcb9f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1198570853, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8dee03127497660be690ebcf8f4cfbb65c6143d70f991db81ee7d8a95f4360f0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1725395311, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c147a1b1e74d79f2bf0ba710fff1aa17c7fb4b2d4fc59bfcc717a75b545b242c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 759408619, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7ba492c35e30ec1e67998e8c4e1d4c67cf0d3e07bc1a032bae7952010c39d0e3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1714739187, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "3f9abce6d1877fc80c5e40db11eea8ca59ec41c9795355244f624581763192f2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1524628480, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a1c0386d2efb9a7042d3e824da7f8325d5ce693f53ccd3667fdb96ce5407e23d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1479917650, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4a3fd79f05cdcc90cc6234185e82889e1c88ca66782c895bd9e806684b66395e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1447090807, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "28860c70c2af91546a921b13f638cce8955206de82b7f1421eb8a19bef70a450", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1524200615, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "ac28b4234603a8b2423cfca2c776d36193e398574572465428198ff1ffd2a65a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2085236311, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "228b1a1f9d6dd94b7d116b1b009b428ee71997f9fd7e569e8a9942fbe8ca0a39", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1826245648, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "580d732e04495ae7864dca6802eef800a2145f5d244617c80a39f25ed252977e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1133349448, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0ea76488ed0baad42748bcbce97e77996599bbbafdc404e4b09ebc3ba1d721ca", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 995051438, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "61d5e495097051585940f82a8e75b0d7d9c2795e73eb814ec437174d5a45dad7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 657327850, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ee0eaad1fdc918598d03b73317c0cf4c9da3be33545e5bf7af8424a161de01c3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1008735900, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "85eda1a4ca43f2c311e1383fa38e2124098493e8da41e1035d310681bb8fcfd9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2043793765, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b91b773ea69941654f54d707fb48decde136c9dbd3a1dd86bedc32f68bc8b426", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1814700746, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4cf75fb6582d0e2419074b4c16fe2f0a37b690ea18f5503ea0ad74d8e7bf6e2b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 598095092, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d60aa3708c0d6cce3fd545fb04ee29ff19e80e2c3f30cc1c6ab6328170d036aa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 880878105, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "6ed33f3475256206d990072e52f7cf669e5b4cf52531c5ed4d142d59cdb77f32", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 108518351, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6d0049685d9ebff087b7b546d4df4269db30c1752db586bb6532603f1ec33b4b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1477231961, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ebf43512ea3e6d7b43ef493585c9ff44c1eda46287307953db351032f56ed56d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1386624901, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "1a8a9970e7c7d5110c5e89d561896eacb08df577a2f3750b192887e3a9c51a08", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 883512328, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c20ee13767b62f459af914d65dd798398fea8c96895812af375cec16ec7b84c6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1315158264, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "c6044bd0cd18fa69c4fbb3ae3cb91c0128c1aef4b2fde08e47df71389b557bc7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 714304322, "reply": "{\n  \"site\": 1,\n  \"option\": 0\n}"}
+{"key": "f2b4ea862442a3846a9b07a349fe57dcd57673fda15f46a75c838a1369dee68e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 530013621, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "8324c73f1995539ae091fddf5324e42e00a50d8e81b3f204b99a35c96ee0a8b5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 132390004, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "f4361dc2bf52f93a0b953e1224a4bfbb35f8e76bbcdfb5b62bff524b8ac3c40c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1329458298, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "8c4767969891eed4289b264853f593273005db53f5bac97049ca583cb30657ed", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1009309306, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "94cc4bbec7a681b183b82fb84380f7d488ba484a1d63e7ec6acac60e20f3650a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1437709700, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "22e57400f148c773a8f7393d5b12bfca941f5e02bf762d308517d2d9cf2ced40", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1992561439, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "e68ccfff5465443fe353e103a4e67611949a6b1f8f78a57bbd19f11d30e4f665", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1682755061, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "eac71b57f73f45ff54efbc347af93cc459d0f2e56d97f928202b53871dd8e772", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1370029670, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4f3251411fd783b781d85a67850227ac6432cf04eefaea18acc9454afe8e21ed", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1146481156, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "ec7afa94b90b5110c1856df08c7e51772668182a3963ab3ed81d3c046b8fd90e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 50787561, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "855f07aa38f0bbba468968bcf9325c511264afc8df733f726dd39e1513d6649d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 677126696, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "84cfc5710e4d60af8619e453f08844e3d39ef9150628101dbcffe67f516e1017", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1578232826, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "a02b0f27f1177f4a4e4bcfa35eb7f173eb5c9d3100689bdef7eedb76017a42ad", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 588015424, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "0582edbe1404f6c3a7184f217106fd67321b5658dff6acf7e2c04cced415f053", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 861313856, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "385e4e547a7c93027faedc68f5213065a73fa98639a9e76f9b3ee77dd4831799", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 383251105, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "e03364258242dc4667ff456bbc7655cfbdcbce8fb7cfbc7343fc00d758a928e8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1066788015, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "d554a578bb17c60c6aaa6f84d20b5ab0aad701dc60f100b72b74f725c5923acc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1489702, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "f777114a08dc294e5bd219900940c04a112f752ec54c5ab55d309dd9edd64676", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1307679349, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "912844f36dc9760d5f72c45e4b0d48bf33e8177149b96d86263c4ef64c0bdd35", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 72967140, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "1cee6da911130e1b1e5e6292d10e2d55ecd29a26477b1690296a7dba612ad101", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1118798586, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "27433f0cf4b9e0813b500cd8b0122ce5995eeb84a65b38bffb5bb2aca5942a2b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 297454292, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "35a6c606e0869da6a4e25d83d52286824de90541b7c3fb4f085163c7b10dbdb6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1963041866, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5a119b94851c75929f25032365cedbe42ec7707cc4ade4c46ab95d6afa22bbee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 721841270, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "be40efce8d4e5d40b865a1ba2fea3f644167561a4d64d7ce7745f598cc6a82e3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 731511127, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d4d0b513073557387046ff70a07d57e668899fd05795a3365b8cd87e9e202682", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1696729883, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "2fdd972cc641c47c6a71494be6d8fbe1148da08b1ac509e3765d7882497d6189", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 607044030, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "cab3d0ff507fe0dd57909b9785af77efdf5c3bc9a4b4c7d0b40ccffe1be6c718", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1333306107, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b7c201ebf4dd7b5da9c0f0e8102751735d33d8a1cd44aac0d7b39437750705ce", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1741438959, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "6d279551135032fac39959f90a9dac82063dc0e89763e056115b1696607f77b6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1304471219, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b492c8a293ee5d802b147c651d2ade6c81a3a3600a85d89964d1cd0d25767bb5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1274257910, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "0f60f056094adef803cc52e56d17e7f015841e77658c40e0849f612f536ad8a2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1559630738, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "41c80d1636e96f7b332589970dd2028cf2f5ce06050bcbf6e8bde02786401936", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 305120143, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "69f1fee69880235ee1b41887073d7e18e59342cd6b63bba1c095d514d8fb9079", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 400915508, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "404f4c7836a49a493bf82a31de8c6e506e7e94ef38889ea0f4ff595bb6b3742a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1912394176, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "6391cc4d585d30cadc85430c5663dbdb328a136501bd941753988f4d824d0e23", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 232134951, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "133212381e0a7aedf0e9130c1924874e61719abb1caed3d906eb26d6243c4e45", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 409484877, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "47ac11287e86fbac927fb8d1c2b1b33fdb89d733aeaa81151a013705202b5235", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 673418349, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "1faec0ad05160b5ba27c046899bf4039998cd08c1c50c1cbe467e524e84fbaf5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1692120856, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "28d6d24cbde668f07108e4b0004d41ea8e81e76dcd3af2d9a89736173ede9323", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1227121856, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "6571b1c202d077fd2055acc2574c06842f64bb02bffdc9a88441f05e150cc158", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1253343642, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a3c56f4e97b87e2b7c60008b6dd32987618e110fda2191664f3d27dd296312e1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 694314294, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "64993c57ed4e805540df4501a35e820539371d6e0af9d211701825c1f60d5113", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 139697232, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c31fc6ac57250fd15b3a75ab8d484eaa09d8b5e03c834a5c9e1d43deddfb1ec9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1671720592, "reply": "{\n  \"site\": 1,\n  \"option\": 2\n}"}
+{"key": "c9af9e3d75cad666edef4e2d0915aefc1392a5430722bee819f704553b34d99d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 663751042, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "04082b2eebc2dfe95cd4a25e63faa4c557f2a15ecd128f6110f69609ce9dff34", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1852047044, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "b21c8358a48abf212224a55fba8c62d906a074353aa3ba957d6145ac3e9f5483", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1330197264, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "73384d4498bba350491cd26ee1ad2870825449210cc220923e11e9d952290a39", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1437859631, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "8f3931234689fac958364eefb22c9bfeb1da57f0864ae5a3ab6541ff36b79c27", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1617196912, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "51e8a7f20dda279afd185211f485a9548faa68e3ba0decd99f9b9ec3f758affa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1042862732, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6b9422728100537dc0bcb75e4f2eb696a697ea26287cfcd95908b80f01a539c4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2009998627, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "8ba715c51b44a66e2249039f4e55f3d157cbcce4482410d9abf8509667bcec7c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 567010598, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "81b84cb3e4c4eeea88ed9c8da4d0158492a98128e8f42fe562e0007e40ed6041", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 426089291, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "55360ee36ce6a1b9861dca3ce59ee6cbdcd8770078e2df966ae26f927ec1c9b2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2055578707, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "a352a76db82101d095e0ea759fde84e006a4d82eac08e7d556be0138769a5f33", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2010566481, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "3858c35cbeaf617a59984d3787d24b33c2c121f3823ee52fb4db1d7289b1b1cd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 857340595, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "79f001a739e748c08a09aa468b2a3cba2d2d9c2df32eaa80c261a808a169b001", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 543357001, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "01657e34f609148f576b81aaf15e204a3ee39c75b89f94b22caba2a652b356c7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 940820855, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "784f57816d36477a44fe3c97763b432610bc34ee4f1b5db1ac19bafbe5bbc62d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1423238860, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "656f2e45b3896b0750d56c9d1e3c6425a39e0404a65e97da28b749592e4c89aa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1410690782, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "592b4cc2b4a1042432850e0803f5c9a9db32dbe3615c4d036c28650f2d7efafb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 927373855, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "787d9fe41a047c6f8868687ce43f8f41fa3476d52a3fb725321705ab8ec3f895", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1180001865, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "4bac2cb3323834e4068cc385af00ccd19a49834db134e614a8fbfeafccaa1a3c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1212388707, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "53e311d767688ce5ef2de54dc5eaa3c7d3b54ac006f3b83b46c8fe71f7de45c4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 817333409, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "ab2577b2b5ad3cc2b4c2643c3708e5c9853ea17ee0df2c7703004fe4b2c2d5f6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 230666557, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "92c331c0f892d91b9111a99b8d0dfea40d710057cdc3a397baa306979c35a7bd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 711041601, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "618d4072688f7b0888db33f3ff4f933a0b9d1264ea5cf536a8a1eadb0c518d8c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1606266346, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "706aa234c458c3cf98a462472889007252dadc2d25b14ee06d6fb914f4e948b6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 114167836, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "253c4a63db2ccf8dc386ffc0f0cb75a7b17109094ad43ae3bdb26fa04a2e8c04", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 216365832, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "fed2b67bb954c6687403f68710ca7d8841eded4d258d6448d35639f4c71b5111", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1452726392, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "6fc86ab9c0e53ee35493aad6a919075ba3f8f33a9ecce99149611bdb1af39553", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 984650420, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ba51c0c687ed48d82b102ffdfe320d6cc58c6117f7600a6153c3ef2e7cbfccef", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1780146214, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "787290027f08e16475a26cfe7172b7330dfe0df490af01b0e8f378e07e64b22f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1665772777, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "67ed2be0d4745ead7514b82ae442a9b3c7ae075d93babb45df4d5e4b1c2b32e3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 976620589, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "84f56ea2b4d869bcedbb04d1f6d0b5fc9d7f45b08ce92a585ad494dc1db885c1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 714277733, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "72b9f4bb83a828b85a845e3fccc7b9c112836c771841d5acd5a4da99641bcbed", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1783359059, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "a73c2f0b1af5041cfbe1403be17473021b6e7feb6fa1e33c14a2c50ebf078b27", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 372733505, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "e3d132b572525fe6631ac2fae2db34b28daba6c778c9b0be243e3ac30e0fa70d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1741507366, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9d036d902e7933d3602870dcc408729b5ffbeed6045f4b9f3fea87eb90cfa780", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 792704533, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "4af45f1bf3b73fc7e3a46027da9276506f065315990376e4ecfdf7a6435b1f12", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1646665058, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "bb8a617591f156a245c80f6f5096fd099dec6aa5f92727377d87f0eb46d1781e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 873311252, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "2f98013b882f494ec547ec783be611bc554ebe7e098c9642a6d7174c23d16af1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 855257037, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "942bcd300fa6128eb771594a74a9000806e8d7227b36948141e59bdde7ebb4dc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1146961645, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4bffdd15379d92c8f96635a407738f8eb4d1f1389d524ee3d8e233ed22133c6b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1345313787, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "51ef67c27fd4b818b9f71558d67fbca6278ca48451265859aa64d01612a6f9af", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2063125642, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "cffbe236b6fb7abfe94e23ed30b0027753df5bbf3ea9da7e8935343d5214b505", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1156594380, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "340cd8b253610a8da1ec8330c82072c79cef598d4d43037e9e0ead034958e3ee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 98733612, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "84ceb103962bb75f6a5abd9551a51389b9cf97f3fd05f7e063bb87175194bed8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1272951858, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "29b753212b7bd872a270178500215834f82a4d0be0f71013e16722511e10ca5f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1783658235, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "a0bba83b946d3c16104daaa6091010b5abac435ce44f9fb4a7bd4f010684add7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1539008579, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "49a93b9af887673ed21604ff15ab4a58adf1bcb9d58582a5b95b045732edf59f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 597230909, "reply": "{\"site\": 0, \"option\": 0}"}
+{"key": "7c1366def89f37845e3c4d90913d296cb4546a209c2b178647e24b8f23f81926", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2103952805, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c47ca6bd34d45fe462129424ed60f295260319c8ffdbffaf4ce07e766f3c85b1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 193022868, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9a0dd62b98a8697d4a7073c1d720f007a6292d3f57c6d7cc066a46cd0c7765c4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1974988001, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "496b9fcdddc7c787c0576c0de707bb2c631c4ee462d469a6d3ad06e5cf487206", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 38997725, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "c7e9795cecd40c126a09463775c0e3393f78e46ed129ea64ba5154d905345845", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1266804784, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8c90eefb6ea67e10cfca81e81bcaf51d130431bcccad3bf4b088d766957eabbe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1892149368, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "90fc7a448020add91cbb256426704624be992f0af52ae0d12d805a6b0e042c72", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 429769691, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "01ca10157ceda1cfa3f9c67ec0cd6a564ece736c0d9755be74dbe9cef9c195ac", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1846934890, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "b0a551928b27981a1a37cf57e6c600cb8a726ca60f381b744ec14b7b82260870", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 469591795, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "a71eca60ec29442357b9d8f0ebdfa82f5e17736f7e9dff0bed8f525080a6411b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 572305120, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "07666c272fdc2c722b410f13e0de5862ad874923d83a35b9ac2a7bced05e2196", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 800996862, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "72a057cd929f895fdcbf9f9943974399ccbf54dfc0627a51b52eefbeb71b1c36", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 51451246, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5398a096e2697b82ec4d6a8c1acc90c3f510397d95d0fe0a4104c3494557c5f7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 375597964, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d91d7133e2a98b69f2f7ef0a4e536a59e9c0d872dd8106d1868ea7535f446eda", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 272438094, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "2165cb08b4895e0b1debc7bae56c1702ca68ba3e435e403bb5b82907f9fcc238", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 414913904, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "2757f2eefbca8a9c6a189810ffc68173c21124c983c8df4aefb263f279238db4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 628007997, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "00295a1a1a83b75cff1f0daf49de3c17a4732eb19dfb393d9bfa1fbe0d4801b0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1472028362, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2b06b5c4009c5b773e88567192fac3e2bc610a11af41708eab27317e6562c92a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1652550187, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "260c5ea69811820f5149e5fa61900b8048e83563dea2ffce152978b06de1defd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 24182701, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "1365aeb9ca5d59a123c8ecfe857e1b0a73d55a009a286025c3e06b8351d939aa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1398425715, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7aff062d846fd10d4b32dc8aaeb6b5718de275414c9c03e7d5c43925fb7045bc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1819781838, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "bf07694e3dbc74a646626beec2db64116832104e09eed22021d1af88fabbf63d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2049785634, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "e2fddfd41fa344f94f6faea25e7e11b1bb96d95d987c75ea2cd966c257e2e12a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1593984161, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6cb31b2a79e51b6ee5985b83cde932245f97486abb11bf77c458725d2071887c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 433199824, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "80bfc9c59164c7816f08b39b2bc04a034e2d2a5a44f57a515ec2846fdb2e8330", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1951255604, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7d94cacc59a893e4db09515aa36b80ec1764b339df431c1737e927c000cfb38f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 7578966, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "bfca0991404e008783f9c9fa0deead8a6bf806292c25a75a9e332153e0c95744", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 437120537, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "6f4ca40aa50315b35def4954c24a3f6b4ebe8d9873c621be11a5607766cc91a5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1865244084, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "3642293d75ba76f6989c2fa265b1ea37b988ce35d14660ea4341b848e04c2b07", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 556860145, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "21560b78232a34f86a52afb88d3dd02b7cfb6ba59be0e03fb5a6b6d28b2747f8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 152692447, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "d38cce3a3fb7530a92a4e2c64495e62323a5d6994948e9e67ecb4a156aab5c8f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2130046593, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4f34e736aec7418df4c4ec9e2df09eac0fba1635a4a34412686f3c0bd7377195", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1452441106, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "30c535ff05a30ea8c3522e3786876a4b49228af7aa0f34c9237f0a9c75d349ae", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 317684822, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "537420c20992db54f3433b2768e7af4b4b959cd7cbbfdcfabf8e157658cf2f22", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1240687649, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d8d24e76e2fdaf962cf6e4ced895bec8a1fbeba606fc201294c94843da77d42d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 929116971, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d79bea07337968e1436087c82fbc968a8c85a10a0ec4bd9e289989fdcbc6a5a4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1778959006, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "21cb5423458cb69ce95c0871407907d9c8067da6e9b028027f90d3b1e3619197", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 762610011, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "95fc16c9ab50e924a542d344a399a6b6eca3f53e3d22bd414fb63122bb126d32", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 42469688, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "54d4435bf8f02118a154e1275a3a3205509ce3a73417328acee9d3bdd5f1f43f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 92824714, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ae773485f315c28b34a6199147dc68eaee7a077ebb4a31be6ca33599cbe88aad", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 493109719, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "aea9da14cf44826bf709c3ba7f409c7e5b93c82ed33b6779e7a8e060ba7e65a8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 447470468, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6d0bfc94af2283c1ebf962cefe1f4e136276f70db8435341720bd8929c5d0d6f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 617600456, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "19d2f0a2a54880b443f236cb9aaa81ff0b0ca9498299c63a3ee9cd20c53fcebb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1824036301, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5111739a33254252d898e87dc8ffbf292d449e9e074dbe44ba7c75ab503ea513", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1773151567, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "77b90eb4c3a8f38f496f7807776ba2c1f493c076241fc7810f2df58055cb9ae0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1030052443, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "f3f29ed0fa470d90e21b29d1508c3685d7afedc0a02eede96b10d729f52995ce", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1421110792, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c4555fac7723f2eb19cd5ea443ba827f48998a69224aedf72f8afa0e2011592b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1716648654, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "1d8adb9faab1e4c13e0c789ccbf5725bfa70fda8ad6de64e3ef5283d0fa53c74", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1472152555, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6433b792bf87e8c5f56fa71ca3171b938e0a2642ed0c794a5ac3c54e06153843", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1530029480, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "df08aaa1ddcad557c1ec63f371bdbb291bdf68deab1f9b946c03e382eda3e020", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 367858395, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "fe40178eb91e7de947af8538b54d6d236c562a895d6b15dfea5552e89674172c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1123086592, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "cc99c33e446e64d17123c9277ffbd359387c77f5aa0d2815ce6dbdafdee4417a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 127665947, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "def6c28226f97be82f9de837b7bbd9daf838b478d87e284940a0ccedf622e605", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1656355996, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "f2657acf4e5b1f3843986a4dc8675c2e8528e6796369a4e993cf47470739f997", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1995151140, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "da5b4a97c84af81ca22c46c64949e34e624f1f58399b6c62da42663205966a05", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 46655720, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c5e64084796d18c15ed7a76d8b6d6f6dc142c62666a343d03f8cdc0845380cfc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1394755915, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "dd42e0a1f6827d78bb0c8a8579c5b14484dc444539ac78bf396cd1759308b32a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 553359618, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "d0d8fe57510e83f9ba54e72e1e1d3946f0ffe4bf01d032b45aa105ecbb9136a1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1039231518, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a1efd479a3a867a6fff31febd15b327d8578d600afdede673fb83de5d1256525", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1503098526, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "abb4364b62f480890eb300bdb69b288574eeb71d80be375edd1e6282a17bd574", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 55746411, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5ef86976432f17b0bca7b6d3d28ef1fe2638d22082995896637e7b9406eb5742", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 122890546, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2445a7fb54752d8be6e7c641d33ce876515c9b828e835221a93b6843eba78546", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1744708409, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "786db74c4487fb2e5b6cc4a2aec41afd3e1056fbb8cc93af55dba1e4b048b06b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 677006971, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "987894462cad1906b1167cc0cc243efe98411f3a402b6ac8749f2c810a1dc20b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1630670185, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f424116ef874fe47980731048ecce0acba4ea0ddcae1316642159f0dbd266e9f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 209799488, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "2d43182befea05a679dbf2588739e1280d9d0008ef519cab88e40b8f70e5301e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2132958153, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "1bfc71e59850e18044167b492c25e957b72986b067f17e8d12a520de6d352253", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 199766728, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "eaebd23a51e3f3db160c1affa6f528d2596bf88c116628d284a675ff74605d50", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 534397830, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9d1d42a3341c245dfad75df6fdb0e8bd0efd652ce8eecf9272942a5581e3bb0e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 49594070, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "263d108a5d42e155ab414b83da3484a8bf695ebfb68a8448882de51388bea285", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1944725610, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "97793344c33003f451e2f32e9628652c6f6b7c1c834b54a79499dc401c10ded9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1988114033, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "65c2dd150a831b08ecabb2b7018ca5fc8182ffa62f1b9a76e5ed05b510656bb5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 886603911, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "1d87e962a6fce55d36350f373c81a6c16a96b1547169fd90cd3718221bfca01e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 552722115, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "a64ddd928dd445a9a95fd9f751bdfd20a09347135557fdbfb3587dd5a0c78099", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 285061711, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c55b524dd6e15e96700ee4f6569e6452e675b3e651474b962ea33333c4d244d6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 688295214, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "08f567931844d25e3c16b1d335445c2a71e255ba9b19f36247f4a51b0b4677b4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1648032673, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "88bd7c10094deac9fc9f102ba99f0a0c02108e65ea8786df881dfedc7dff1016", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1418246045, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "fc2a32be2bfca2faaa8e8abb84df862cfb7edac1976984d1a23852a7fd703a01", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1483197285, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "406239d29110b4bb022339d7954d3f0624c0997030b73ac6e0473468e97cebdb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 30122683, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f61ca99b995ec0a235d494574a91c3740b3b66481a5acccd08e2ac02701c9243", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 465918870, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "8f1e4b84ba22b1f8a266d398420009907243a315d88c6a7322e4ffef455c7adf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 684296221, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f89c67bebf8c8cab8fabce73824545c1dc576c65264f56c52278af849ce1ec64", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 519803185, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "1814cafa40639881cd9b9ecd3c9b53ade0cb5529799f407ed899bd999b22ce1a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 231737116, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "cf944a9bc89b8e1cb60527e406cf1415dee9f2b6f914f12120e92e143662ca1f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 932737786, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "4d74019c555fea9975472faa3170bfe556e5d2b3e036905490b2474354f2474e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1392001482, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "77c7f4edcd65cc72bd0bb1586cb3d18378fb7ff3bffb874d616ab742625c18a1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 311404465, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8ff2baf6f799382daa20171c91fe974a9b06e2eacbf2fca4d553ac377949a74d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2108290089, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "b67f5e723cff3a09e101312dc4f3c115fc6ee9f34c576f547b5515aab90fdc03", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 175542702, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "6d1ffd0ca14ff51a176bc45ae2f91203c2b0ec4a3fc758c5df8e34746fa8867c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 949946920, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "56f440c764224010815cd78787d9a109c09041bf6ed79a55e136aebec233f9fa", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1532306000, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "72a06e5c011d8f748255813d4ffe36d621b9d705ea458559d514dde835a0de4b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1904884545, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "af93199d96202f1db26c195c37c750bf9e188d109d674ca471648111ac6fd0a4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 379093043, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5819ebeb635db12571bbe0c93bd7f2d231cccb932e2b87230b6f49958ed6ff92", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 545542454, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "390c3e49b8b9af35b760816414028458866432c4de0584630f662e91e1395912", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1271429115, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "fbb7d9928b349eb47b9f730f89a121eadb84eec988ccc6cc11b93afe39d53d99", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 634916747, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "fcaac12ab87e961953456399a584e130b69d309cc0efbfa7a8c9bcbba73ac20c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2049804992, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "70c7a647ac0470bc5531a804237ee907b5ea07f17b89ceaa1646f0437ebe5b07", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2115059869, "reply": "We are given a Python function `median(xs)` that is supposed to:\n- Return the median of a non-empty list of numbers.\n- Not mutate the input.\n- Raise a `ValueError` for an empty list.\n\nThe current implementation is:\n\n```python\ndef median(xs):\n    \"\"\"Median of a non-empty list of numbers.\"\"\"\n    pass\n    xs.sort(); s = xs\n    n = len(s)\n    mid = n // 2\n    return s[mid]\n```\n\nWe can change exactly one of three editable sites:\n\n- **Site 0**: currently `'    pass'` (option 0). Options:\n  - [0] `'    pass'`\n  - [1] `\"    if not xs:\\n        raise ValueError('empty')\"`\n  - [2] `\"    if xs is None:\\n        raise ValueError('none')\"`\n\n- **Site 1**: currently `'    xs.sort(); s = xs'` (option"}
+{"key": "398cc4ee8c483d4b6478a14a0eb0d30598601775f78f05e3dac4ba21ecda53ac", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1726715669, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "686fcb5142b6aa2237882f2bc630bc0c3bb798f9b14800ded1ec0f4241b8e027", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 607201678, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "cf3d381b294b531107c42a3019dc136fec6ae1e08eefa4428dba4b4c717a535c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 282104466, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "b41e1af3cf563b6ca8853d3eec26a7ff260416dc279f3f40e50af34e38ed909a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1806982785, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "02d770e57dc4e9e8353c584df9dc16dbd21112a6387d0f08f8fa9772310fa73d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1298232631, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5399d4382ac048bc4cea8bc957e88b9bee38028d770e5cbad1f48ec11800da32", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1440148287, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "cf6a831c1feb8d63f860e0a97e8a97af10f76d9d561641fd70938a69c801d485", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1689565749, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c4738e9b1150a3057643e1fe06281c5db0f52f5e60ed6ee7758900e2c65c4045", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1832412409, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "3daf82a63944db0e2aab9c60673d6cbf413e7db07a2c8016346d93f3bec6bfe8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 236249292, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d02e1965973336a0be792089c2cd238467d6238d3de5b0ae8e7e1db79dab795c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 157102282, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5fd6fe5e274b46327c2685d262d6f9cdc526684104e0e7ea41d20e5b3bd0b6a1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1737645094, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "fa8a212dd7e9ad2802ac6fa60a3f81c8f5a7ad85f5dcce0c1fd5a8a613daee4f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2077250299, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "a68eff8e53afe09686fc4c491708916a0faf83ddc3332b65fd18ad19138c707c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 504038821, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4696f99b98e0edac778eda153c1b4d2382a8ba7b91014178a8e48ef164597f86", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2135843954, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2c6696e4697a0fa00eaf2119bfcab84972ceb58b6fb183b746dd163d7db832da", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 722504751, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "fccbbd182ec659bff550cf1aef189a1943072352b86d59ed61381500fb344447", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2132845552, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "835d7bb6d5ff40cf570eb2347d5053949f91e59307cf460989b500b8b3b47b84", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 38305725, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "83a4e74e623201b19a29c44c89e561369cdf0e0694de74246890a59ef208f680", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 139523383, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "1d14e76215b9a39c15b4c98e466400400654ba4f6e31c0d25d368a853cfce32b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 830362778, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "8a877c07a35818e844026997e0130ec3cba67016c28dac2e0aa6955331c9ff51", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1192148543, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2aa5a2523eaa3f511a8ce70737a0703290e21d3a004aa18e9cc567ebc61b13bb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1860656936, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c9627e53f48469c4d939612e8cb4f00a2dcbb8b5a828813072a89c7d337368cf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1278616742, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "df8be415d93dcc27c0e5817bd632695261d438779f0340df3f3d11416e3e6ac7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 368413691, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "f5a9bff8159d3dc93d03de09c9317dcfa39e5877122a254c085c095415ccfcee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1141191958, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "decf7eb25f765eb2c9aca0d0ac8c3ac3b4dd095d1bdb153b92fffe79c7e698c2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2094694034, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "bd8f5fc0971f56a07021452d4d6ef2d8eb90ce552f28ac2f410bd04d04d5393e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1684114627, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d86ecc68d6e4b5778265e244c338494cfbd8bc7e95129aa199ab4de536fa9358", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1518863506, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4c9bf73fec1b076661cf46623c9f25749d1a4a14fc19aa1cd4f2800526e13de7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2109273191, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2b88ded0c19f69a79e64e2199514dd3e59b54e62476fb54b79aed4a499d7dd19", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2017996639, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f0d6c207075d4dd160b72262cf88b893dbc576cbd2366524f21503687ebec86f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 17074540, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c05816e802e05fc26abdf3cff9710d9b0aed6c5df29b8f5a592c5a3b0f437882", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 286919231, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "61d3a7e30987aa16c74fde5ed96389e47895f1c3df6b29c4f6dd4a1a116d41d5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 998285023, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "dee5fd863fd4250131c978485e671bd4d0ee4003b023bb5d5c4b3902d80756c9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 52482196, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "21cfc554b6dee7c63994df8f8d5f517e7f7688f9bf5fdb3524071664c1d9ffcd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 816984598, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a990d336f963ab703d87b16c472c168860445ff2c9715dc03f069360a020c3ca", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 316074111, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "df896e15bda28dff04f6d4742a76554098f70ccf761e44e0de42bdaee238acf8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 486048434, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e479233beca36143abff68ce9a4fbcd9e84e0dbd087ca1e44a7a658d3e8f601d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1662151348, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4118a7f8ff246a355ddbb142ed03852036b00e461265ab9c2da4d11ad2f56ce0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1130681162, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "4fd2500270c2acba9cf9e42dff1159d6c7e0a19875c30b721b98f5dcfb517627", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1890302202, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "bc5a1a7e35f129e3573a4755797322aec4cd556c703216db71f198bba645241b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 149204571, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "19f19e69e0348521687ff67ba659c9115964146e3f0501110e8ca929f32ed02a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1144517566, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "65a0c79948fec64d6a6ffe3328b56747df9cad35ae82a2cb3474dcee9bea4751", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1863373916, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2f508d7d4e29f9fc77fddb501d71d4c66ff8b7c1a2043aae61e34a3b31fe204e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1302021105, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "3ba53d2cd2691df316d50ea19ec17ff556894f96ea572b8ee18d45f18b83c0b6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1951102145, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "ee52cbfe28c224723ddfed0f6d264b505e1d044de90b324d47dc328a845ef7cf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 115122161, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "6f1de918df713550463a3a707aa031777016d2de73567b7b442fd50fdc9f7a83", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 639510228, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5aa77b1bbbb98a3c08c131c67fd0169baa91e79e5998833e2e433d4b8fc80710", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 382108167, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "81c639815bb91137204ee6c06c119f878fa6e9c32511321e0aa65378a29d4c6d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1200789072, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ab601ca4c29e93b7e07551b79b9702080e6b530be234d7c0ba0c7e37e3dba8a9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1939850971, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0dea44d2b79c81d87dac254cc5da000aa8476aa615569f9e5ea9ec386cca9016", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1450753064, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "78716e3d331a97c76e9d366d61b032649b40e59e6609a6d164e7972691a6917c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 906575975, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "2d0718fe1559cff5444a2ab997192407afb3a0ebd254b6a936cfd2d2f19af00b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 382499686, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "2c8adca9e62400bd5bcf3d0bbb57e3bc55a670d83c97d09dc3f59ac8fc49373b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 557915167, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "f8c1f8ab891759033d637f7a63adb3c24ae0e8299fb5efbd811ac4521801a359", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 689240196, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a1f0032a2ea065c40cf13b14e3af0582e700bf63e239e059a829cfeadcbd0145", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 906633403, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7fccd06040244c7cb3cd747bfb9464161e85627622d61bff99f2a9ad1e994b25", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 666475678, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "48b6385c45cdb2a2e2db18f2aee06b38019112f6dc02290089c72cc6f5ab5c38", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1102069869, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "655618674721dcbe29906b4a7933e769cd7f669676fed7a1c934da42dc939b4e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1323935463, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c30a76a4ace7b3b809855882c28c6f2b39d9632e9d59053a22c0626e46f07cf4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1019306792, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "6af0c707e88e4ba347295a9e4696661b3f7106ae0382497456a26c6a24d258cf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 909309175, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "239cbe492d0ae0905259658a0d5a099218b198f78c2c252f9af1d1244748b2ee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1292701642, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2f96107fde9efd79543a9d4839cc51f230b0b0b8ff81b17982feec77766375bc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1934515357, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9654c39d270d16644111a975546882c3bfe4ef3236f0653854d7ce7adb89ea67", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 976954620, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "21657fef7bb028c3d6bad99f885589ce4f2adedf15feca5a9d7ac9eb2ecec1bb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2083338357, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "c8c79fe72521a9409fa09b916c9d39779f0bd7d7f01da71b56a95f9d28fbe04c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1514307598, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "f38cfe280bdedcd745405938ee03344d6e5e04336c65c139dd4edc9471dced48", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1829173638, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "1c0bda93114b8ef1f204934dd6e51e689b6dbc91a330ae779f9ce48968f017ed", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 627037046, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "bbaeeb1b3d0f6eb69a3d67db37b058c6592ff97751aa908033dc24c8df0d4439", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1151669235, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "9ff6437d3e36a5a92986ed28ca9ab7931ba1a5ec2b565e62556e6dd103c7fcf4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2120970154, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "1174eaabba093229166007799c76cdc7b300e6b69bcdb689ca990f7976873505", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 371833599, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "5b190f1826233e15a8c1fc2403c977338fc884336f0a4b4ef62801414c93b76e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1210473094, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "3f928d40d4f7f361219d702c110607fad36ce127b3310ac7f2bd63575b272d76", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 541381337, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "a2b1e9545ce1cc43b687f70479182cea37d5336c9b318586fd807e74229c7060", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 125139857, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "dc36f5cc3388d3074dd6654293a9d6a379bab4b46883e225c4bb19509e3cb7ce", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 714490824, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c24a9a7b7bbf82a990dfad4abeb9474fe88e9fe949d27d191b2655a2ed494e82", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1069064325, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "74ab645013a4375b65a92376b5614b2712c1df1aac14c7e69ae6e5b4a0c388df", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2079349116, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "8b3e77cbb4d12037fa8a916cc2866307a58b4e76deeffae973fa4786efb5d2c6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1235696172, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "be736996f8375b911f6c8e986062cc700a9b14de0e2fcc1de53f6f741b5eac2d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1010342816, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0c07b5e3f2fb052d0e2df0357573cf56538fed6c9b06e52a18c6d69dfccb8639", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 91895073, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "972bc70b1541b14e11cbeea469152d218ce8e01f8e130210401fda89d30fb0ab", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 709664683, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "e12d6de8eab297313689e7285f4d649e00ba2b46ae23086463cf33269c4f9279", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 580759144, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "672b1e0cf700a68b036199edde1cb4ae36204d2b1804ab7ddba699000cc3afb6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 807440381, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "89e61bf344ed2129180906f56f0149da602301d56907c7f95f1a81c99b410d23", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2120575327, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "81f195d4ae5c11111f9e82612070bcf6ba42b4fca2318222bd7ffbd16b0c461e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 345255291, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "6d6d7ab1efb8b8c0ebbf355eaa6b7beb2f57627b70fc1659e9df1d8ad1251e3f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1033542559, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c540610e2c8bdf2449b34bc18d81cc531d5d2f743b1d50230b1f607e8f631c89", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2083154124, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0569d0209d79731248a686190d08a707e7916b63cbe91a4243dcc2e259b2b9c7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 97203992, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0ec34651a7e272a07c0a02b08458c44c2487c2b30ab28bf5840170dadbac4ffc", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 942981719, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "3e98a71ce894e744c2b6cdff33df5e79f2cabc4bceef7f73842dbc2fbbafa3d4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 831827304, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "1e4f3daae7aa97c2c8e3596c1dbd9047371b5c5fd675c42f82218e16dadf5e32", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1276897235, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c7255f1bb745d3bee1bf7e5586cbdf1f37a0f1f4766355d8adcc03c7473cbb49", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1674456329, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2def5ca38930d91d5fb30ddbff40e506f10789db92078cedf4916b150bf093af", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1112379134, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "053922931a0e489aefefd50639ff105953da5e9aa82c6e62313b5f6d6debfb9c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 239318062, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "88827d58170550e83f67bad575abad2fa94109ad3bdb228791827895fcd7c241", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 516076482, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "6674d6b18cc38b32ca7c3278d45dd600bf7326cc76b5fcea268266cc58c2926a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1191818455, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ddc0701aa883f3cdf06c3a9247a7d654111cf3c2e1d671303a28bd8a4ddbd4ea", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 291235919, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "d1e50a67e9f88f64df873d551d34836863d656165e568ff7dc4931512f103239", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 838636180, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "159155815bd22412803bb68e5687a8db0b0030677c8b21cb09c6526c405b0598", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 939694224, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "8aa23ddc24da8f9a87085f2ea91abe348a62bcb4b7d4828c60d71ccf688babca", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 811838845, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "57efc99380e10556cc7b15c2ac12dd19298c9010159e6e91cb05f4bc8efadfc4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 544965293, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "746cb0a792686cab68c2466530848b54e4f3e43641abec355958e8ccf494fe33", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1619863478, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b48816893bbf7c64edd306ed869fbd8a247127e50766c7e7696ed76b594bb7f6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1220449086, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "01dc25d3577a17334d3d6e28029e8190709a20d8572e07e99e7b1c4c2d7d58ac", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 33232094, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "509700e8762919727de349ede91afd7b4b2f08dbdda145498ecd176cd70dad6f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1663547377, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "08c30483b77bdaafdfa5ceb05daa61a5c7462672a7d1d5f1580aed18b96f30b4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1727656371, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "a2aa0f56b72ac90fcd1228fc66fabc9caf0c1a44668bf05d199c7e1fc37e1767", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1070891114, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "40af04c8462aaadb3ee0f33b4261663693c95bc1ae3b3c2b3158fbc469d5c2b1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1426281218, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a165bf9cc2a151686cf989db9ed5cd08a07c46e7ce69ed19f7fcc4df86ed6b45", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 581807893, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "db9416d3189c8104b3a571f17b9d29e2547c27176dc0a74f7babb61b9533e3b9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1511001112, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "a127d9e1d9018c161f10960ffb73a63255786cc8bd7d5530d5af774717b36cd7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 565593760, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5feb1f8f22e83bcdbf432e86a7a0c8ffc3e4c97f1bba7f1d7c6b843b265d0e2c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 660630700, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "9ede120722e3ed7ee178b711bce042222592ef315d3b0157fff9bd7833f97613", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 380550361, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "d53dd761b2faa880bd8ea0cc4c958588e8420807160d5f4c5b526a8ada42255a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 753375419, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0248db5e83392d5ece625953146b2a2634660ff02d2a05ab1c7a3ba1250b2c5b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 911308628, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "79a6c348ca6fe46934e9ac71e33ae1258a4e750f46b444a21d57627b3c66560a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 788685100, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d2f0afaea506ce47382df460a0a2d355fb77c1a837260bc7a6b6cef25f7e5956", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 178378057, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "bc4082edbc708634b700b1980826aaa3dd45973dfa1c4c3bc6e9088675b10e01", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1144174713, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d997add10499977de8aaa36568e4da575c6ae7986b50ebd156dadf5868a678f2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 29667833, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "bff9a49ed291dd3cdffa56ab1844bca6a34212627f291bb857f3f156d16e115e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1172372232, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "98b74c0a386a664731fdfc9ab14ea5711280067e2b5d0a6894f0fe34174bdc15", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1557122045, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "f337852d47355f1bed78621c809f06b85bd57ba742508a841960fa136b26f534", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1673619905, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "98d97bf14dc842b9ac65a02ba73d675faf3eacd36090bd22951ce6474ecc9496", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1421095576, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "1e06951d3e298bc4a9412dfe7345bf2c25e0518dc175b1981437a484caf116d8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1071821968, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7e2ee84de9314bf8956aba8caf39beb2165242fdaf4d035e758ae96a911388b4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1925251205, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "cbf9f4a189168c6a28d9a8ace1f5b856582537cdca9890292532e794ea8de6da", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1369401090, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "169c63350310da1945e2b4a5593f205eabb45e6e5921a802379c0276ca5d9bf9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1368696147, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2b68ec203f07d428f8348828896f579e47ffa230429a26ed693128900266b79f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2144758219, "reply": "{\"site\": 0, \"option\": 2}"}
+{"key": "9dbda82dd9887d5f5d11d5c45175f874ac6e84f1062a7d9e2955532d00bb14b6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1605463004, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "339c711defc4b56160e31795904b04813ecd81922eed0cf960744037f0028f52", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1071695895, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e415953d71ef5cb2af19e36a9f68c9a5f65c7368bd06f2ad222ef62104e16ee0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1012711121, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "67e8ad1b8a969c747beaba645feed6cdebab8c521f20d950e1993f79c24ca3b1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1399714796, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ce688378da9df40d9c12ea3e08ff54d8c12c6790b09481906a3d2be81f41a532", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1989617225, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "674bd00cdac97065037df0622758bd1e660f36475ece47c5b254bf36def91176", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1428242036, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e42c09b1859bba84a9909de0b250b2ec6967fa25917e5aeb9fae6a4b34e5b5be", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 559745411, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "53d876ed94c9109608046bc4a36e6290fea17ec9b65043ba667b9cafa0e308ee", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 430833943, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "2c57211a002702f770883529f8243b1166712a78928e7c49cc2c699634f78595", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1851922841, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "96520e49e42e1ea79317d7cabae1dc7fdcdb4c80200e8f638446a45f764ebff2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1839212102, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "a5dc64c77b5e68455996cbd527f3f9a3100e70b663f88ce20c1c81e84c378b5d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1098141623, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "f54b148e4822c08cd5fd9712aa4090e476ac8fb802fb793d90c0bd7eee22b522", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2100570918, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "6bb0636eddde3146faf1a8cef095e603bf04b3bdc71e41c5f0bbc2085374403a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1941191307, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4dca78f7e9638f918644e658e614264d91c56280f7ed2b99f60d64b2ac166c62", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 661218681, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "ef2dd0027ceb5735c84cd9a506af17350bd1616b4b6be54ab9bb9154fce23ff0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2096644897, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "b7f3ea9e42bd4920b48724f8de3efdd7fd8a0a842ce3b0e849ba5dd0f1e5d0a4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1286987923, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "7707aabb1d09c72a2b7fa51aa1215e6823e8c2d50e63f34c791807023076fde9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 984772044, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "b85d26743ac3273e348b6fde8b24f3359ee291a5b8533bf3393cb5b2c84fd781", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 630395411, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "f7ea7c50b6093b40ef280d004260607698fa241c67a29886aaee04ee3a6eab20", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1502704840, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2f322e0782d78f2dab057bacc62bb6e6274a42e8de8974e9be9c8baf965ef200", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 337275364, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "2d50a23d5f8d33d7c8d8e0a532e0cc132ede756ea1b62fd1cc110b460dee4754", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1902894094, "reply": "{\"site\": 1, \"option\": 0}"}
+{"key": "f1c8998f03a880db3114ab589e0182174b5537baa54095c1fe8136bb7c59f11d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 792593249, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "193f514dc78d9def127c0d95124f6c55728036847666099d7084392f50481fb8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1215120291, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "61b579f77e4b6c0decd612e11ca4ed27c343ca2088619cc1a242d4ddd6e555ef", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1070548083, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "590eb2189fdbca575cd1ffe60525a5a952d6d05229815986ea99a50ab5fdc0a7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1384478776, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7db5580be70ce765b98667322be41972b8e0c6cc86d388f0a6d790b2980fee6b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1335303044, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "41ae53d98be0ab8c759ad10345cd2923af995b41a770da33c9aa744e42faa635", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 7173027, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "b32d84e04494420c0b0d2f1737c30bbf80c0e3862f6552a3cec66eb6ab043eb8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 608485414, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "fbc1b70f999449540adf5ad21b95cd9217a231c4c660478698fee94328b00a6a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 638418177, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "520de3a2e3061743c77355be5d15a62789cc33eb14b1940f791b7adb9381ac7d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 455779656, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "3db7fde0f2b8121a3b30058452648f9a9b251d124cb694f09252395ff6e9aa02", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 74881369, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "0d50000b47b502d3fac1b79a61b99197918e4df3788faf499195b7a80304d3c5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1443560283, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "d161c99ec8f264186c5d36bfa7716aac0871fe18363ba9125c73840b86712c9f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1485544512, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9abece81f15c1960ad1c05889474b07cb9e1abfbb631b2b624126ff6bd7c10f9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 811838845, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c73ae91e818fe3e58007922cf31308dd267350ae2d81fb95af89c7f1e2897309", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 345255291, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "1a2194381656d9eafbdaf950ca8fce78cb4e2d3fbbea4aa81bc47595e5a0c805", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 580759144, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5417012de5839be785acfac6721838ca8bdcd2d12cc1b4468ce38e3bc2a20eb6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 91895073, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "0b62251caecdcafc2c14f4ff53755fb52fb50b6d57f0db96d1eeb8c9972ba73d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 942981719, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "922104270967044b48783f28240305481ee1f4fae53cbf0c8e5ae66331a97d38", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1191818455, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a584fca51817dbcd5c8f7623bda69d798073fe623440810f84049febecdfad3a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1010342816, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0802f9c1e5a9e1fff3ac798dd4bc01b843a08086f3a43d1217e0f98c4add4486", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 807440381, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "badf00cd8ec227004af6f227cd6d2bf7651a941a10bb16afb58b4bce4b49a2ca", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 709664683, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "09fb7f08fd026b135f33963c2ee9298e90ded8b1ab05fd7125be63092ffc9043", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 838636180, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a50b744ba1f16a51efd13e0c4ba0bdfe5b9027aceed48b6ee82f3ea223ef17f8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1674456329, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "8f541f897a468378d660eb9b74f4dd0e456d5ec293ca4093e17f214365d0d7c9", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2083154124, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "a49513d48bc38b49436b36f6476a23daad7be2d31a2d3330f1a2c2d986f64961", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1276897235, "reply": "{\n  \"site\": 1,\n  \"option\": 2\n}"}
+{"key": "7bc0ed2a120722617c58a9f7e228064adee4b8ff3317ea917d87a63b187f023f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 239318062, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2269a3d25d99327de90146f5747f2ea83f22a774f61490d01e74e426817408d8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 831827304, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "8011cc5db232f81ad73d1d94abdac21eda412d44e756b36c5c9b24b9a820e356", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 97203992, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "845d84dc542a448696a69f87e275fe63e2f1b0ff17183bc28dd16d3b6e4cfe4e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2120575327, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "900548e2ac592d6a68967d8ef8202ffcb75c615fa553cd679831c7edffd4dadd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1112379134, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "b7a9afa3983a412dac3bdfd8555905424233ec534e0ead7fbc83391006194a21", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 516076482, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "57367ee6c6af006afae17fc6b670e05d53b9496f4283688b7f68aaf671bc38ef", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 291235919, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "eb12ab732d565db4ca265e5c2d6bc69615ceda59da28e4b46f85645e1e65b886", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 939694224, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "3c88b3ff3715e2f42fa9bfcb545aa529e6804d5eb7da2cf58526dc46e61b2d90", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1235696172, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "169a9a467b75fed7604b7c0ec5431d36addde2054a63b017dd19af99de77483f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1033542559, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "3cf7b9e88b686ae79f6879e05b1df4bc0bd88e8e37c8735e30bdcf60f3812de3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 544965293, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "c8c6037639f953ad953129ae57816ad00b52a2cf0d84483d5f6d16f6d91106a4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 380550361, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "10ea82b5250acf75493e0b5c0c2f5f1aad47e1fa0cbeb27ce6e866389a35d3f2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1925251205, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "d82baeab3c944a71878e5ffb44277e3e6eb84657b0b52a3123a886273816f136", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 129883345, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "5c7985e6715ce8c1445f39f4d9b43b564e7d61f1af93816ecfe9085c8c1e381d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1673619905, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "07dc64628e17480765e0d78e7f0d63f4a24652813ed1f3223d338e11088f3ef6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1071695895, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "097f388ecc0fe7294a8d7a5e4266bd40078a8a68003f0f4a6d28a035704cfcef", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1374392434, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "de894aeaf211559441fb02818802c446e60520fdee53a624b077737410eb43eb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1811678528, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "18faf2f2b4047bb1f43c32ad6557a7052dde94dece56a31c270a726c0c4fd347", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1172372232, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "57d989f0d0b0c9f766fe328df79ab7701435763e0549fb773950154f6537d79d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1144174713, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "fe60b7ae39e990e5c3f5b773fd3ba2618f310d4c1090dd28c47b9f9e827cd5a4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 670292769, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "cabbbde920cb606a789473fb2cdd6c89389cd108ce6ab9c5e86bf7e8dd69a29b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 581807893, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "4372fb327948536551f5bccdb615cede6ede3ebfc66af517320a0fae8c099d06", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1421095576, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "f3360e376564040714aa052ef0d60083a76e94e6862fea8436e24c9b1439ca1c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 660630700, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c1390af8a7395d1c3c8832beac44b5a20f2548b3a2958b6f9bf4bad833cb8bbe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 805287982, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "5496d988b71ec385afa3e7bbb9c02f09e866b568ebd14a10dec30015b41b50ba", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1557122045, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "b34ee2687758108acf9ed39121c52ab33d374e507322994b15f7138309a8da79", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1369401090, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "434ec4e43829d475b6f8a419f0e8463e66e4c85afae4d2d9e26e76a26a4ce929", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 29667833, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "37373cbff1a601abaece5d994b7ddfb7122f92ef4e9172bbb763ff654d3f29a4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1619863478, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9601490f785c6f6e18f4b0912f6cf4ede5b896d9c821921d4c11c29e8c50715f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 178378057, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4cde64ba03886d8655af7ef9bc402a3b8e3e3cf1ce645cf9d19e255a355b1770", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1070891114, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "4498f028dabc49314f042407910ceca40788269f29388973e8fc2084dbd7fcec", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 753375419, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7df0be5dbefec8a686346b946df9d16d379ce0f35b63dec2d38b1093970371b2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1095360620, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "1ef4764e2c2398902cbd872c847023e0b981c84cd597412f756b6f8d515f9c07", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1725262861, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "96249852a8853dbba3a91524d120af0b1afa096bcf2babda35430dd2d6bc9541", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1426281218, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "2a49607f33cc21009cef268471d09a7672386e4849648781746ad68591a6c23b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1386587614, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "eb688710546f3492a777f83dd738e6c8f38f6ed011b274d0f70541dbf88dad34", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1928392357, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "06c98164765ac7e250d077695753a42241c2ac457256c1fb756ce26daed60be4", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1839939768, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ff4684103792f5604ea5d702a2ef867390822b2490e7d7fcbf5cd0610445fd13", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 465312038, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "067709da2d6992b2de4b86bbb11e8494f359d1c3afea03debf6fe9bbfc97be1d", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 841930930, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "0dfbf5251859b2cd53c8aecac9644bacb5eca9ef359ed6b18a4051b4eea4a34f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1449610503, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "8ba9e1172cf97161c6c2c954bb5801462f6bfb0561292934ad3735d8c8edf5a7", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 741033502, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9c60ee1b0978a798435f895bd8268dec3c540150d3267c3b49852d86c03d7341", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 271952961, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "794559946cd9f575d828adf60a32d1e757e265e15b4ac0bc455a0becaef51c9e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 824811939, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "cc53b734e4d4f863b97009de5e21bca3f3c0051c7d107a27dc8505b92eccf2b5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1748006374, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b0cdc95b78ae39e7fd23927f6120a73b885438a802a1da12e7066c6539dc96e1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1012711121, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2c1b1cf883b897d6bd6297db7943b6d9c6e08f652feda132d7b4f7d28e1eb4cb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 409369701, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a0c1f88784ec925a66fd68ffb9799a07950b2d1662ce91606cf5adeb155b9a4b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2037716118, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "1c0e0f911aa79b1bebf9e9060dfa310a62ea9c77f993d0fce2d26d4eb01de193", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1026217485, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "9a75853bb13358dade53282919c24e7a4165d4012653778b314283037ac2272a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 559745411, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "d252ded0da3d82473c65d9123bfc8948ba3adac270078424277b1269faf2fa83", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1489487547, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9c22d506365433f6601223ae3a17556c9d3f3aa6d90188bae4402fc77fcb9ae3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1851922841, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "1e0985426d94226a8d59a09df23d234bcf6ab2dfe5e584fd75d55c0f6b406a30", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1125130919, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "12c5b78a13d08de02c80b1ff4e7dc1892da7956bf8214d9c8c7a4c6587477657", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 759503469, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "a97065c282ea31a4ad4d7651e754e286d0c9e0f9038b9dd78f5d898d233b2f6b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 451153031, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "98bd64cd6207540bc74c68a454ecdd42241a9eb78a9d90694a7d1a4aff0a77ab", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 152496042, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e31accc1f1a5d75a61d1ccb4d7e01502cad1508447a19a9d1a40777ca78b1052", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2144758219, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "8bc41d3f5a0b524dff2a46ea939327d9ec1b0f4abe4e995b35d65562ffb76e31", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1428242036, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "b2c002285d64b2ed8efad806ef078713e4a8c38f1f70bb603becedd1ca63b6cd", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 622918974, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "14bfccdd5009c4e8c4e74cb8271e8ed75c9c4cc79cd3c7792fa5ca120d522b28", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 103779547, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "04e6fcb2b527b693c3fa90521285e9050ea86c8ddbfd7ccf1e67c1f4b993770e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2101711574, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4c06dd0471fae8038a708f296d7dc1295af68ee80acb0ea79f17711a327741df", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1694301490, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7ed2aaec2b511f65736265bb69d3c54adf6a9cf6d7aa03ab539e4f9079052a2b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1746856277, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c3392fabe2f43605c69fcf4282e5b5b0205b18b7a20b60be18d906271831a86f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1368696147, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "18ba6fc597ffd8731a3ce18763ec6e4aaff167ca6a329d2df8bb47594c5a2d21", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1605463004, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f00d7e60a47ff335cf396a760d7ba3b88361313ed54f631d583fbcb826fda214", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1839212102, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "c5fb0a4e5d5cbc5ef059567b9694ef9b2f1adc2f2599724413b37ab8602bc7c1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1502704840, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "cb3c4ced5a555b364a503de1e3f9e842ed61364588835f12096f85835f60f410", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2036009089, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b1bb50a91e20af8e971893ef60db1c35796555af9694ea1853ad6fe2dc1ddf41", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 785592031, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "48cb3859657d7d40b661eaf42c7d3c705af24d2194d57f7a39f75a16d14dc99b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 363856865, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "cd65940bb8278d20d6c46ab230f5ac85d92ea10fa9713984ec79a41d5b58d61e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 416963708, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "bdd8320e1c362e06723d6cae0467a91ad87ca81721b6884b441aa1ee9da0e819", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 430833943, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "6cc7deb7c60c0ce47f33a556cda3f812c0983434c920e5f2d25fb9b637741ddf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1399714796, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "db50cd31fd0a5273dfea17aa82e7579e9c6856b9e84974ea742adfc881806c5b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 923054708, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "94137d0346a84bcd14f479c362066ce4243c5a989014dfe8d8705389fa82dd4e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1989617225, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "7b5241ff0dcd80bebda10e61806cd2bbb895aee70f3be587daa14dd4f81fbf07", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1681209558, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ef0f9c6e87b944b20a314c49edbc8e9b032fdaf9f616c571f367490312ff2d98", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1959066333, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "b73cf3d2343bf0bc71e26a7ac0f5c8def62d8366e5e03952e8f90b9d547f9e45", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 762122479, "reply": "{\n  \"site\": 1,\n  \"option\": 1\n}"}
+{"key": "245422d27bc5cdb52a42b0a947b4ec544a077554b4f21700449db30148a2704f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 299627685, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "c9417692a6e38332855ab1dbc0562a65d9c5a1ba10fc988d7f8705c7608e15d8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1020962701, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0584e442a7f3f34a3753f6bc4ff87bb7afa8d81b5a908c54edc666a4b125fe0c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1178422204, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6762a0e5a18d07fbacae681e1ed003e230a59d6d9a1c5e41ac62f532435340ce", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2112410894, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "167e3b510eda0df1de88fab5b7c13f44320997bc7a1b322d8e3ddbe942e0a908", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 699295409, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "c2489cb3352e945067cf54eeb78de7c17dc1aeca891f2fe722fa346d283fb16f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 904801989, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "0a89c06b1e227e07c707105f046af987cea8b98559047d656477af4427ec8a43", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 379846454, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "573830b2e87b3e5efa6958fb2c3e35a7466964268e0d5d8550e25375cabbb467", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 264941095, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "6b2bf6bfd5f308455d85a4713aa992883c2931e72500a3a46397678d8e5c3057", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 785108538, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7ead6749528bc18012a60d9a2d3adb0dfbaeef0dde2d9000901aa8a465ffbd46", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1902529847, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "3efa1791e0068cd10845eedf3c6635e79bf0fde3b92c68365ad91144652c66b8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 101576692, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "05b7886b6043b47c572b11bc4b9e839bd2f103acba07f394b7916233a0597066", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 68515745, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "6173f2b78cb468ba3cfcd2bc04cd98f8303d8139ab8adf7400d74e046be24b14", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 734842009, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "d55b9ac6f2bf4e822a0a3c6a2329b7ee219875f91add6b818086d9dc2af38aba", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1594428977, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "21ac0603a0a45fbe70aaf633329bbedb86af35a7f943118864b262ca57251ae6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 392155964, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "7642ad98bcc0bc6bed162a53223913e6256c1b32489618d6e7204aaa56dfba15", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1963960854, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "fbbf83122f7c4a3610a8eaa64d168e77f037304ff2024a7aae47d98db35c47a2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2079319643, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d2fb9fd5d72fe7ce65c3f6045ed83c208ff6ea474bac2f8620124c86ab9c22ef", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1763894411, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "38b92e9ace5e88d911c458fcbf963b67f86c58f076413420c4845802e274476c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1664004177, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "01016bd1f5e1da34e9fba9d520c3606cd82be7fc969406b8d2b784b276c31f4f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 581614111, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "fda7c71d1c61effb5459874838f5b1d9a7e69958c5efb016c008eac0c0ceebff", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1070891114, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "6cc0ed72bf62afcb5b4c65208481605a112365015cc0fbc88e49ddb5bcb1027b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 29667833, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d7da348e46db50149f82b91ae7c3fa37379777c6df47494317a82dcd92abb92f", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1426281218, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "339dfb1d03a6cd21f0a89b618c2c11d8839d3a5e55aaa1af35b9854e4f8b4557", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 753375419, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9173b8eeb60e296f0d449f1af7b9bec098bc70a28695fbc26be6315421d322e1", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1144174713, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "b196641cadd1c06a52b1c9207c2d50783393ff25e1b14949b44c85a574338b79", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1095360620, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ed43406ed0f29ef8225e7551dfd75f858bd8e6c51015082e5dcf2be593a88808", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1557122045, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "0d6ea65a9856296062005038ea9620ad423d8dfc3b94afbbf060c2a87f3c88f2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1421095576, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "575b4330fbdebf1a84f13b2645d468293900009e569b3a1979a2dd7ddbcf4e79", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 380550361, "reply": "{\n  \"site\": 2,\n  \"option\": 1\n}"}
+{"key": "56141c0b934a1f08808fa5287622e6fe340d7fb99268dd95b91d73d1620fbe86", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 741033502, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "dad359af0ed98af3e8b4016699f9d3ce6ae063a38d0c1747513cb8fae041dac8", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 465312038, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "4acfcf3eb38829506ed13d27b1ec6793c518827ead02f11df402b8d8f6716048", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1125130919, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "d06b12d17830aa12502e93bba22babfab6c3bd0c874d20713d4c165983cca923", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1851922841, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7a7189cc6f4bd078142d0fb5443a9f3116a0d041a32b1ffd6abf540fd666e29c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 559745411, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "7031e18965f78d6cda22bf0f7ef2aaec7d6de0cc93a2ffb72635c14d6ba20960", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1428242036, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "ecc7140fe1b01ae77480f3b09c309c1bc4baa769963da5482a067adfabd870fe", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1748006374, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c1869851f23a9863178e084edb0d44895a7fc32f270de808a7a06c2d29a7a599", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 409369701, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "9dc080af1031840a3987fc1b6fd2043acccc621d20dc2f240cfe3c3450e70a61", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1386587614, "reply": "{\"site\": 2, \"option\": 1}"}
+{"key": "6e01d944034aa3f9224fd1bceb0b9e12eedbcbbfe7a30d7bcc0c2e13e15e2320", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1694301490, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "3caf41a050dd9bae131cf3998a5a662465a15f8e9de7d24cb5f107ccfbb9c5e0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1042537201, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "659af04e39bb6a1f637196db822828244f0af47ed8bbb67d67c8deea9a1cacdb", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 123397804, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "aa173a14acca2eec0f1e7063acff9e5ee6b4cc3741ae499558770331cfc20e55", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2036009089, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "b2270cd7e731a13e1ec91f22a9de65644f2d715b6c64bd0a48687d640636f669", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1902894094, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "4af2571ebe67154729395b9c3c6324625673195f0544b0057efbd59e9c84149b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 363856865, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "2d45bbc2dd37154f20cdabb763294a9dea6c3ba58eb1d1d750e2019aa746fa16", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 271952961, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "c73bbc1e641859f44a82c6a59817f74a8b60518177d28e38a1944c7769642571", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 299627685, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "b1106af485aeb90bff01ea99dd5aba1b793839c0d5c2322e66b7b7605942fa73", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1962433713, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "4b85255b3a6d4c7617ffa34f56a80ec863ac24d6c2c4b59f5eefd3f097a39b3c", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2097541091, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "cf26202d3d865568bbd1204c7f97a8183b2a89a15f1506c0b2e058bc529bdbc6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 6794531, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "8f0b7e7d449bd37087ef20fa9233d21f54e6dca6d3c4a49fab5d89647d095d35", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 699295409, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "6e6a48843d82fc3c30e1b7403fafec1c6a0e682763f9c9259b8aaa1cfa98464b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1648280778, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "86ce7da763e831d6c9d5c523901259f505ff0e8421e004ce28c04a8d09fd9006", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 762122479, "reply": "{\n  \"site\": 0,\n  \"option\": 1\n}"}
+{"key": "2b98b2232346b80f06e157fb23bf16a4d0528c57d485dc4afa9b87000e2d233a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1178422204, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "459cbb6f937e648e452b73d799b2d2b5ea76cba8bdada1d3ebfbaef05f7f8e99", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2101711574, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e55bf949c2e99732358fe57f2b97eba206bd65667af718c2c5fa42b9f4478eb6", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2023775445, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "814cf14c2d1ebefa8c555c7810b7038adc63861f67421f86cc2d5fcdaf09d824", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1510012083, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "23b1bccd0acfe04839ddb099ceb633bee6c3e2ffa1134e38c2880b91544dfe3b", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 185269848, "reply": "{\"site\": 1, \"option\": 2}"}
+{"key": "2c3d1f63ddc2d8336ddca8020d4980e7c81035cf7bb94719e6301537d43da97e", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1423734687, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "cc5916fc5cd35af305d2623f010759a4d48264ae0efad0640c941427c9a8f5f2", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2058724563, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "183f247f5dbef4e690d17e1196d61adc3b3329274d2a46b76bf7f30708b00fdf", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1478179704, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ad7efffcb60e45c4721a6cfec35987f8e8b400f8e0d1eb30de1b43ac1f9e7c85", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 570825403, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "69bc7b120e55055f587a950773aac5d88a538f3ac97595c8efbf08776f7c7431", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 613728142, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "717840f4f42a1ccf2210fba0c18490281b168871683c35221c5c64affbfd6190", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1419957658, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "2b6971e6a16fa611e7157a68436eab6cd10028919d8dea8db2ca3ff07d7d2405", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 837005026, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "508137672b6e7a31c1048d1572ac6adafdc05423b201e6844da4fa7a57fc50da", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1329174108, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "ec9cbfe8b27769fa59e6270dbd0e82a7eb820da0778b88982d083e52fa1faa37", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1827725069, "reply": "{\"site\": 1, \"option\": 1}"}
+{"key": "66e8a57c045799ccb1199bc28b142af6dbf3dca53ee7187396cb43b65c6c938a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 271952961, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "11c05e5c414841b64b5b78f8f10b27746835d73db5f530160bd3ff62edec61b3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 363856865, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9c381d0e12bd1ca82eb57e5ccc3a051ad4d0d45f3c8a9aaeb090ee111a8b53e3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2036009089, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "811881b4c887b8d4ce5800799cd90c14a9e4bd6a6c9a5a059a806bfbf24a7fc3", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1694301490, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "e2eaf31f9a51e69930995ef32e8c61656f407cc31c0d9769e26cbce13f408e54", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 2101711574, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "f15e5ef2e85e80d5a72aed8fd286ac4b144839a05356af78d5adf744fdeb2b6a", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 762122479, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "8b93721505afb22bc77ddc80e04349dcd0409a503eb1dbb4d5fb8e79ad8d71c5", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 699295409, "reply": "{\"site\": 0, \"option\": 1}"}
+{"key": "9efd8520c5ceccc1ca079d6bcccfac9678246a00cf27508cdd71438a813f3dc0", "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", "seed": 1178422204, "reply": "{\"site\": 0, \"option\": 1}"}
