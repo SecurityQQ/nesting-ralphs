@@ -1,0 +1,114 @@
+{
+ "embedding_model": "BAAI/bge-small-en-v1.5",
+ "n_states": 215,
+ "folds": "5-fold grouped by task (20 tasks)",
+ "cv": {
+  "traceloss_adamw": {
+   "n": 215,
+   "mse": 0.13528325367884422,
+   "within_task_rank_acc": 0.625,
+   "within_task_pairs": 344,
+   "auroc_any_success": 0.7243046501521078,
+   "auroc_fold_mean": 0.6038506075162493
+  },
+  "traceloss_muon": {
+   "n": 215,
+   "mse": 0.11588472419100837,
+   "within_task_rank_acc": 0.6046511627906976,
+   "within_task_pairs": 344,
+   "auroc_any_success": 0.781019122120817,
+   "auroc_fold_mean": 0.6082824548648494
+  },
+  "mlp_last_step": {
+   "n": 215,
+   "mse": 0.42196129608155414,
+   "within_task_rank_acc": 0.7180232558139535,
+   "within_task_pairs": 344,
+   "auroc_any_success": 0.37619513255106474,
+   "auroc_fold_mean": 0.458123714295557
+  },
+  "const_train_mean": {
+   "n": 215,
+   "mse": 0.15996901043045442,
+   "within_task_rank_acc": 0.0,
+   "within_task_pairs": 344,
+   "auroc_any_success": 0.2877553237722729,
+   "auroc_fold_mean": 0.5
+  },
+  "dod_pass_fraction": {
+   "n": 215,
+   "mse": 0.49770278158636405,
+   "within_task_rank_acc": 0.16569767441860464,
+   "within_task_pairs": 344,
+   "auroc_any_success": 0.28851586266840507,
+   "auroc_fold_mean": 0.20240059443048797
+  },
+  "cosine_last_step_to_DoD": {
+   "n": 215,
+   "mse": 0.590787114625595,
+   "within_task_rank_acc": 0.37209302325581395,
+   "within_task_pairs": 344,
+   "auroc_any_success": 0.6427640156453716,
+   "auroc_fold_mean": 0.709521178490794
+  }
+ },
+ "sealed_test_with_final_model": {
+  "traceloss_adamw": {
+   "n": 107,
+   "mse": 0.08810689818827866,
+   "within_task_rank_acc": 0.5686900958466453,
+   "within_task_pairs": 313,
+   "auroc_any_success": 0.6707027540360874
+  },
+  "mlp_last_step": {
+   "n": 107,
+   "mse": 0.4152764479679317,
+   "within_task_rank_acc": 0.6677316293929713,
+   "within_task_pairs": 313,
+   "auroc_any_success": 0.46082621082621084
+  },
+  "const_train_mean": {
+   "n": 107,
+   "mse": 0.10883733816505634,
+   "within_task_rank_acc": 0.0,
+   "within_task_pairs": 313,
+   "auroc_any_success": 0.5
+  },
+  "dod_pass_fraction": {
+   "n": 107,
+   "mse": 0.44621929768792246,
+   "within_task_rank_acc": 0.1757188498402556,
+   "within_task_pairs": 313,
+   "auroc_any_success": 0.4919278252611586
+  },
+  "cosine_last_step_to_DoD": {
+   "n": 107,
+   "mse": 0.6365220526633887,
+   "within_task_rank_acc": 0.3801916932907348,
+   "within_task_pairs": 313,
+   "auroc_any_success": 0.45346628679962014
+  }
+ },
+ "epochs_chosen_cv": {
+  "adamw": [
+   5,
+   10,
+   5,
+   10,
+   10
+  ],
+  "muon": [
+   5,
+   5,
+   5,
+   10,
+   5
+  ]
+ },
+ "final_epochs": 5,
+ "split_sizes": {
+  "train": 63,
+  "valid": 45,
+  "test": 107
+ }
+}

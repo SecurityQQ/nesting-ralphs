@@ -123,12 +123,37 @@ def results_section():
     nrows = "".join(f"<tr><td>{names[k]}</td><td class='num'>{v['verified_success_rate']:.2f}</td>"
                     f"<td class='num'>{v['mean_executor_calls_per_episode']:.1f}</td><td class='num'>{v['verify_fail_rate']:.2f}</td></tr>"
                     for k, v in nc.items())
+    E2 = json.loads((ROOT / "runs/v2/eval_results.json").read_text())
+    T2 = json.loads((ROOT / "runs/v2/traceloss_results.json").read_text())
+    D2 = json.loads((ROOT / "runs/v2/dod.json").read_text())
+    C2 = E2["controllers"]
+    n2 = {"ralph": "Bounded Ralph", "graph_rules": "Graph + rules (DoD pass fraction)", "graph_traceloss": "Graph + TraceLoss (learned loss)"}
+    rows2 = "".join(f"<tr class='{'best' if k == 'graph_traceloss' else ''}'><td>{n2[k]}</td><td class='num'>{v['verified_success_rate']:.3f}</td>"
+                    f"<td class='num'>[{v['success_ci95'][0]:.2f}, {v['success_ci95'][1]:.2f}]</td><td class='num'>{v['false_done']}/{v['verifier_calls']}</td></tr>"
+                    for k, v in C2.items())
+    cv2 = T2["cv"]
+    nt2 = sum(d["n_tests"] for d in D2.values())
+    pr2 = sum(d["pass_on_reference"] for d in D2.values())
+    v2card = f"""
+      <div class="results-card" style="margin-top:22px">
+        <span class="mono">V2 · REAL NEMOTRON-3 ON CRUSOE · PROMPT → DOD → LEARNED LOSS</span>
+        <p class="verdict" style="background:#b2f2bb">With a real Nemotron executor, the learned TraceLoss controller verified {C2['graph_traceloss']['verified_success_rate']:.0%} vs {C2['ralph']['verified_success_rate']:.0%} for Ralph — ahead, but intervals overlap (not significant yet).</p>
+        <table class="rtable"><tr><th>Controller</th><th>Verified</th><th>95% CI</th><th>False done</th></tr>{rows2}</table>
+        <ul>
+          <li>Nemotron-3-Super wrote the Definition of Done from each one-line prompt: {pr2}/{nt2} generated tests are correct.</li>
+          <li>TraceLoss = small transformer over [DoD embedding, trace step embeddings, budget] → V; loss = 1 − V. Trained on {T2['n_states']} states labelled by real rollouts.</li>
+          <li>Grouped CV: TraceLoss MSE {cv2['traceloss_adamw']['mse']:.3f} vs constant {cv2['const_train_mean']['mse']:.3f}; DoD pass fraction is anti-predictive (AUROC {cv2['dod_pass_fraction']['auroc_fold_mean']:.2f}).</li>
+          <li>Out of distribution on real Pi traces it does not transfer.</li>
+        </ul>
+      </div>"""
     lr, la = ctrl["ralph"]["verified_success_rate"], ctrl["graph_learned_muon"]["verified_success_rate"]
     n_ep = ctrl["ralph"]["episodes"]
     return f"""
     <section class="results wrap" id="results">
-      <div class="section-label"><span>05 / WHAT WE MEASURED</span><span class="sim-flag">SIMULATED EXECUTOR · NOT AN LLM</span></div>
+      <div class="section-label"><span>05 / WHAT WE MEASURED</span><span class="sim-flag">V2 REAL NEMOTRON · V1 SIMULATED</span></div>
       <h2>Me fail English? <span class="serif">That's unpossible.</span></h2>
+      {v2card}
+      <h3 style="margin-top:30px">v1 · simulated executor (first experiment)</h3>
       <div class="results-grid">
         <div class="results-card">
           <p class="verdict">Hypothesis not supported (yet): at equal budget the learned critic verified {la:.0%} of sealed test episodes vs {lr:.0%} for plain Ralph.</p>

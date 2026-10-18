@@ -160,8 +160,21 @@ h2{letter-spacing:.5px!important;color:#1b1b1b}
 
     
     <section class="results wrap" id="results">
-      <div class="section-label"><span>05 / WHAT WE MEASURED</span><span class="sim-flag">SIMULATED EXECUTOR · NOT AN LLM</span></div>
+      <div class="section-label"><span>05 / WHAT WE MEASURED</span><span class="sim-flag">V2 REAL NEMOTRON · V1 SIMULATED</span></div>
       <h2>Me fail English? <span class="serif">That's unpossible.</span></h2>
+      
+      <div class="results-card" style="margin-top:22px">
+        <span class="mono">V2 · REAL NEMOTRON-3 ON CRUSOE · PROMPT → DOD → LEARNED LOSS</span>
+        <p class="verdict" style="background:#b2f2bb">With a real Nemotron executor, the learned TraceLoss controller verified 73% vs 67% for Ralph — ahead, but intervals overlap (not significant yet).</p>
+        <table class="rtable"><tr><th>Controller</th><th>Verified</th><th>95% CI</th><th>False done</th></tr><tr class=''><td>Bounded Ralph</td><td class='num'>0.667</td><td class='num'>[0.53, 0.78]</td><td class='num'>13/45</td></tr><tr class=''><td>Graph + rules (DoD pass fraction)</td><td class='num'>0.688</td><td class='num'>[0.55, 0.80]</td><td class='num'>11/44</td></tr><tr class='best'><td>Graph + TraceLoss (learned loss)</td><td class='num'>0.729</td><td class='num'>[0.59, 0.83]</td><td class='num'>10/45</td></tr></table>
+        <ul>
+          <li>Nemotron-3-Super wrote the Definition of Done from each one-line prompt: 135/141 generated tests are correct.</li>
+          <li>TraceLoss = small transformer over [DoD embedding, trace step embeddings, budget] → V; loss = 1 − V. Trained on 215 states labelled by real rollouts.</li>
+          <li>Grouped CV: TraceLoss MSE 0.135 vs constant 0.160; DoD pass fraction is anti-predictive (AUROC 0.20).</li>
+          <li>Out of distribution on real Pi traces it does not transfer.</li>
+        </ul>
+      </div>
+      <h3 style="margin-top:30px">v1 · simulated executor (first experiment)</h3>
       <div class="results-grid">
         <div class="results-card">
           <p class="verdict">Hypothesis not supported (yet): at equal budget the learned critic verified 63% of sealed test episodes vs 77% for plain Ralph.</p>

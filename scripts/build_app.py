@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT))
 
 from trace_critic.env import verify  # noqa: E402
 from trace_critic.tasks import TASKS  # noqa: E402
+from trace_critic.tasks_v2 import FTASKS  # noqa: E402
 
 OUT = ROOT / "site/public/app"
 
@@ -58,6 +59,21 @@ def main():
                      "traces": [{"synth_id": t["synth_id"], "query": rows[t["synth_id"]]["query"],
                                  "reasoning": rows[t["synth_id"]]["synthetic_reasoning"],
                                  "steps": t["steps"], "n_bad": t["n_bad"]} for t in bad + clean]}
+    # Nemotron + DoD-from-prompt + TraceLoss (v2)
+    v2 = ROOT / "runs/v2"
+    eps = json.loads((v2 / "eval_episodes.json").read_text())
+    for e in eps.values():
+        for x in e["events"]:
+            x.pop("src", None)
+            if x.get("diff"):
+                x["diff"] = x["diff"][:600]
+    dod = json.loads((v2 / "dod.json").read_text())
+    data["v2"] = {"eval": json.loads((v2 / "eval_results.json").read_text()), "episodes": eps,
+                  "traceloss": json.loads((v2 / "traceloss_results.json").read_text()),
+                  "pi_curves": json.loads((v2 / "pi_curves.json").read_text())["by_signal"],
+                  "dod": {k: {kk: d[kk] for kk in ("code", "n_tests", "fail_on_buggy", "pass_on_reference",
+                                                    "dropped_by_auditor", "attempt")} for k, d in dod.items()},
+                  "goals": {k: FTASKS[k].goal for k in dod}}
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "data.json").write_text(json.dumps(data, separators=(",", ":")))
     print("episodes:", len(episodes), "artifacts:", len(artifacts),

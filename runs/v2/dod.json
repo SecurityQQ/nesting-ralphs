@@ -1,0 +1,383 @@
+{
+ "cart_discount": {
+  "task": "cart_discount",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_no_discount_returns_subtotal_rounded_to_cents():\n    \"\"\"discount 0% should return the subtotal rounded to cents.\"\"\"\n    items = [(10.0, 2), (3.333, 1)]  # subtotal = 20.0 + 3.333 = 23.333\n    assert round(solution.cart_total(items, discount_pct=0), 2) == round(23.333, 2)\n\ndef test_full_discount_returns_zero():\n    \"\"\"discount 100% should return zero regardless of items.\"\"\"\n    items = [(5.0, 4), (2.5, 2)]\n    assert solution.cart_total(items, discount_pct=100) == 0.0\n\ndef test_partial_discount_applied_once_to_subtotal():\n    \"\"\"discount applied exactly once to the subtotal, then rounded to cents.\"\"\"\n    items = [(8.0, 3), (4.5, 2)]  # subtotal = 24.0 + 9.0 = 33.0\n    # 20% discount => 33.0 * 0.8 = 26.4\n    assert round(solution.cart_total(items, discount_pct=20), 2) == 26.4\n\ndef test_fractional_discount_is_handled_correctly():\n    \"\"\"fractional discount percentages are applied and result rounded to cents.\"\"\"\n    items = [(1.0, 1), (2.0, 1)]  # subtotal = 3.0\n    # 33.33% discount => 3.0 * (1 - 0.3333) = 2.0001 -> rounded to 2.00\n    assert round(solution.cart_total(items, discount_pct=33.33), 2) == 2.0\n\ndef test_empty_items_returns_zero():\n    \"\"\"an empty cart yields zero regardless of discount.\"\"\"\n    assert solution.cart_total([], discount_pct=15) == 0.0\n\ndef test_zero_price_items_contribute_nothing():\n    \"\"\"items with zero price do not affect the total.\"\"\"\n    items = [(0.0, 5), (10.0, 1)]  # subtotal = 10.0\n    assert round(solution.cart_total(items, discount_pct=10), 2) == 9.0\n\ndef test_discount_below_zero_raises_error():\n    \"\"\"discount_pct must be in [0, 100]; negative values raise ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.cart_total([(5.0, 1)], discount_pct=-5)\n\ndef test_discount_above_100_raises_error():\n    \"\"\"discount_pct must be in [0, 100]; values over 100 raise ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.cart_total([(5.0, 1)], discount_pct=150)\n",
+  "tests": [
+   "test_discount_above_100_raises_error",
+   "test_discount_below_zero_raises_error",
+   "test_empty_items_returns_zero",
+   "test_fractional_discount_is_handled_correctly",
+   "test_full_discount_returns_zero",
+   "test_no_discount_returns_subtotal_rounded_to_cents",
+   "test_partial_discount_applied_once_to_subtotal",
+   "test_zero_price_items_contribute_nothing"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 6,
+  "n_tests": 8,
+  "pass_on_reference": 8
+ },
+ "parse_duration": {
+  "task": "parse_duration",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_parse_basic_example():\n    \"\"\"'1h30m15s' should be parsed as 5475 seconds.\"\"\"\n    assert solution.parse_duration('1h30m15s') == 5475\n\ndef test_parse_only_hours():\n    \"\"\"'2h' should be parsed as 7200 seconds.\"\"\"\n    assert solution.parse_duration('2h') == 7200\n\ndef test_parse_only_minutes():\n    \"\"\"'5m' should be parsed as 300 seconds.\"\"\"\n    assert solution.parse_duration('5m') == 300\n\ndef test_parse_only_seconds():\n    \"\"\"'45s' should be parsed as 45 seconds.\"\"\"\n    assert solution.parse_duration('45s') == 45\n\ndef test_parse_zero_values():\n    \"\"\"'0h0m0s' should be parsed as 0 seconds.\"\"\"\n    assert solution.parse_duration('0h0m0s') == 0\n\ndef test_parse_empty_string_raises():\n    \"\"\"Empty input should raise ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.parse_duration('')\n\ndef test_parse_unknown_unit_raises():\n    \"\"\"Input with unknown unit (e.g., '1x') should raise ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.parse_duration('1x')\n\ndef test_parse_malformed_missing_unit_raises():\n    \"\"\"Input where a number is not followed by a valid unit (e.g., '1h30') should raise ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.parse_duration('1h30')\n",
+  "tests": [
+   "test_parse_basic_example",
+   "test_parse_empty_string_raises",
+   "test_parse_malformed_missing_unit_raises",
+   "test_parse_only_hours",
+   "test_parse_only_minutes",
+   "test_parse_only_seconds",
+   "test_parse_unknown_unit_raises",
+   "test_parse_zero_values"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 4,
+  "n_tests": 8,
+  "pass_on_reference": 7
+ },
+ "clamp_range": {
+  "task": "clamp_range",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_clamp_below_lo():\n    \"\"\"Return lo when x is less than lo.\"\"\"\n    assert solution.clamp(0, 1, 5) == 1\n    assert solution.clamp(-10, 0, 0) == 0\n\ndef test_clamp_above_hi():\n    \"\"\"Return hi when x is greater than hi.\"\"\"\n    assert solution.clamp(10, 1, 5) == 5\n    assert solution.clamp(3.5, 0, 2) == 2\n\ndef test_clamp_within_range():\n    \"\"\"Return x unchanged when x is within [lo, hi].\"\"\"\n    assert solution.clamp(3, 1, 5) == 3\n    assert solution.clamp(2.5, 0.0, 5.0) == 2.5\n\ndef test_clamp_lo_eq_hi():\n    \"\"\"Return the single-point value when lo equals hi, regardless of x.\"\"\"\n    assert solution.clamp(100, 7, 7) == 7\n    assert solution.clamp(-5, 7, 7) == 7\n    assert solution.clamp(7, 7, 7) == 7\n\ndef test_clamp_lo_gt_hi_raises():\n    \"\"\"Raise ValueError when lo is greater than hi.\"\"\"\n    with pytest.raises(ValueError):\n        solution.clamp(0, 5, 1)\n    with pytest.raises(ValueError):\n        solution.clamp(3.2, 10, -10)\n\ndef test_clamp_works_with_floats():\n    \"\"\"Clamp correctly handles floating\u2011point inputs.\"\"\"\n    assert solution.clamp(2.7, 1.5, 3.2) == 2.7\n    assert solution.clamp(1.0, 1.5, 3.2) == 1.5\n    assert solution.clamp(4.0, 1.5, 3.2) == 3.2\n",
+  "tests": [
+   "test_clamp_above_hi",
+   "test_clamp_below_lo",
+   "test_clamp_lo_eq_hi",
+   "test_clamp_lo_gt_hi_raises",
+   "test_clamp_within_range",
+   "test_clamp_works_with_floats"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 4,
+  "n_tests": 6,
+  "pass_on_reference": 6
+ },
+ "slugify": {
+  "task": "slugify",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_lowercase_and_word_join():\n    \"\"\"Output is lowercase ASCII words joined by single hyphens.\"\"\"\n    assert solution.slugify(\"Hello World!\") == \"hello-world\"\n\ndef test_no_leading_trailing_hyphen():\n    \"\"\"Result has no leading or trailing hyphens even if input does.\"\"\"\n    assert solution.slugify(\"---leading and trailing---\") == \"leading-and-trailing\"\n\ndef test_multiple_separators_collapsed():\n    \"\"\"Any sequence of non\u2011alphanumeric characters becomes a single hyphen.\"\"\"\n    assert solution.slugify(\"Foo___Bar!!!Baz\") == \"foo-bar-baz\"\n\ndef test_truncate_to_max_len():\n    \"\"\"Output length never exceeds the given max_len.\"\"\"\n    assert solution.slugify(\"a\" * 50, max_len=10) == \"a\" * 10\n\ndef test_truncate_no_trailing_hyphen():\n    \"\"\"When truncating, any trailing hyphen is removed.\"\"\"\n    assert solution.slugify(\"a-bcdef\", max_len=2) == \"a\"\n\ndef test_default_max_len_is_forty():\n    \"\"\"Default max_len is 40 and respects the no\u2011trailing\u2011hyphen rule.\"\"\"\n    long_input = \"b\" * 55\n    assert len(solution.slugify(long_input)) == 40\n    assert not solution.slugify(long_input).endswith(\"-\")\n\ndef test_invalid_input_type_raises():\n    \"\"\"Passing a non\u2011string raises a TypeError.\"\"\"\n    with pytest.raises(TypeError):\n        solution.slugify(123)\n",
+  "tests": [
+   "test_default_max_len_is_forty",
+   "test_invalid_input_type_raises",
+   "test_lowercase_and_word_join",
+   "test_multiple_separators_collapsed",
+   "test_no_leading_trailing_hyphen",
+   "test_truncate_no_trailing_hyphen",
+   "test_truncate_to_max_len"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 4,
+  "n_tests": 7,
+  "pass_on_reference": 6
+ },
+ "moving_average": {
+  "task": "moving_average",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_window_less_than_one_raises():\n    \"\"\"window < 1 raises ValueError\"\"\"\n    with pytest.raises(ValueError):\n        solution.moving_average([1, 2, 3], 0)\n    with pytest.raises(ValueError):\n        solution.moving_average([1, 2, 3], -2)\n\ndef test_empty_input_returns_empty():\n    \"\"\"[] if input list is empty (fewer items than any positive window)\"\"\"\n    assert solution.moving_average([], 3) == []\n\ndef test_fewer_items_than_window_returns_empty():\n    \"\"\"[] if fewer items than window\"\"\"\n    assert solution.moving_average([1, 2], 3) == []\n    assert solution.moving_average([5, 6, 7], 5) == []\n\ndef test_exact_window_size_returns_single_average():\n    \"\"\"mean over the single full window when len(xs) == window\"\"\"\n    assert solution.moving_average([1, 2, 3, 4], 4) == [2.5]\n\ndef test_multiple_full_windows():\n    \"\"\"mean over every full window sliding by one\"\"\"\n    xs = [1, 2, 3, 4, 5]\n    assert solution.moving_average(xs, 2) == [1.5, 2.5, 3.5, 4.5]\n    assert solution.moving_average(xs, 3) == [2.0, 3.0, 4.0]\n\ndef test_window_one_returns_original_as_floats():\n    \"\"\"window of 1 returns each element as a float mean\"\"\"\n    assert solution.moving_average([10, 20, 30], 1) == [10.0, 20.0, 30.0]\n",
+  "tests": [
+   "test_empty_input_returns_empty",
+   "test_exact_window_size_returns_single_average",
+   "test_fewer_items_than_window_returns_empty",
+   "test_multiple_full_windows",
+   "test_window_less_than_one_raises",
+   "test_window_one_returns_original_as_floats"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 4,
+  "n_tests": 6,
+  "pass_on_reference": 6
+ },
+ "roman_to_int": {
+  "task": "roman_to_int",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_basic_additive():\n    \"\"\"Roman numerals without subtractive notation are summed directly.\"\"\"\n    assert solution.roman_to_int(\"III\") == 3\n    assert solution.roman_to_int(\"VIII\") == 8\n    assert solution.roman_to_int(\"MMXXIII\") == 2023\n\ndef test_subtractive_notation():\n    \"\"\"Standard subtractive pairs produce the correct values.\"\"\"\n    assert solution.roman_to_int(\"IV\") == 4\n    assert solution.roman_to_int(\"IX\") == 9\n    assert solution.roman_to_int(\"XL\") == 40\n    assert solution.roman_to_int(\"XC\") == 90\n    assert solution.roman_to_int(\"CD\") == 400\n    assert solution.roman_to_int(\"CM\") == 900\n\ndef test_mixed_numeral():\n    \"\"\"Combination of additive and subtractive notation works.\"\"\"\n    assert solution.roman_to_int(\"MCMXCIV\") == 1994\n    assert solution.roman_to_int(\"MMMDCCCLXXXVIII\") == 3888\n\ndef test_empty_string_raises():\n    \"\"\"An empty input raises ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.roman_to_int(\"\")\n\ndef test_invalid_character_raises():\n    \"\"\"Any character outside the Roman set raises ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.roman_to_int(\"ABC\")\n    with pytest.raises(ValueError):\n        solution.roman_to_int(\"IXZ\")\n    with pytest.raises(ValueError):\n        solution.roman_to_int(\"VX@\")\n\ndef test_lowercase_raises():\n    \"\"\"Lowercase letters are considered invalid characters.\"\"\"\n    with pytest.raises(ValueError):\n        solution.roman_to_int(\"iv\")\n    with pytest.raises(ValueError):\n        solution.roman_to_int(\"mcmxciv\")\n\ndef test_single_valid_characters():\n    \"\"\"Each valid Roman numeral maps to its integer value.\"\"\"\n    assert solution.roman_to_int(\"I\") == 1\n    assert solution.roman_to_int(\"V\") == 5\n    assert solution.roman_to_int(\"X\") == 10\n    assert solution.roman_to_int(\"L\") == 50\n    assert solution.roman_to_int(\"C\") == 100\n    assert solution.roman_to_int(\"D\") == 500\n    assert solution.roman_to_int(\"M\") == 1000\n",
+  "tests": [
+   "test_basic_additive",
+   "test_empty_string_raises",
+   "test_invalid_character_raises",
+   "test_lowercase_raises",
+   "test_mixed_numeral",
+   "test_single_valid_characters",
+   "test_subtractive_notation"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 5,
+  "n_tests": 7,
+  "pass_on_reference": 7
+ },
+ "median": {
+  "task": "median",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_median_odd_length():\n    \"\"\"Median of an odd\u2011length list returns the middle element after sorting.\"\"\"\n    assert solution.median([3, 1, 2]) == 2\n\ndef test_median_even_length():\n    \"\"\"Median of an even\u2011length list returns the average of the two middle elements.\"\"\"\n    assert solution.median([4, 1, 3, 2]) == 2.5\n\ndef test_median_single_element():\n    \"\"\"Median of a single\u2011element list returns that element.\"\"\"\n    assert solution.median([10]) == 10\n\ndef test_median_negative_numbers():\n    \"\"\"Median works correctly with negative numbers.\"\"\"\n    assert solution.median([-5, -1, -3]) == -3\n\ndef test_median_float_numbers():\n    \"\"\"Median works correctly with floating\u2011point numbers.\"\"\"\n    assert solution.median([1.5, 2.5, 3.5]) == 2.5\n\ndef test_median_does_not_mutate_input():\n    \"\"\"The input list is not mutated by the median function.\"\"\"\n    data = [7, 2, 5, 3]\n    original = data.copy()\n    solution.median(data)\n    assert data == original\n\ndef test_median_empty_list_raises_ValueError():\n    \"\"\"Calling median on an empty list raises a ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.median([])\n",
+  "tests": [
+   "test_median_does_not_mutate_input",
+   "test_median_empty_list_raises_ValueError",
+   "test_median_even_length",
+   "test_median_float_numbers",
+   "test_median_negative_numbers",
+   "test_median_odd_length",
+   "test_median_single_element"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 3,
+  "n_tests": 7,
+  "pass_on_reference": 7
+ },
+ "top_words": {
+  "task": "top_words",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\n\ndef test_returns_k_most_frequent_words():\n    \"\"\"Return the k most frequent lowercase words as (word, count) pairs.\"\"\"\n    text = \"apple banana apple orange banana apple\"\n    assert solution.top_words(text, 2) == [(\"apple\", 3), (\"banana\", 2)]\n\n\ndef test_returns_empty_list_when_k_zero():\n    \"\"\"When k == 0, return an empty list.\"\"\"\n    assert solution.top_words(\"any text\", 0) == []\n\n\ndef test_raises_value_error_when_k_negative():\n    \"\"\"When k < 0, raise a ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.top_words(\"some words\", -1)\n\n\ndef test_breaks_ties_alphabetically():\n    \"\"\"If frequencies tie, order words alphabetically.\"\"\"\n    text = \"cat dog cat dog bird\"\n    assert solution.top_words(text, 2) == [(\"cat\", 2), (\"dog\", 2)]\n\n\ndef test_returns_all_when_k_exceeds_distinct_words():\n    \"\"\"If k is greater than the number of distinct words, return all words sorted.\"\"\"\n    text = \"one two three\"\n    # All have frequency 1; alphabetical order: one, three, two\n    assert solution.top_words(text, 5) == [(\"one\", 1), (\"three\", 1), (\"two\", 1)]\n\n\ndef test_returns_empty_for_empty_text():\n    \"\"\"For an empty input string, return an empty list regardless of k > 0.\"\"\"\n    assert solution.top_words(\"\", 3) == []\n\n\ndef test_handles_apostrophes_and_mixed_case():\n    \"\"\"Treat words case\u2011insensitively and allow apostrophes inside words.\"\"\"\n    text = \"Don't stop believing don't\"\n    # Lowercased: \"don't stop believing don't\"\n    # Frequencies: don't -> 2, believing -> 1, stop -> 1\n    # Top 2: don't (2), then believing (1) before stop (1) alphabetically\n    assert solution.top_words(text, 2) == [(\"don't\", 2), (\"believing\", 1)]\n",
+  "tests": [
+   "test_breaks_ties_alphabetically",
+   "test_handles_apostrophes_and_mixed_case",
+   "test_raises_value_error_when_k_negative",
+   "test_returns_all_when_k_exceeds_distinct_words",
+   "test_returns_empty_for_empty_text",
+   "test_returns_empty_list_when_k_zero",
+   "test_returns_k_most_frequent_words"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 3,
+  "n_tests": 7,
+  "pass_on_reference": 7
+ },
+ "merge_intervals": {
+  "task": "merge_intervals",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_empty_input():\n    \"\"\"Empty input returns empty list.\"\"\"\n    assert solution.merge_intervals([]) == []\n\ndef test_single_interval():\n    \"\"\"A single interval is returned unchanged.\"\"\"\n    assert solution.merge_intervals([[5, 10]]) == [[5, 10]]\n\ndef test_overlapping_intervals():\n    \"\"\"Overlapping intervals are merged into a single interval.\"\"\"\n    intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]\n    assert solution.merge_intervals(intervals) == [[1, 6], [8, 10], [15, 18]]\n\ndef test_touching_intervals_merge():\n    \"\"\"Touching intervals (end == start) are merged.\"\"\"\n    intervals = [[1, 2], [2, 3], [4, 5]]\n    assert solution.merge_intervals(intervals) == [[1, 3], [4, 5]]\n\ndef test_unsorted_input_is_handled():\n    \"\"\"Unsorted input is processed and result is sorted.\"\"\"\n    intervals = [[5, 6], [1, 2], [3, 4]]\n    assert solution.merge_intervals(intervals) == [[1, 2], [3, 4], [5, 6]]\n\ndef test_unsorted_with_overlap():\n    \"\"\"Unsorted input with overlapping intervals merges correctly.\"\"\"\n    intervals = [[5, 6], [1, 4], [2, 3]]\n    assert solution.merge_intervals(intervals) == [[1, 6]]\n\ndef test_input_not_mutated():\n    \"\"\"The input list must not be mutated.\"\"\"\n    original = [[1, 3], [2, 6], [8, 10]]\n    copy = [list(pair) for pair in original]  # deep copy for comparison\n    solution.merge_intervals(original)\n    assert original == copy, \"Input was mutated\"\n\ndef test_output_is_sorted_by_start():\n    \"\"\"Output list is sorted by the start of each interval.\"\"\"\n    intervals = [[6, 8], [1, 4], [2, 5], [9, 10]]\n    result = solution.merge_intervals(intervals)\n    assert all(result[i][0] <= result[i+1][0] for i in range(len(result)-1))\n\ndef test_invalid_input_type_raises():\n    \"\"\"Passing a non-iterable raises TypeError.\"\"\"\n    with pytest.raises(TypeError):\n        solution.merge_intervals(None)\n",
+  "tests": [
+   "test_empty_input",
+   "test_input_not_mutated",
+   "test_invalid_input_type_raises",
+   "test_output_is_sorted_by_start",
+   "test_overlapping_intervals",
+   "test_single_interval",
+   "test_touching_intervals_merge",
+   "test_unsorted_input_is_handled",
+   "test_unsorted_with_overlap"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 3,
+  "n_tests": 9,
+  "pass_on_reference": 8
+ },
+ "split_bill": {
+  "task": "split_bill",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_non_positive_n_raises_ValueError():\n    \"\"\"n <= 0 must raise ValueError.\"\"\"\n    for n in (0, -1, -5):\n        with pytest.raises(ValueError):\n            solution.split_bill(100, n)\n\ndef test_exact_division_returns_equal_shares():\n    \"\"\"When total_cents is divisible by n, all shares are equal.\"\"\"\n    assert solution.split_bill(120, 4) == [30, 30, 30, 30]\n    assert solution.split_bill(0, 5) == [0, 0, 0, 0, 0]\n\ndef test_remainder_distribution_gives_larger_shares_first():\n    \"\"\"Remainder cents are distributed as +1 to the first few people.\"\"\"\n    # 10 cents among 3 people -> base 3, remainder 1 -> [4,3,3]\n    assert solution.split_bill(10, 3) == [4, 3, 3]\n    # 23 cents among 5 people -> base 4, remainder 3 -> [5,5,5,4,4]\n    assert solution.split_bill(23, 5) == [5, 5, 5, 4, 4]\n\ndef test_sum_of_shares_equals_total_cents():\n    \"\"\"The returned shares must sum exactly to total_cents.\"\"\"\n    assert sum(solution.split_bill(99, 7)) == 99\n    assert sum(solution.split_bill(0, 1)) == 0\n    assert sum(solution.split_bill(123456, 13)) == 123456\n\ndef test_shares_differ_by_at_most_one_cent():\n    \"\"\"Any two shares must differ by no more than 1 cent.\"\"\"\n    for total, n in [(0, 1), (5, 2), (100, 9), (12345, 100)]:\n        shares = solution.split_bill(total, n)\n        assert max(shares) - min(shares) <= 1\n\ndef test_larger_shares_appear_first():\n    \"\"\"Larger shares (if any) must appear at the start of the list.\"\"\"\n    # 17 cents among 5 people -> base 3, remainder 2 -> [4,4,3,3,3]\n    shares = solution.split_bill(17, 5)\n    assert shares == [4, 4, 3, 3, 3]\n    # Ensure no smaller share precedes a larger one\n    assert all(shares[i] >= shares[i+1] for i in range(len(shares)-1))\n\ndef test_single_person_gets_all_cents():\n    \"\"\"When n == 1, the sole person receives the entire amount.\"\"\"\n    assert solution.split_bill(42, 1) == [42]\n    assert solution.split_bill(0, 1) == [0]\n",
+  "tests": [
+   "test_exact_division_returns_equal_shares",
+   "test_larger_shares_appear_first",
+   "test_non_positive_n_raises_ValueError",
+   "test_remainder_distribution_gives_larger_shares_first",
+   "test_shares_differ_by_at_most_one_cent",
+   "test_single_person_gets_all_cents",
+   "test_sum_of_shares_equals_total_cents"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 4,
+  "n_tests": 7,
+  "pass_on_reference": 7
+ },
+ "version_compare": {
+  "task": "version_compare",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import solution\nimport pytest\n\ndef test_numeric_compare():\n    \"\"\"Compare dotted versions numerically: '1.10' > '1.9'.\"\"\"\n    assert solution.compare_versions('1.10', '1.9') == 1\n    assert solution.compare_versions('1.9', '1.10') == -1\n\ndef test_missing_parts_zero():\n    \"\"\"Missing parts count as 0: '1.0' == '1'.\"\"\"\n    assert solution.compare_versions('1.0', '1') == 0\n    assert solution.compare_versions('2', '2.0.0') == 0\n    assert solution.compare_versions('1.0.0', '1.0.1') == -1\n\ndef test_pre_release_lower():\n    \"\"\"A pre\u2011release suffix is lower than the same version without suffix.\"\"\"\n    assert solution.compare_versions('1.0.0-rc1', '1.0.0') == -1\n    assert solution.compare_versions('1.0.0', '1.0.0-alpha') == 1\n    assert solution.compare_versions('1.0.0-rc1', '1.0.0-rc1') == 0\n\ndef test_return_values():\n    \"\"\"Function returns only -1, 0, or 1.\"\"\"\n    for a, b in [('1.0', '2.0'), ('1.0', '1.0'), ('2.0', '1.0')]:\n        result = solution.compare_versions(a, b)\n        assert result in {-1, 0, 1}\n\ndef test_leading_zeros():\n    \"\"\"Numeric parts ignore leading zeros.\"\"\"\n    assert solution.compare_versions('1.01', '1.1') == 0\n    assert solution.compare_versions('1.001', '1.01') == 0\n    assert solution.compare_versions('1.0', '1.00') == 0\n\ndef test_multiple_parts():\n    \"\"\"Extra parts are compared after common prefix.\"\"\"\n    assert solution.compare_versions('1.2.3.4', '1.2.3') == 1\n    assert solution.compare_versions('1.2.3', '1.2.3.0') == 0\n    assert solution.compare_versions('1.2.3', '1.2.3.5') == -1\n",
+  "tests": [
+   "test_leading_zeros",
+   "test_missing_parts_zero",
+   "test_multiple_parts",
+   "test_numeric_compare",
+   "test_pre_release_lower",
+   "test_return_values"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 5,
+  "n_tests": 6,
+  "pass_on_reference": 6
+ },
+ "chunk_list": {
+  "task": "chunk_list",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import solution\nimport pytest\n\n\ndef test_chunk_empty_input_returns_empty_list():\n    \"\"\"Empty input returns []\"\"\"\n    assert solution.chunk([], 3) == []\n\n\ndef test_chunk_size_greater_than_length_returns_single_chunk():\n    \"\"\"If size > len(items), returns a single chunk containing all items\"\"\"\n    assert solution.chunk([1, 2, 3], 5) == [[1, 2, 3]]\n\n\ndef test_chunk_size_equals_length_returns_single_chunk():\n    \"\"\"If size == len(items), returns a single chunk containing all items\"\"\"\n    assert solution.chunk([1, 2, 3], 3) == [[1, 2, 3]]\n\n\ndef test_chunk_normal_case_splits_correctly():\n    \"\"\"Split list into consecutive chunks of given size\"\"\"\n    assert solution.chunk([1, 2, 3, 4, 5, 6, 7], 3) == [[1, 2, 3], [4, 5, 6], [7]]\n\n\ndef test_chunk_last_chunk_may_be_shorter():\n    \"\"\"Last chunk may be shorter when size does not divide length\"\"\"\n    assert solution.chunk([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]\n\n\ndef test_chunk_size_one_returns_list_of_singletons():\n    \"\"\"Size 1 yields a list of single\u2011element lists\"\"\"\n    assert solution.chunk(['a', 'b', 'c'], 1) == [['a'], ['b'], ['c']]\n\n\ndef test_chunk_works_with_tuple_and_generator():\n    \"\"\"Function works with any iterable, not just list\"\"\"\n    assert solution.chunk((1, 2, 3, 4), 2) == [[1, 2], [3, 4]]\n    gen = (x for x in range(5))\n    assert solution.chunk(gen, 2) == [[0, 1], [2, 3], [4]]\n\n\ndef test_chunk_invalid_size_raises_ValueError():\n    \"\"\"Size <= 0 raises ValueError\"\"\"\n    with pytest.raises(ValueError):\n        solution.chunk([1, 2, 3], 0)\n    with pytest.raises(ValueError):\n        solution.chunk([1, 2, 3], -2)\n",
+  "tests": [
+   "test_chunk_empty_input_returns_empty_list",
+   "test_chunk_invalid_size_raises_ValueError",
+   "test_chunk_last_chunk_may_be_shorter",
+   "test_chunk_normal_case_splits_correctly",
+   "test_chunk_size_equals_length_returns_single_chunk",
+   "test_chunk_size_greater_than_length_returns_single_chunk",
+   "test_chunk_size_one_returns_list_of_singletons",
+   "test_chunk_works_with_tuple_and_generator"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 7,
+  "n_tests": 8,
+  "pass_on_reference": 8
+ },
+ "luhn": {
+  "task": "luhn",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import solution\nimport pytest\n\ndef test_valid_number_without_spaces_returns_true():\n    \"\"\"A valid Luhn number without spaces returns True.\"\"\"\n    assert solution.luhn_valid(\"79927398713\") is True\n\ndef test_invalid_number_without_spaces_returns_false():\n    \"\"\"An invalid Luhn number without spaces returns False.\"\"\"\n    assert solution.luhn_valid(\"79927398710\") is False\n\ndef test_valid_number_with_spaces_returns_true():\n    \"\"\"Spaces are ignored; a valid Luhn number with spaces returns True.\"\"\"\n    assert solution.luhn_valid(\"7992 7398 713\") is True\n\ndef test_invalid_number_with_spaces_returns_false():\n    \"\"\"Spaces are ignored; an invalid Luhn number with spaces returns False.\"\"\"\n    assert solution.luhn_valid(\"7992 7398 710\") is False\n\ndef test_non_digit_character_returns_false():\n    \"\"\"Any non\u2011digit, non\u2011space character causes the function to return False.\"\"\"\n    assert solution.luhn_valid(\"7992a7398713\") is False\n    assert solution.luhn_valid(\"7992-7398-713\") is False\n\ndef test_fewer_than_two_digits_returns_false():\n    \"\"\"Strings containing fewer than two digits (after ignoring spaces) return False.\"\"\"\n    assert solution.luhn_valid(\"\") is False\n    assert solution.luhn_valid(\" \") is False\n    assert solution.luhn_valid(\"5\") is False\n    assert solution.luhn_valid(\" 5 \") is False\n    assert solution.luhn_valid(\"   \") is False\n\ndef test_non_string_input_raises_typeerror():\n    \"\"\"Passing a non\u2011string argument should raise a TypeError.\"\"\"\n    with pytest.raises(TypeError):\n        solution.luhn_valid(12345)\n",
+  "tests": [
+   "test_fewer_than_two_digits_returns_false",
+   "test_invalid_number_with_spaces_returns_false",
+   "test_invalid_number_without_spaces_returns_false",
+   "test_non_digit_character_returns_false",
+   "test_non_string_input_raises_typeerror",
+   "test_valid_number_with_spaces_returns_true",
+   "test_valid_number_without_spaces_returns_true"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 5,
+  "n_tests": 7,
+  "pass_on_reference": 6
+ },
+ "dedupe": {
+  "task": "dedupe",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_dedupe_removes_duplicates_preserves_order():\n    \"\"\"Remove duplicates while keeping first occurrence and original order.\"\"\"\n    assert solution.dedupe([1, 2, 2, 3, 1, 4]) == [1, 2, 3, 4]\n\ndef test_dedupe_empty_list():\n    \"\"\"Return an empty list when input is empty.\"\"\"\n    assert solution.dedupe([]) == []\n\ndef test_dedupe_no_duplicates():\n    \"\"\"Return a copy of the list when there are no duplicates.\"\"\"\n    original = [5, 6, 7]\n    assert solution.dedupe(original) == [5, 6, 7]\n\ndef test_dedupe_with_key_function():\n    \"\"\"Use key function to determine identity for deduplication.\"\"\"\n    items = [{'id': 1, 'v': 'a'}, {'id': 2, 'v': 'b'}, {'id': 1, 'v': 'c'}]\n    assert solution.dedupe(items, key=lambda x: x['id']) == [{'id': 1, 'v': 'a'}, {'id': 2, 'v': 'b'}]\n\ndef test_dedupe_unhashable_items():\n    \"\"\"Work correctly with unhashable items such as lists.\"\"\"\n    items = [[1, 2], [3, 4], [1, 2], [5, 6]]\n    assert solution.dedupe(items) == [[1, 2], [3, 4], [5, 6]]\n\ndef test_dedupe_invalid_input_type():\n    \"\"\"Raise TypeError when items is not iterable.\"\"\"\n    with pytest.raises(TypeError):\n        solution.dedupe(42)\n",
+  "tests": [
+   "test_dedupe_empty_list",
+   "test_dedupe_invalid_input_type",
+   "test_dedupe_no_duplicates",
+   "test_dedupe_removes_duplicates_preserves_order",
+   "test_dedupe_unhashable_items",
+   "test_dedupe_with_key_function"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 2,
+  "n_tests": 6,
+  "pass_on_reference": 6
+ },
+ "to_snake": {
+  "task": "to_snake",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport solution\n\ndef test_camel_case_conversion():\n    \"\"\"Converts CamelCase identifiers to snake_case.\"\"\"\n    assert solution.to_snake(\"CamelCase\") == \"camel_case\"\n\ndef test_lower_camel_case_conversion():\n    \"\"\"Converts camelCase identifiers to snake_case.\"\"\"\n    assert solution.to_snake(\"camelCase\") == \"camel_case\"\n\ndef test_acronyms_remain_together():\n    \"\"\"Keeps acronyms together when converting to snake_case.\"\"\"\n    assert solution.to_snake(\"HTTPServerError\") == \"http_server_error\"\n    assert solution.to_snake(\"getHTTP\") == \"get_http\"\n\ndef test_existing_snake_case_unchanged():\n    \"\"\"Leaves already snake_case strings unchanged.\"\"\"\n    assert solution.to_snake(\"already_snake_case\") == \"already_snake_case\"\n\ndef test_digits_stick_to_preceding_word():\n    \"\"\"Ensures digits stay attached to the preceding word.\"\"\"\n    assert solution.to_snake(\"version2Update\") == \"version2_update\"\n\ndef test_empty_and_single_character():\n    \"\"\"Handles empty string and single character inputs.\"\"\"\n    assert solution.to_snake(\"\") == \"\"\n    assert solution.to_snake(\"A\") == \"a\"\n    assert solution.to_snake(\"z\") == \"z\"\n\ndef test_invalid_input_type_raises():\n    \"\"\"Raises TypeError for non-string input.\"\"\"\n    with pytest.raises(TypeError):\n        solution.to_snake(123)\n",
+  "tests": [
+   "test_acronyms_remain_together",
+   "test_camel_case_conversion",
+   "test_digits_stick_to_preceding_word",
+   "test_empty_and_single_character",
+   "test_existing_snake_case_unchanged",
+   "test_invalid_input_type_raises",
+   "test_lower_camel_case_conversion"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 3,
+  "n_tests": 7,
+  "pass_on_reference": 7
+ },
+ "business_days": {
+  "task": "business_days",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import datetime\nimport pytest\nimport solution\n\n\ndef test_same_day_returns_zero():\n    \"\"\"If start and end are the same date, the result is 0.\"\"\"\n    d = datetime.date(2025, 9, 26)  # Friday\n    assert solution.business_days(d, d) == 0\n\n\ndef test_forward_one_weekday():\n    \"\"\"Count a single weekday when start is Monday and end is the next Tuesday (exclusive).\"\"\"\n    start = datetime.date(2025, 9, 22)  # Monday\n    end = datetime.date(2025, 9, 23)    # Tuesday\n    assert solution.business_days(start, end) == 1\n\n\ndef test_forward_spanning_weekend():\n    \"\"\"Count weekdays across a weekend; only Friday counts when end is the following Monday (exclusive).\"\"\"\n    start = datetime.date(2025, 9, 26)  # Friday\n    end = datetime.date(2025, 9, 29)    # Monday\n    assert solution.business_days(start, end) == 1\n\n\ndef test_forward_multiple_weeks():\n    \"\"\"Count weekdays over multiple whole weeks; Monday to next Monday exclusive yields 5 days.\"\"\"\n    start = datetime.date(2025, 9, 22)  # Monday\n    end = datetime.date(2025, 9, 29)    # Monday (next week)\n    assert solution.business_days(start, end) == 5\n\n\ndef test_backward_returns_negative():\n    \"\"\"If end precedes start, the result is the negative of business_days(end, start).\"\"\"\n    start = datetime.date(2025, 9, 23)  # Tuesday\n    end = datetime.date(2025, 9, 22)    # Monday\n    assert solution.business_days(start, end) == -1\n\n\ndef test_invalid_input_raises_typeerror():\n    \"\"\"Passing non\u2011datetime.date arguments should raise a TypeError.\"\"\"\n    with pytest.raises(TypeError):\n        solution.business_days(\"2025-09-22\", datetime.date(2025, 9, 23))\n    with pytest.raises(TypeError):\n        solution.business_days(datetime.date(2025, 9, 22), 123)\n",
+  "tests": [
+   "test_backward_returns_negative",
+   "test_forward_multiple_weeks",
+   "test_forward_one_weekday",
+   "test_forward_spanning_weekend",
+   "test_invalid_input_raises_typeerror",
+   "test_same_day_returns_zero"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 2,
+  "n_tests": 6,
+  "pass_on_reference": 6
+ },
+ "flatten": {
+  "task": "flatten",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import solution\nimport pytest\n\ndef test_flatten_basic_nested_lists():\n    \"\"\"Flatten nested lists into a single list.\"\"\"\n    assert solution.flatten([1, [2, 3], [[4]], []]) == [1, 2, 3, 4]\n\ndef test_flatten_handles_tuples():\n    \"\"\"Flatten nested tuples similarly to lists.\"\"\"\n    assert solution.flatten((1, (2, 3), ((4),))) == [1, 2, 3, 4]\n\ndef test_flatten_strings_and_bytes_are_atoms():\n    \"\"\"Strings and bytes are treated as atomic values and are not split.\"\"\"\n    assert solution.flatten(['ab', ['c', 'de']]) == ['ab', 'c', 'de']\n    assert solution.flatten([b'xy', [b'z']]) == [b'xy', b'z']\n\ndef test_flatten_depth_one_removes_one_level():\n    \"\"\"depth=1 removes exactly one level of nesting.\"\"\"\n    assert solution.flatten([[[1, 2]], [3]], depth=1) == [[1, 2], 3]\n\ndef test_flatten_depth_none_fully_flattens():\n    \"\"\"depth=None (default) fully flattens all nested lists and tuples.\"\"\"\n    assert solution.flatten([1, (2, [3, (4,)]), []]) == [1, 2, 3, 4]\n\ndef test_flatten_depth_greater_than_nesting():\n    \"\"\"A depth larger than the nesting depth results in full flattening.\"\"\"\n    assert solution.flatten([[[1]]], depth=5) == [1]\n\ndef test_flatten_invalid_input_raises_typeError():\n    \"\"\"Passing a non\u2011iterable as the nested argument raises TypeError.\"\"\"\n    with pytest.raises(TypeError):\n        solution.flatten(42)\n",
+  "tests": [
+   "test_flatten_basic_nested_lists",
+   "test_flatten_depth_greater_than_nesting",
+   "test_flatten_depth_none_fully_flattens",
+   "test_flatten_depth_one_removes_one_level",
+   "test_flatten_handles_tuples",
+   "test_flatten_invalid_input_raises_typeError",
+   "test_flatten_strings_and_bytes_are_atoms"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 2,
+  "n_tests": 7,
+  "pass_on_reference": 7
+ },
+ "percentile": {
+  "task": "percentile",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import pytest\nimport numpy as np\nimport solution\n\ndef test_percentile_linear_interpolation():\n    \"\"\"Percentile uses linear interpolation between closest ranks (numpy default).\"\"\"\n    xs = [1, 2, 3, 4]\n    assert solution.percentile(xs, 50) == np.percentile(xs, 50, method='linear')\n\ndef test_percentile_edge_cases():\n    \"\"\"0th percentile returns minimum, 100th returns maximum.\"\"\"\n    xs = [7, 2, 5, 3]\n    assert solution.percentile(xs, 0) == np.percentile(xs, 0, method='linear')\n    assert solution.percentile(xs, 100) == np.percentile(xs, 100, method='linear')\n\ndef test_percentile_p_out_of_range_raises():\n    \"\"\"p outside [0, 100] raises ValueError.\"\"\"\n    xs = [1, 2, 3]\n    with pytest.raises(ValueError):\n        solution.percentile(xs, -1)\n    with pytest.raises(ValueError):\n        solution.percentile(xs, 101)\n\ndef test_percentile_empty_xs_raises():\n    \"\"\"Empty input sequence raises ValueError.\"\"\"\n    with pytest.raises(ValueError):\n        solution.percentile([], 50)\n\ndef test_percentile_does_not_mutate_input():\n    \"\"\"Input list is not modified.\"\"\"\n    xs = [3, 1, 4, 2]\n    original = xs.copy()\n    solution.percentile(xs, 25)\n    assert xs == original\n\ndef test_percentile_single_element():\n    \"\"\"Single-element list returns that element for any valid p.\"\"\"\n    xs = [42]\n    for p in (0, 25, 50, 75, 100):\n        assert solution.percentile(xs, p) == np.percentile(xs, p, method='linear')\n\ndef test_percentile_duplicate_values():\n    \"\"\"Handles duplicate values with linear interpolation.\"\"\"\n    xs = [1, 1, 2, 2]\n    assert solution.percentile(xs, 50) == np.percentile(xs, 50, method='linear')\n",
+  "tests": [
+   "test_percentile_does_not_mutate_input",
+   "test_percentile_duplicate_values",
+   "test_percentile_edge_cases",
+   "test_percentile_empty_xs_raises",
+   "test_percentile_linear_interpolation",
+   "test_percentile_p_out_of_range_raises",
+   "test_percentile_single_element"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 7,
+  "n_tests": 7,
+  "pass_on_reference": 7
+ },
+ "word_wrap": {
+  "task": "word_wrap",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 1,
+  "code": "import solution\nimport pytest\n\ndef test_empty_text_returns_empty_list():\n    \"\"\"Empty text -> []\"\"\"\n    assert solution.wrap(\"\", 10) == []\n\ndef test_collapses_whitespace_and_no_leading_trailing_spaces():\n    \"\"\"Collapse runs of whitespace and ensure no line has leading/trailing spaces\"\"\"\n    assert solution.wrap(\"  hello   \\t\\tworld\\n\\nfoo  \", 10) == [\"hello world\", \"foo\"]\n\ndef test_greedy_wrap_fills_lines_as_much_as_possible():\n    \"\"\"Greedy wrap: fill line as much as possible without exceeding width\"\"\"\n    assert solution.wrap(\"a b c d e\", 3) == [\"a b\", \"c d\", \"e\"]\n\ndef test_word_longer_than_width_goes_on_own_line():\n    \"\"\"A word longer than width is placed on its own line unbroken\"\"\"\n    assert solution.wrap(\"short verylongword here\", 5) == [\"short\", \"verylongword\", \"here\"]\n\ndef test_tabs_and_newlines_treated_as_whitespace():\n    \"\"\"Tabs and newlines are treated as whitespace and collapsed\"\"\"\n    assert solution.wrap(\"foo\\t\\tbar\\n\\nbaz\", 10) == [\"foo bar\", \"baz\"]\n\ndef test_each_line_has_no_leading_or_trailing_spaces():\n    \"\"\"Each line returned has no leading or trailing spaces\"\"\"\n    result = solution.wrap(\"  start middle   end  \", 10)\n    for line in result:\n        assert not line.startswith(' ') and not line.endswith(' ')\n\ndef test_exact_width_line_is_returned_without_extra_space():\n    \"\"\"A line that exactly fits the width is returned as-is\"\"\"\n    assert solution.wrap(\"ab cd\", 5) == [\"ab cd\"]\n",
+  "tests": [
+   "test_collapses_whitespace_and_no_leading_trailing_spaces",
+   "test_each_line_has_no_leading_or_trailing_spaces",
+   "test_empty_text_returns_empty_list",
+   "test_exact_width_line_is_returned_without_extra_space",
+   "test_greedy_wrap_fills_lines_as_much_as_possible",
+   "test_tabs_and_newlines_treated_as_whitespace",
+   "test_word_longer_than_width_goes_on_own_line"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 7,
+  "n_tests": 7,
+  "pass_on_reference": 6
+ },
+ "csv_line": {
+  "task": "csv_line",
+  "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+  "attempt": 2,
+  "code": "import pytest\nimport solution\n\ndef test_empty_string_returns_single_empty_field():\n    \"\"\"Empty input line yields a list with one empty string.\"\"\"\n    assert solution.parse_csv_line(\"\") == [\"\"]\n\ndef test_no_quotes_split_preserves_whitespace():\n    \"\"\"Fields without quotes are split on commas and whitespace is preserved.\"\"\"\n    assert solution.parse_csv_line(\"a, b ,c\") == [\"a\", \" b \", \"c\"]\n\ndef test_quoted_field_contains_commas():\n    \"\"\"A double\u2011quoted field may contain commas that are not delimiters.\"\"\"\n    assert solution.parse_csv_line('\"a,b\",c') == [\"a,b\", \"c\"]\n\ndef test_quoted_field_preserves_internal_whitespace():\n    \"\"\"Whitespace inside quoted fields is preserved.\"\"\"\n    assert solution.parse_csv_line('\" a b \",c') == [\" a b \", \"c\"]\n\ndef test_doubled_quote_inside_quotes_is_literal_quote():\n    \"\"\"Two consecutive quotes inside a quoted field represent a literal quote.\"\"\"\n    assert solution.parse_csv_line('\"He said \"\"Hello\"\"\"') == ['He said \"Hello\"']\n\ndef test_multiple_quoted_fields_with_escaped_quotes():\n    \"\"\"Multiple quoted fields, each may contain escaped quotes and commas.\"\"\"\n    assert solution.parse_csv_line('\"a,b\",\"c d\",\"e\"\"f\"') == [\"a,b\", \"c d\", 'e\"f']\n\ndef test_quoted_empty_string():\n    \"\"\"A pair of quotes with nothing between them denotes an empty string.\"\"\"\n    assert solution.parse_csv_line('\"\"') == [\"\"]\n\ndef test_unmatched_quote_raises_error():\n    \"\"\"An opening quote without a matching closing quote should raise an error.\"\"\"\n    with pytest.raises(ValueError):\n        solution.parse_csv_line('\"a,b')\n",
+  "tests": [
+   "test_doubled_quote_inside_quotes_is_literal_quote",
+   "test_empty_string_returns_single_empty_field",
+   "test_multiple_quoted_fields_with_escaped_quotes",
+   "test_no_quotes_split_preserves_whitespace",
+   "test_quoted_empty_string",
+   "test_quoted_field_contains_commas",
+   "test_quoted_field_preserves_internal_whitespace",
+   "test_unmatched_quote_raises_error"
+  ],
+  "dropped_by_auditor": [],
+  "fail_on_buggy": 4,
+  "n_tests": 8,
+  "pass_on_reference": 7
+ }
+}

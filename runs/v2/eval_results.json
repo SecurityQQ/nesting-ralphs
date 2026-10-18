@@ -1,0 +1,90 @@
+{
+ "executor": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+ "dod_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+ "budget": 6,
+ "seeds": 8,
+ "branching_k": 2,
+ "test_tasks": [
+  "roman_to_int",
+  "version_compare",
+  "flatten",
+  "word_wrap",
+  "median",
+  "csv_line"
+ ],
+ "controllers": {
+  "ralph": {
+   "episodes": 48,
+   "verified_success_rate": 0.6666666666666666,
+   "success_ci95": [
+    0.525,
+    0.783
+   ],
+   "mean_executor_calls": 3.0416666666666665,
+   "calls_per_verified_success": 4.5625,
+   "verifier_calls": 45,
+   "false_done": 13,
+   "false_done_rate": 0.28888888888888886,
+   "loops": 84,
+   "per_task": {
+    "roman_to_int": 6,
+    "version_compare": 8,
+    "flatten": 3,
+    "word_wrap": 0,
+    "median": 8,
+    "csv_line": 7
+   }
+  },
+  "graph_rules": {
+   "episodes": 48,
+   "verified_success_rate": 0.6875,
+   "success_ci95": [
+    0.547,
+    0.801
+   ],
+   "mean_executor_calls": 3.5833333333333335,
+   "calls_per_verified_success": 5.212121212121212,
+   "verifier_calls": 44,
+   "false_done": 11,
+   "false_done_rate": 0.25,
+   "loops": 75,
+   "per_task": {
+    "roman_to_int": 7,
+    "version_compare": 8,
+    "flatten": 3,
+    "word_wrap": 0,
+    "median": 8,
+    "csv_line": 7
+   }
+  },
+  "graph_traceloss": {
+   "episodes": 48,
+   "verified_success_rate": 0.7291666666666666,
+   "success_ci95": [
+    0.59,
+    0.834
+   ],
+   "mean_executor_calls": 3.5833333333333335,
+   "calls_per_verified_success": 4.914285714285715,
+   "verifier_calls": 45,
+   "false_done": 10,
+   "false_done_rate": 0.2222222222222222,
+   "loops": 70,
+   "per_task": {
+    "roman_to_int": 8,
+    "version_compare": 8,
+    "flatten": 3,
+    "word_wrap": 0,
+    "median": 8,
+    "csv_line": 8
+   }
+  }
+ },
+ "usage": {
+  "calls": 490,
+  "prompt_tokens": 359107,
+  "completion_tokens": 951212,
+  "errors": 0
+ },
+ "seconds": 214
+}

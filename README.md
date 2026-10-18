@@ -116,6 +116,64 @@ The run made 1012 API calls; 2 replies were unparseable and counted as charged n
 - Nemotron still gets caught by hidden checks: the verify-fail rate is 9–19%, meaning visible checks passed but the full contract did not.
 - Testing the hypothesis with a real LLM needs harder tasks with free-form edits. That is the next step.
 
+## v2: prompt → Definition of Done → learned loss (real Nemotron runs)
+
+```
+one-line prompt + code ──Nemotron-3-Super──▶ DoD (pytest tests, audited)
+trace: step₁…step_t ──bge-small──▶ [z_DoD, z₁…z_t, budget] ──TraceLoss (2-layer transformer)──▶ V
+loss = 1 − V        controller picks the branch with the highest V        hidden tests verify
+```
+
+```bash
+PYTHONPATH=. uv run python scripts/pilot_v2.py          # DoD generation + pilot
+PYTHONPATH=. uv run python -m trace_critic.collect_v2   # real trajectories + rollout labels
+PYTHONPATH=. uv run python -m trace_critic.traceloss    # train + grouped CV
+PYTHONPATH=. uv run python -m trace_critic.eval_v2      # controller comparison
+```
+
+Needs `CRUSOE_INFERENCE_API_KEY` in `.env` (Crusoe Serverless Inference).
+
+- **Tasks:** 20 one-line prompts over buggy Python modules (`trace_critic/tasks_v2.py`).
+  - Each task has hidden tests that the agent and the DoD generator never see; they are the independent verifier.
+  - Each task also has a reference solution, used only to sanity-check the hidden tests and to score DoD quality.
+- **DoD from the prompt:** `nvidia/NVIDIA-Nemotron-3-Super-120B-A12B` writes the tests.
+  - 20/20 prompts produced a usable DoD.
+  - 135/141 generated tests are correct, i.e. they pass on the reference solution.
+  - In 6 tasks (parse_duration, slugify, merge_intervals, luhn, word_wrap, csv_line) at least one test is wrong. A correct solution cannot pass such a DoD, so the agent either never claims done or has to break the solution to satisfy it.
+- **Executor:** `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B` makes free-form whole-file edits, one focused change per step.
+- **Labels:** 215 trace states. Each state gets K=3 real continuations, and the label is q = the fraction verified by hidden tests. Collecting them took 1,596 Nemotron calls.
+- **TraceLoss:** a 2-layer transformer over frozen `BAAI/bge-small-en-v1.5` embeddings, trained with MSE (V − q)².
+  - The number of epochs is chosen by nested grouped CV.
+  - The model is evaluated with 5-fold CV grouped by task.
+
+**TraceLoss quality** (out-of-fold, 20 tasks):
+
+| Model | MSE ↓ | Within-task rank ↑ | AUROC ↑ |
+|---|---|---|---|
+| TraceLoss (AdamW) | 0.135 | 0.625 | 0.604 |
+| TraceLoss (Muon) | 0.116 | 0.605 | 0.608 |
+| MLP on last step only | 0.422 | 0.718 | 0.458 |
+| Constant | 0.160 | 0.000 | 0.500 |
+| DoD pass fraction | 0.498 | 0.166 | 0.202 |
+| Cosine(step, DoD), raw embedding heuristic | 0.591 | 0.372 | 0.710 |
+
+On the sealed test tasks, the final model (trained on train+valid only) scores MSE 0.088. The constant scores 0.109 and DoD pass fraction scores 0.446.
+
+**Controllers:** real Nemotron executor on the sealed test tasks (`roman_to_int, version_compare, flatten, word_wrap, median, csv_line`), budget 6 calls, 8 seeds per task.
+
+| Controller | Verified | 95% CI | Calls / success | False done |
+|---|---|---|---|---|
+| Bounded Ralph | 0.667 | [0.53, 0.78] | 4.56 | 13/45 |
+| Graph + rules (DoD pass fraction) | 0.688 | [0.55, 0.80] | 5.21 | 11/44 |
+| Graph + TraceLoss (learned) | 0.729 | [0.59, 0.83] | 4.91 | 10/45 |
+
+**Honest reading:**
+- The learned loss is ahead, but the intervals overlap heavily, so the difference is not significant at this scale.
+- The share of passing generated DoD tests is *anti-predictive* of verified success (AUROC 0.20). This is the false-done problem in numbers.
+- Raw embedding similarity to the DoD ranks well (AUROC 0.71) but is badly calibrated. The learned head is calibrated but has smaller rank gains.
+- Applied out of distribution to real Pi traces, TraceLoss collapses (V ≈ 0.04 everywhere): it does not transfer (`runs/v2/pi_curves.json`).
+- The test split was re-drawn after a 60-episode pilot so that it is not at ceiling; pilot outcomes were not used otherwise.
+
 ## Real data: HF Agent Traces and PleIAs/SYNTH
 
 Both sources are used as the spec intended: for import, auditing and verification. Neither is used as critic labels.
@@ -151,9 +209,7 @@ Rebuild data: `uv run python scripts/build_app.py`.
 
 ## Nemotron / Crusoe
 
-The provided Crusoe Cloud credentials authenticate against the Cloud API (`GET /v1alpha5/organizations/projects` → 200).
-No inference endpoint or Nemotron model ID was verified within the time box, so the reported run uses the simulated executor.
-Credentials go in `.env`, which is gitignored and never committed.
+Nemotron runs on Crusoe Serverless Inference (`https://api.inference.crusoecloud.com/v1`) through an Intelligence API key stored in `.env`, which is gitignored. The v2 numbers above all come from real Nemotron-3 calls. Raw logs are in `runs/v2/`.
 
 ## Not claimed
 
