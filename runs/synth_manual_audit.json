@@ -1,0 +1,280 @@
+{
+ "method": "30 flagged steps sampled with random.seed(2026) after final parser filters; labelled by hand by reading the source line",
+ "genuine": 27,
+ "n": 30,
+ "items": [
+  {
+   "synth_id": "synth_math_58_6743",
+   "line": 60,
+   "expr": "27 - 36.2 = 9.2",
+   "lhs": -9.2,
+   "rhs": 9.2,
+   "text": "- Month 1: 27 - 36.2 = 9.2 remaining",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_5_12578",
+   "line": 18,
+   "expr": "890000 * 890 = 790100000",
+   "lhs": 792100000.0,
+   "rhs": 790100000.0,
+   "text": "School 1 cost: 890,000 \u00d7 890 = 790,100,000\u20ac",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_35_7770",
+   "line": 65,
+   "expr": "2106 - 72330 = -51324",
+   "lhs": -70224.0,
+   "rhs": -51324.0,
+   "text": "Range length = 2106 - 72330 = -51324",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_7_9902",
+   "line": 48,
+   "expr": "884 * 0.19 = 168.00",
+   "lhs": 167.96,
+   "rhs": 168.0,
+   "text": "- 884 \u00d7 0.19 = 168.00",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_71_8291",
+   "line": 31,
+   "expr": "8650 - 6230 = 8638",
+   "lhs": 2420.0,
+   "rhs": 8638.0,
+   "text": "\u2234 P\u2080 = P\u2099 - n\u00d714 = 8650 - 445\u00d714 = 8650 - 6230 = 8638",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_73_9893",
+   "line": 11,
+   "expr": "53880 * 780 = 41822400",
+   "lhs": 42026400.0,
+   "rhs": 41822400.0,
+   "text": "Actual: 53,880 \u00d7 780 = 41,822,400",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_24_1022",
+   "line": 49,
+   "expr": "28192 = -28188",
+   "lhs": 28192.0,
+   "rhs": -28188.0,
+   "text": "This implies: 28,192 = -28,188 ?",
+   "label": "parser_false_positive",
+   "why": "rhetorical question, not a computation claim"
+  },
+  {
+   "synth_id": "synth_math_42_11419",
+   "line": 56,
+   "expr": "7940 * 299 = 2475060",
+   "lhs": 2374060.0,
+   "rhs": 2475060.0,
+   "text": "7940 \u00d7 299 = 2,475,060",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_13_6290",
+   "line": 49,
+   "expr": "8 - 6152 = -6154",
+   "lhs": -6144.0,
+   "rhs": -6154.0,
+   "text": "- 8 - 6,152 = -6,154 \u2611",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_49_12965",
+   "line": 54,
+   "expr": "940.8 / 6 / 4 = 40.8",
+   "lhs": 39.2,
+   "rhs": 40.8,
+   "text": "Monthly per squadron: 940.8 \u00f7 6 \u00f7 4 = 40.8 tons/month",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_40_2856",
+   "line": 55,
+   "expr": "111000 + 1400 + 200 = 114600",
+   "lhs": 112600.0,
+   "rhs": 114600.0,
+   "text": "- Hundreds: 111,000 + 1,400 + 200 = 114,600",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_31_13227",
+   "line": 169,
+   "expr": "441/16*7056 = 441/112896",
+   "lhs": 194481.0,
+   "rhs": 0.00390625,
+   "text": "\u2234 k = 441/112,896 = 441/16\u00d77056 = 441/112,896",
+   "label": "parser_false_positive",
+   "why": "ambiguous notation 441/16\u00d77056 meant 441/(16\u00d77056)"
+  },
+  {
+   "synth_id": "synth_math_62_5274",
+   "line": 49,
+   "expr": "420 * 1 = 140",
+   "lhs": 420.0,
+   "rhs": 140.0,
+   "text": "\u2234 Volume in 3D = 420 \u00d7 1 = 140.",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_50_5271",
+   "line": 61,
+   "expr": "1780 - 2960960 = -2782160",
+   "lhs": -2959180.0,
+   "rhs": -2782160.0,
+   "text": "- Net change: 1780 - 2,960,960 = -2,782,160 \u2713",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_19_12933",
+   "line": 84,
+   "expr": "5 - 484 + 10 = -479",
+   "lhs": -469.0,
+   "rhs": -479.0,
+   "text": "Net: 5 - 484 + 10 = -479 saplings",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_35_6878",
+   "line": 19,
+   "expr": "844 + 28 - 3 = 871",
+   "lhs": 869.0,
+   "rhs": 871.0,
+   "text": "Total = 844 + 28 - 3 = 871 plants",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_18_1944",
+   "line": 38,
+   "expr": "5*6 + 2*6 = 30",
+   "lhs": 42.0,
+   "rhs": 30.0,
+   "text": "Total units sold: 5\u00d76 + 2\u00d76 = 30 units",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_37_14452",
+   "line": 36,
+   "expr": "1 - (-89) = +89",
+   "lhs": 90.0,
+   "rhs": 89.0,
+   "text": "= 1 - (1 - 90) = 1 - (-89) = +89",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_80_1475",
+   "line": 50,
+   "expr": "2940 + 98 = 2941",
+   "lhs": 3038.0,
+   "rhs": 2941.0,
+   "text": "98 \u00d7 31 = 98 \u00d7 (30 + 1) = 98 \u00d7 30 + 98 \u00d7 1 = 2940 + 98 = 2941",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_20_12435",
+   "line": 136,
+   "expr": "325 * (200 - 6.4) = 65000 - 2070",
+   "lhs": 62920.0,
+   "rhs": 62930.0,
+   "text": "325 \u00d7 193.6 = 325 \u00d7 (200 - 6.4) = 65,000 - 2,070 = 62,930",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_32_8703",
+   "line": 28,
+   "expr": "5706/(15 * 10) = 5706/15 * 10",
+   "lhs": 38.04,
+   "rhs": 3804.0,
+   "text": "5706/150 = 5706/(15 \u00d7 10) = 5706/15 \u00d7 10 = 380.4 \u00d7 10 = 3804",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_52_6956",
+   "line": 54,
+   "expr": "177 + 56 + 20880 + 89 = 23601",
+   "lhs": 21202.0,
+   "rhs": 23601.0,
+   "text": "But this gives: 177 + 56 + 20,880 + 89 = 23,601",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_35_13686",
+   "line": 76,
+   "expr": "4740 * 122220 = 1466640",
+   "lhs": 579322800.0,
+   "rhs": 1466640.0,
+   "text": "The concise solution uses: 395 \u00d7 12 \u00d7 122,220 = 4,740 \u00d7 122,220 = 1,466,640",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_36_14330",
+   "line": 23,
+   "expr": "8/2/10/2 = 4/5",
+   "lhs": 0.2,
+   "rhs": 0.8,
+   "text": "\u2234 8/10 = 8\u00f72/10\u00f72 = 4/5",
+   "label": "parser_false_positive",
+   "why": "ambiguous notation 8\u00f72/10\u00f72"
+  },
+  {
+   "synth_id": "synth_math_82_7626",
+   "line": 39,
+   "expr": "242 * 3664212 = 886741104",
+   "lhs": 886739304.0,
+   "rhs": 886741104.0,
+   "text": "Wait, let me verify: 242 \u00d7 3,664,212 = 886,741,104",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_18_9620",
+   "line": 39,
+   "expr": "914 - 920 = 6",
+   "lhs": -6.0,
+   "rhs": 6.0,
+   "text": "The museum can form exactly 2 complete packets, with 914 - 460\u00d72 = 914 - 920 = 6 votive offerings remaining.",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_50_5271",
+   "line": 45,
+   "expr": "1780 - 2960960 = -2782160",
+   "lhs": -2959180.0,
+   "rhs": -2782160.0,
+   "text": "Net change = 1780 - 2,960,960 = -2,782,160",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_18_2366",
+   "line": 26,
+   "expr": "855/76 = (8 * 76 + 55)/76",
+   "lhs": 11.25,
+   "rhs": 8.723684210526315,
+   "text": "855/76 = (8 \u00d7 76 + 55)/76 = 8 + 55/76",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_30_3846",
+   "line": 51,
+   "expr": "6010 - 9 + 90 + 9 = 6010 + 81",
+   "lhs": 6100.0,
+   "rhs": 6091.0,
+   "text": "5250 + 760 - 9 + 90 + 9 = 6010 - 9 + 90 + 9 = 6010 + 81 = 6091",
+   "label": "genuine_arithmetic_error"
+  },
+  {
+   "synth_id": "synth_math_51_5400",
+   "line": 53,
+   "expr": "6624 + 368 = 7130",
+   "lhs": 6992.0,
+   "rhs": 7130.0,
+   "text": "Total = 48 \u00d7 $138 + 1 \u00d7 $368 = $6624 + $368 = $7130",
+   "label": "genuine_arithmetic_error"
+  }
+ ]
+}

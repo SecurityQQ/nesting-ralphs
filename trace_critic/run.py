@@ -127,11 +127,21 @@ def evaluate(executor, critics):
                         if e["decision"] == "CONTINUE":
                             loops += e["node"].artifact in seen
                             seen.add(e["node"].artifact)
-                    r = dict(success=ok, calls=calls, vcalls=vcalls, loops=loops, gaps=0,
-                             events=[dict(id=e["node"].id, parent=e["parent"].id, decision=e["decision"], score=None,
-                                          vis=sum(e["node"].observed.values()) / len(e["node"].observed),
-                                          verified=(True if e["decision"] == "VERIFIED" else False if e["decision"] == "FLAG_GAP" else None),
-                                          action=e["node"].last_action) for e in log])
+                    evs = [dict(id=root.id, parent=None, decision="ROOT", score=None, calls=0, action=None,
+                                vis=sum(root.observed.values()) / len(root.observed), verified=None,
+                                variant=root.variant)]
+                    n_calls = 0
+                    for e in log:
+                        n_calls += e["decision"] == "CONTINUE"
+                        evs.append(dict(id=e["node"].id, parent=e["parent"].id, decision=e["decision"], score=None,
+                                        calls=n_calls, variant=e["node"].variant,
+                                        vis=sum(e["node"].observed.values()) / len(e["node"].observed),
+                                        verified=(True if e["decision"] == "VERIFIED" else False if e["decision"] == "FLAG_GAP" else None),
+                                        action=e["node"].last_action))
+                    if not ok:
+                        evs.append(dict(id=None, parent=None, decision="STOP_UNRESOLVED", score=None, calls=calls,
+                                        vis=None, verified=False, action=None, variant=None))
+                    r = dict(success=ok, calls=calls, vcalls=vcalls, loops=loops, gaps=0, events=evs)
                 else:
                     r = graph_search(root, executor, EVAL_BUDGET, rng, scorer)
                 agg["episodes"] += 1
@@ -143,7 +153,7 @@ def evaluate(executor, critics):
                 agg["gaps"] += r["gaps"]
                 if r["success"]:
                     agg["calls_success"].append(r["calls"])
-                if s < 3:
+                if s < 10:
                     episodes[f"{cname}|{task}|{s}"] = dict(controller=cname, task=task, seed=s, **r)
         n = agg["episodes"]
         res[cname] = dict(

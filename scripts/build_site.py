@@ -115,6 +115,9 @@ def results_section():
         for k, label in (("adamw", "Critic, AdamW"), ("muon", "Critic, Muon+AdamW"),
                          ("ref_visible_pass_frac", "Ref: visible pass fraction"),
                          ("ref_train_mean", "Ref: constant train mean")))
+    pi = json.loads((ROOT / "runs/pi_audit.json").read_text())["summary"]
+    sy = json.loads((ROOT / "runs/synth_audit.json").read_text())["summary"]
+    au = sy["manual_precision_audit"]
     lr, la = ctrl["ralph"]["verified_success_rate"], ctrl["graph_learned_muon"]["verified_success_rate"]
     n_ep = ctrl["ralph"]["episodes"]
     return f"""
@@ -142,6 +145,29 @@ def results_section():
           <p><a class="button primary" href="{REPO}" target="_blank" rel="noopener noreferrer" style="margin-top:8px">Code + data on GitHub <span aria-hidden="true">↗</span></a></p>
         </div>
       </div>
+      <div class="results-grid" style="margin-top:26px">
+        <div class="results-card">
+          <span class="mono">REAL PI AGENT TRACES · HF AGENT-TRACES · <a href="https://huggingface.co/datasets/{pi['dataset']}" target="_blank" rel="noopener noreferrer">{pi['dataset']}</a></span>
+          <p class="verdict" style="background:#fff3bf">{pi['done_claims_without_passing_check_after_last_edit']} of {pi['sessions_ending_with_done_claim']} sessions that end with “done” show no passing test/build command after their last edit.</p>
+          <ul>
+            <li>{pi['sessions']} real sessions, {len(pi['models'])} models, {pi['tool_calls']} tool calls; tool error rate {pi['tool_error_rate']:.1%}.</li>
+            <li>{pi['check_failures']} of {pi['check_commands']} test/build commands failed; only {pi['sessions_with_any_check']} sessions ran any check.</li>
+            <li>{pi['repeat_calls_same_result']} exact repeats (same tool, args and result, no edit in between) — the loop signal TRACE drops.</li>
+            <li>No verifier outcome exists for these traces: these are heuristic signals, not success labels, and are not used to train the critic.</li>
+          </ul>
+        </div>
+        <div class="results-card">
+          <span class="mono">PLEIAS/SYNTH · MATH REASONING · INDEPENDENT ARITHMETIC VERIFIER</span>
+          <p class="verdict" style="background:#fff3bf">{sy['traces_with_any_wrong_step']} of {sy['traces_with_checkable_steps']} checkable synthetic reasoning traces contain at least one wrong arithmetic step.</p>
+          <ul>
+            <li>{sy['arithmetic_steps_checked']:,} explicit equalities re-computed exactly in Python; {sy['arithmetic_steps_wrong']} flagged ({sy['step_error_rate']:.1%}).</li>
+            <li>Manual audit of {au['n']} random flags: {au['genuine']} genuine errors (e.g. <code>5.79 × 905 = 5,240.95</code>), {au['n'] - au['genuine']} parser false positives.</li>
+            <li>Local step validity only — it does not check whether the problem was modelled correctly.</li>
+            <li>Why it matters: even curated reasoning traces need an independent check before they count as “done”.</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:22px"><a class="button primary" href="app/">Open the TRACE app <span aria-hidden="true">↗</span></a></p>
     </section>
 """
 
@@ -156,7 +182,7 @@ def main():
         ("</style>", RALPH_CSS + "</style>" + FONTS),
         ('<span class="brand-mark">△</span> TRACE<span class="brand-detail">RECURSIVE OPTIMISATION</span>',
          '<img src="logo.png" alt=""> Nesting Ralphs<span class="brand-detail">TRACE · RECURSIVE OPTIMISATION</span>'),
-        ('<a href="#method">Method</a></nav>', f'<a href="#method">Method</a><a href="#results">Results</a><a href="{REPO}" target="_blank" rel="noopener noreferrer">GitHub</a></nav>'),
+        ('<a href="#method">Method</a></nav>', f'<a href="#method">Method</a><a href="#results">Results</a><a href="app/">App</a><a href="{REPO}" target="_blank" rel="noopener noreferrer">GitHub</a></nav>'),
         ('<main id="main">', '<div class="wrap"><div class="banner"><img src="banner.jpg" alt="Nesting Ralph matryoshka dolls, each one opening into a smaller Ralph loop"></div></div>\n  <main id="main">'),
         ('<div class="hero-copy">', '<div class="hero-copy"><div class="ralph-quote">“I’m learnding!”</div>'),
         ('<p class="hero-description">', '<p class="hero-tagline">based on <b>Ralph Wiggum</b> and <b>Russian Nesting Dolls</b> principles</p>'
@@ -177,6 +203,8 @@ def main():
          f'<a href="{REPO}" target="_blank" rel="noopener noreferrer">Nesting Ralphs <span>Code &amp; data ↗</span></a>'),
         ('<footer class="footer wrap"><a class="brand" href="#"><span class="brand-mark">△</span> TRACE</a>',
          '<footer class="footer wrap"><a class="brand" href="#"><img src="logo.png" alt=""> Nesting Ralphs</a>'),
+        ('<a class="header-cta" href="#playground">Explore the loop <span aria-hidden="true">↗</span></a>',
+         '<a class="header-cta" href="app/">Open the app <span aria-hidden="true">↗</span></a>'),
         ("Recursive Agents Hackathon · Research concept · 2026", "Recursive Agents Hackathon · Research prototype · 2026 · MIT"),
     ]
     for a, b in rep:

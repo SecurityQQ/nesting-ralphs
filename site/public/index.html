@@ -100,8 +100,8 @@ h2{letter-spacing:.5px!important;color:#1b1b1b}
   <a class="skip" href="#main">Skip to content</a>
   <header class="header wrap">
     <a class="brand" href="#" aria-label="TRACE home"><img src="logo.png" alt=""> Nesting Ralphs<span class="brand-detail">TRACE · RECURSIVE OPTIMISATION</span></a>
-    <nav aria-label="Main navigation"><a href="#idea">The idea</a><a href="#playground">Playground</a><a href="#method">Method</a><a href="#results">Results</a><a href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
-    <a class="header-cta" href="#playground">Explore the loop <span aria-hidden="true">↗</span></a>
+    <nav aria-label="Main navigation"><a href="#idea">The idea</a><a href="#playground">Playground</a><a href="#method">Method</a><a href="#results">Results</a><a href="app/">App</a><a href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+    <a class="header-cta" href="app/">Open the app <span aria-hidden="true">↗</span></a>
   </header>
   <div class="wrap"><div class="banner"><img src="banner.jpg" alt="Nesting Ralph matryoshka dolls, each one opening into a smaller Ralph loop"></div></div>
   <main id="main">
@@ -183,6 +183,29 @@ h2{letter-spacing:.5px!important;color:#1b1b1b}
           <p><a class="button primary" href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer" style="margin-top:8px">Code + data on GitHub <span aria-hidden="true">↗</span></a></p>
         </div>
       </div>
+      <div class="results-grid" style="margin-top:26px">
+        <div class="results-card">
+          <span class="mono">REAL PI AGENT TRACES · HF AGENT-TRACES · <a href="https://huggingface.co/datasets/championswimmer/pi-coding-sessions" target="_blank" rel="noopener noreferrer">championswimmer/pi-coding-sessions</a></span>
+          <p class="verdict" style="background:#fff3bf">9 of 15 sessions that end with “done” show no passing test/build command after their last edit.</p>
+          <ul>
+            <li>26 real sessions, 5 models, 1695 tool calls; tool error rate 8.0%.</li>
+            <li>35 of 104 test/build commands failed; only 13 sessions ran any check.</li>
+            <li>19 exact repeats (same tool, args and result, no edit in between) — the loop signal TRACE drops.</li>
+            <li>No verifier outcome exists for these traces: these are heuristic signals, not success labels, and are not used to train the critic.</li>
+          </ul>
+        </div>
+        <div class="results-card">
+          <span class="mono">PLEIAS/SYNTH · MATH REASONING · INDEPENDENT ARITHMETIC VERIFIER</span>
+          <p class="verdict" style="background:#fff3bf">170 of 2099 checkable synthetic reasoning traces contain at least one wrong arithmetic step.</p>
+          <ul>
+            <li>12,385 explicit equalities re-computed exactly in Python; 285 flagged (2.3%).</li>
+            <li>Manual audit of 30 random flags: 27 genuine errors (e.g. <code>5.79 × 905 = 5,240.95</code>), 3 parser false positives.</li>
+            <li>Local step validity only — it does not check whether the problem was modelled correctly.</li>
+            <li>Why it matters: even curated reasoning traces need an independent check before they count as “done”.</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:22px"><a class="button primary" href="app/">Open the TRACE app <span aria-hidden="true">↗</span></a></p>
     </section>
 
     <section class="reading wrap"><span class="mono">BUILT ON IDEAS FROM</span><div><a href="https://ghuntley.com/ralph/" target="_blank" rel="noopener noreferrer">Ralph <span>Persistent execution ↗</span></a><a href="https://github.com/zou-group/textgrad" target="_blank" rel="noopener noreferrer">TextGrad <span>Textual feedback ↗</span></a><a href="https://arxiv.org/abs/2502.10325" target="_blank" rel="noopener noreferrer">AgentPRM <span>Learning from rollouts ↗</span></a><a href="https://kellerjordan.github.io/posts/muon/" target="_blank" rel="noopener noreferrer">Muon <span>Optimiser inspiration ↗</span></a><a href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer">Nesting Ralphs <span>Code &amp; data ↗</span></a></div></section>

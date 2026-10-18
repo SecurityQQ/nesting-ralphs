@@ -49,7 +49,8 @@ uv run python -m trace_critic.run --executor nemotron
 | Critic | `critic.py` | MLP, `L = mean (V − q)²`; ablation **AdamW** vs **Muon (Newton–Schulz, hidden 2-D matrix) + AdamW** |
 | Controllers | `search.py` | bounded Ralph · graph best-first with fixed rules · same graph search with learned critic; `K=2`, shared budget ledger, every executed branch charged |
 | Decisions | `search.py` | `CONTINUE`, `BACKTRACK`, `REPLAN(loop)`, `FLAG_GAP` (verifier failed on a visibly-passing state), `VERIFIED`, `STOP_UNRESOLVED` |
-| TRACE | `report.py`, `runs/traces/*.jsonl` | static HTML replay + export to HF Session Trace Simple Format |
+| TRACE | `report.py`, `runs/traces/*.jsonl`, `site/public/app/` | HTML report, PWA replay app, export to HF Session Trace Simple Format |
+| Real traces | `pi_traces.py`, `synth_check.py` | HF Agent Traces (Pi) import + audit; SYNTH arithmetic verifier |
 
 Features are environment-only: visible-check status, deltas, repeats, budget, edit stats.
 They exclude the task id, the narration, hidden checks and the outcome.
@@ -87,6 +88,39 @@ Critic quality on 563 held-out test states:
      (full vs structural) is now chosen on the **valid** family only (`feature_selection_valid_mse` in results).
 - Likely next steps: a pairwise/ranking loss between sibling branches, labels from the *same* controller that
   consumes them (labels here come from Ralph continuations, i.e. a different policy), and a real LLM executor.
+
+## Real data: HF Agent Traces and PleIAs/SYNTH
+
+Both sources are used as the spec intended: for import, auditing and verification. Neither is used as critic labels.
+
+```bash
+uv run python scripts/fetch_data.py        # downloads into data/ (gitignored)
+uv run python -m trace_critic.pi_traces    # -> runs/pi_audit.json
+uv run python -m trace_critic.synth_check  # -> runs/synth_audit.json
+```
+
+**Real Pi Agent sessions** ([championswimmer/pi-coding-sessions](https://huggingface.co/datasets/championswimmer/pi-coding-sessions), MIT, HF `format:agent-traces`).
+These are imported with the controller's environment-only signals: exact repeats, tool errors, test/build commands,
+and "done" claims with no passing check after the last edit.
+26 sessions from 5 models, 1,695 tool calls, tool error rate 8.0%. 35 of 104 test/build commands failed, and only 13 sessions ran any check.
+**9 of 15 sessions that end with "done" show no passing test/build command after their last edit.**
+These traces have no verifier outcome, so these are heuristic signals, not success labels.
+
+**PleIAs/SYNTH** (shard 1, `exercise == "math exercise"`, 2,443 traces). Every explicit equality in `synthetic_reasoning`
+is recomputed exactly with `fractions.Fraction`. 12,385 equalities were checked and 285 flagged (2.3%).
+**170 of 2,099 checkable traces contain at least one wrong arithmetic step.**
+A manual audit of 30 random flags (`runs/synth_manual_audit.json`) found 27 genuine errors, e.g. `5.79 × 905 = 5,240.95`,
+and 3 parser false positives. This checks local step validity only, not whether the problem was modelled correctly.
+A final-answer consistency check was tried and dropped: its extraction proved unreliable.
+
+## App
+
+https://nesting-ralphs.vercel.app/app/ is an installable PWA with three tabs:
+1. Step-by-step replay of logged controller episodes, with the search tree, critic V, code diff and visible vs hidden checks.
+2. Real Pi Agent traces with detector signals.
+3. SYNTH reasoning with verified and flagged arithmetic steps highlighted.
+
+Rebuild data: `uv run python scripts/build_app.py`.
 
 ## Nemotron / Crusoe
 

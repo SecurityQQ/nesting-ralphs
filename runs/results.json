@@ -43,7 +43,7 @@
   "feature_set": "struct",
   "critic": {
     "adamw": {
-      "train_seconds": 0.55,
+      "train_seconds": 0.54,
       "best_valid_mse": 0.044782888144254684,
       "test": {
         "n_states": 563,
@@ -81,7 +81,7 @@
       }
     },
     "muon": {
-      "train_seconds": 0.62,
+      "train_seconds": 0.64,
       "best_valid_mse": 0.044423263520002365,
       "test": {
         "n_states": 563,
@@ -251,5 +251,5 @@
       "human_queries": 0
     }
   },
-  "wall_seconds": 5.7
+  "wall_seconds": 5.8
 }

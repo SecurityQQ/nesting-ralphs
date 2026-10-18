@@ -135,7 +135,8 @@ def graph_search(root, executor, budget, rng, scorer, k=2, frontier_cap=8, gap_v
     frontier = [root]
     root.score = scorer(root, budget)
     events.append(dict(id=root.id, parent=None, decision="ROOT", score=root.score, calls=0,
-                       vis=sum(root.observed.values()) / len(root.observed), verified=None, action=None))
+                       vis=sum(root.observed.values()) / len(root.observed), verified=None, action=None,
+                       variant=root.variant))
     current = root
     while calls + k <= budget and frontier:
         best = max(frontier, key=lambda n: (n.score, n.id))
@@ -152,7 +153,7 @@ def graph_search(root, executor, budget, rng, scorer, k=2, frontier_cap=8, gap_v
             if child.artifact in seen:  # exact repeat, deterministic checks => no new observation
                 loops += 1
                 events.append(dict(id=child.id, parent=best.id, decision="REPLAN(loop)", score=None,
-                                   calls=calls, vis=None, verified=None, action=a))
+                                   calls=calls, vis=None, verified=None, action=a, variant=child.variant))
                 continue
             seen.add(child.artifact)
             children.append(child)
@@ -164,7 +165,8 @@ def graph_search(root, executor, budget, rng, scorer, k=2, frontier_cap=8, gap_v
                 ver = verified(child)
                 if ver:
                     events.append(dict(id=child.id, parent=best.id, decision="VERIFIED", score=child.score,
-                                       calls=calls, vis=1.0, verified=True, action=child.last_action, via=decision))
+                                       calls=calls, vis=1.0, verified=True, action=child.last_action, via=decision,
+                                       variant=child.variant))
                     return dict(success=True, calls=calls, vcalls=vcalls, loops=loops, gaps=gaps, events=events)
                 child.verify_fails += 1
                 child.score = scorer(child, budget - calls)
@@ -172,12 +174,12 @@ def graph_search(root, executor, budget, rng, scorer, k=2, frontier_cap=8, gap_v
                     gaps += 1
             events.append(dict(id=child.id, parent=best.id, decision=("FLAG_GAP" if ver is False else decision),
                                score=child.score, calls=calls, vis=sum(child.observed.values()) / len(child.observed),
-                               verified=ver, action=child.last_action))
+                               verified=ver, action=child.last_action, variant=child.variant))
             frontier.append(child)
         frontier.sort(key=lambda n: (n.score, n.id), reverse=True)
         del frontier[frontier_cap:]
     events.append(dict(id=None, parent=None, decision="STOP_UNRESOLVED", score=None, calls=calls,
-                       vis=None, verified=False, action=None))
+                       vis=None, verified=False, action=None, variant=None))
     return dict(success=False, calls=calls, vcalls=vcalls, loops=loops, gaps=gaps, events=events)
 
 

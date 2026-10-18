@@ -1,0 +1,14 @@
+{
+  "name": "Nesting Ralphs · TRACE",
+  "short_name": "TRACE",
+  "description": "Replay agent search episodes, real Pi Agent traces and SYNTH reasoning checks. The critic steers; the verifier certifies.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#8fd3ff",
+  "theme_color": "#ffd90f",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+  ]
+}

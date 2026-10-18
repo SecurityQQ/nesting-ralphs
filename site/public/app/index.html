@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffd90f">
+<meta name="description" content="Replay real logged agent search episodes: critic values, branches, backtracks, hidden checks and the independent verifier.">
+<title>Nesting Ralphs · TRACE app</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="../favicon.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{--ink:#1b1b1b;--sky:#8fd3ff;--yellow:#ffd90f;--red:#e8352b;--paper:#fffdf2;--muted:#3d4f63;
+--CONTINUE:#3b82f6;--BACKTRACK:#f59e0b;--REPLAN:#a855f7;--FLAG_GAP:#dc2626;--VERIFIED:#16a34a;--STOP:#111827;--ROOT:#6b7280;
+--pop:4px 4px 0 #1b1b1b;--pop-sm:3px 3px 0 #1b1b1b;--mono:'Space Mono',monospace;--comic:'Luckiest Guy',sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font:600 14px/1.45 Nunito,system-ui,sans-serif;color:var(--ink);background:var(--sky) radial-gradient(#ffffff55 1.4px,transparent 1.5px) 0 0/22px 22px;min-height:100vh;padding:14px 14px 30px}
+button,select{font:inherit;color:inherit}
+.card{background:var(--paper);border:3px solid var(--ink);border-radius:16px;box-shadow:var(--pop)}
+header{display:flex;align-items:center;gap:14px;background:var(--yellow);padding:10px 16px;flex-wrap:wrap}
+header img{width:48px;height:48px;border-radius:50%;border:3px solid var(--ink);background:#fff}
+header h1{font:400 26px/1 var(--comic);margin:0;color:var(--red);-webkit-text-stroke:1px var(--ink);paint-order:stroke fill;letter-spacing:.5px}
+header .sub{font:700 10px var(--mono);letter-spacing:.05em}
+header .spacer{flex:1}
+.pill{display:inline-block;border:2px solid var(--ink);border-radius:999px;padding:3px 10px;font:700 10px var(--mono);background:#fff}
+.pill.warn{background:#fff}
+a.pill{color:inherit;text-decoration:none}
+.btn{border:3px solid var(--ink);border-radius:999px;background:#fff;padding:7px 14px;font-weight:800;cursor:pointer;box-shadow:var(--pop-sm);transition:transform .1s,box-shadow .1s}
+.btn:hover:not(:disabled){transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.btn:active:not(:disabled){transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.primary{background:var(--red);color:#fff}
+#install{display:none}
+.controls{margin-top:14px;padding:12px 14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.controls label{font:700 10px var(--mono);display:flex;flex-direction:column;gap:3px}
+select{border:3px solid var(--ink);border-radius:12px;padding:6px 10px;background:#fff;font-weight:800;cursor:pointer}
+.controls .grow{flex:1}
+.stepper{display:flex;gap:6px;align-items:center}
+#scrub{width:220px;accent-color:var(--red)}
+.goal{margin-top:14px;padding:12px 16px;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.goal .mono{font:700 10px var(--mono);color:var(--muted)}
+.goal p{margin:0;font-weight:800}
+.outcome{margin-left:auto}
+.outcome.ok{background:#b2f2bb}.outcome.bad{background:#ffc9c9}
+main{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:14px;margin-top:14px}
+.panel{padding:14px 16px}
+.label{font:700 10px var(--mono);letter-spacing:.05em;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+#tree{width:100%;height:auto;display:block;margin-top:8px;background:#f4f9ff;border:2px solid var(--ink);border-radius:12px}
+#tree .node{cursor:pointer}
+#tree .node:hover circle.body{stroke:var(--ink);stroke-width:3}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font:700 10px var(--mono)}
+.legend i{display:inline-block;width:16px;height:0;border-top:3px solid;vertical-align:middle;margin-right:4px}
+.legend .vbar{display:inline-flex;gap:2px;vertical-align:middle;margin:0 4px}
+.legend .vbar b{width:10px;height:10px;border-radius:50%;display:inline-block}
+.chart{margin-top:12px}
+#vchart{width:100%;height:90px;display:block;background:#f4f9ff;border:2px solid var(--ink);border-radius:12px}
+.decision{display:inline-block;border:3px solid var(--ink);border-radius:12px;padding:4px 12px;font:400 22px/1.1 var(--comic);letter-spacing:.5px;color:#fff;margin-top:8px;box-shadow:var(--pop-sm)}
+.explain{margin:10px 0 0;font-weight:700}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin-top:12px;font-size:13px}
+.facts dt{font:700 10px var(--mono);color:var(--muted);padding-top:3px}
+.facts dd{margin:0;font-weight:800}
+.budget{height:14px;border:2px solid var(--ink);border-radius:999px;background:#e5e7eb;overflow:hidden;margin-top:4px}
+.budget b{display:block;height:100%;background:var(--CONTINUE);transition:width .25s}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.check{border:2px solid var(--ink);border-radius:10px;padding:5px 8px;font-size:12px;display:flex;justify-content:space-between;gap:6px;align-items:center}
+.check.pass{background:#d3f9d8}.check.fail{background:#ffe3e3}
+.check.hidden{border-style:dashed}
+.check small{font:700 9px var(--mono);color:var(--muted)}
+pre{margin:8px 0 0;background:#1b1b1b;color:#e9ecef;border-radius:12px;border:3px solid var(--ink);padding:10px 0;font:12px/1.55 var(--mono);overflow:auto;max-height:340px}
+pre .ln{display:block;padding:0 12px;white-space:pre}
+pre .chg{background:#5c4813;box-shadow:inset 4px 0 0 var(--yellow)}
+.hint{font-size:12px;color:var(--muted);margin:8px 0 0}
+.scores{margin-top:14px;padding:12px 16px}
+.scores table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+.scores td,.scores th{padding:6px 8px;border-bottom:2px dashed #1b1b1b33;text-align:left}
+.scores th{font:700 10px var(--mono);color:var(--muted)}
+.scores td.n{font-family:var(--mono);font-weight:700;white-space:nowrap}
+.scores tr.cur td{background:#fff3bf}
+.tabs{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.tab{border:3px solid var(--ink);border-radius:14px;background:#fff;padding:8px 14px;font-weight:800;cursor:pointer;box-shadow:var(--pop-sm);text-align:left}
+.tab small{display:block;font:700 9px var(--mono);color:var(--muted)}
+.tab.active{background:var(--red);color:#fff}.tab.active small{color:#ffe3e3}
+.intro{margin-top:14px;padding:12px 16px;line-height:1.6}.intro .pill{margin-top:6px}
+.intro a{color:var(--ink)}
+.stats{margin-top:14px;padding:12px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{border:2px solid var(--ink);border-radius:12px;padding:8px 10px;background:#fff}
+.stat b{display:block;font:400 26px/1.1 var(--comic)}.stat span{font:700 10px var(--mono);color:var(--muted)}
+.strip{display:flex;flex-wrap:wrap;gap:2px;margin-top:10px}
+.strip i{width:11px;height:22px;border-radius:3px;border:1px solid #1b1b1b55;cursor:pointer}
+.evlist{margin-top:12px;max-height:520px;overflow:auto;border:2px solid var(--ink);border-radius:12px;background:#fff}
+.ev{display:grid;grid-template-columns:44px 120px 1fr;gap:8px;padding:6px 10px;border-bottom:1px dashed #1b1b1b33;font-size:12px}
+.ev code{font:11px var(--mono);word-break:break-all}
+.ev .chip{font:700 9px var(--mono);border:2px solid var(--ink);border-radius:999px;padding:1px 6px;color:#fff;text-align:center;align-self:start}
+.ev.hl{background:#fff3bf}
+pre.wrap .ln{white-space:pre-wrap}
+pre .ok{background:#1f4d2b}pre .bad{background:#6b1d1d;box-shadow:inset 4px 0 0 #ff6b6b}
+pre .tag{font-size:10px;color:#ffd90f;margin-left:8px}
+footer{margin-top:14px;font:700 10px var(--mono);text-align:center}
+footer a{color:inherit}
+.kbd{font:700 10px var(--mono);border:2px solid var(--ink);border-radius:6px;padding:0 5px;background:#fff}
+@media(max-width:900px){main{grid-template-columns:1fr}#scrub{width:140px}.checks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="card">
+  <img src="icon-192.png" alt="">
+  <div><h1>Nesting Ralphs · TRACE</h1><div class="sub">REPLAY REAL LOGGED SEARCH EPISODES</div></div>
+  <span class="spacer"></span>
+  <span class="pill warn" id="simflag">SIMULATED EXECUTOR · NOT AN LLM</span>
+  <button class="btn" id="install">Install app</button>
+  <a class="pill" href="../">About</a>
+  <a class="pill" href="https://github.com/SecurityQQ/nesting-ralphs" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-view="fixture" role="tab">① Controller replays <small>our fixtures · verifier</small></button>
+  <button class="tab" data-view="pi" role="tab">② Real Pi Agent traces <small>HF agent-traces</small></button>
+  <button class="tab" data-view="synth" role="tab">③ SYNTH verifier <small>PleIAs/SYNTH math</small></button>
+</nav>
+<div id="view-fixture" class="view">
+<section class="card controls" aria-label="Episode controls">
+  <label>CONTROLLER<select id="ctrl"></select></label>
+  <label>SEALED TEST TASK<select id="task"></select></label>
+  <label>SEED<select id="seed"></select></label>
+  <span class="grow"></span>
+  <div class="stepper">
+    <button class="btn" id="first" title="First step (Home)">⏮</button>
+    <button class="btn" id="prev" title="Previous step (←)">←</button>
+    <button class="btn primary" id="play" title="Play / pause (space)">▶ Play</button>
+    <button class="btn" id="next" title="Next step (→)">→</button>
+    <input type="range" id="scrub" min="0" value="0" aria-label="Step">
+    <span class="pill" id="stepno">1/1</span>
+  </div>
+</section>
+
+<section class="card goal"><span class="mono">GOAL</span><p id="goal"></p><span class="pill outcome" id="outcome"></span></section>
+
+<main>
+  <section class="card panel">
+    <div class="label"><span>SEARCH TREE · click a node to inspect it</span><span id="treemeta"></span></div>
+    <svg id="tree" viewBox="0 0 640 380" role="img" aria-label="Search tree"></svg>
+    <div class="legend" id="legend"></div>
+    <div class="chart"><div class="label"><span>SCORE OF EACH NEW STATE · critic V (or rule score)</span><span>visible checks ▫</span></div>
+      <svg id="vchart" viewBox="0 0 640 90" preserveAspectRatio="none"></svg></div>
+  </section>
+
+  <section class="card panel" aria-live="polite">
+    <div class="label"><span id="evlabel">STEP</span><span id="nodeid"></span></div>
+    <span class="decision" id="decision">ROOT</span>
+    <p class="explain" id="explain"></p>
+    <dl class="facts">
+      <dt>ACTION</dt><dd id="action">—</dd>
+      <dt>SCORE</dt><dd id="score">—</dd>
+      <dt>BUDGET</dt><dd><span id="budgettxt"></span><div class="budget"><b id="budgetbar"></b></div></dd>
+    </dl>
+    <div class="label" style="margin-top:14px"><span>CONTRACT CHECKS (pytest)</span><span>solid = visible to executor · dashed = hidden</span></div>
+    <div class="checks" id="checks"></div>
+    <p class="hint" id="checkhint"></p>
+    <div class="label" style="margin-top:14px"><span>ARTIFACT · solution.py</span><span id="hash"></span></div>
+    <pre id="src"></pre>
+  </section>
+</main>
+
+<section class="card scores">
+  <div class="label"><span>HOW THE CONTROLLERS DID ON ALL SEALED TEST EPISODES</span><span>same budget · same executor</span></div>
+  <table id="scores"></table>
+  <p class="hint">Shown episodes are the first 10 seeds per task, replayed exactly from <code>runs/episodes.json</code>. The critic steers; only the independent pytest verifier sets VERIFIED. Keys: <span class="kbd">←</span> <span class="kbd">→</span> <span class="kbd">space</span> <span class="kbd">Home</span></p>
+</section>
+</div>
+
+<div id="view-pi" class="view" hidden>
+  <section class="card intro"><b>Real Pi Agent sessions</b> from <a href="https://huggingface.co/datasets/championswimmer/pi-coding-sessions" target="_blank" rel="noopener noreferrer">championswimmer/pi-coding-sessions</a> (MIT), imported with the same environment-only signals the TRACE controller uses: exact repeats (same tool + args + same result, no edit in between), tool errors, test/build commands, and “done” claims with no passing check after the last edit.
+  <span class="pill" style="background:#ffe3e3">No verifier outcome exists for these traces: signals are heuristics, never training labels.</span></section>
+  <section class="card stats" id="pistats"></section>
+  <section class="card controls"><label>SESSION<select id="pisess"></select></label><span class="grow"></span><span class="pill" id="pimeta"></span></section>
+  <section class="card panel"><div class="label"><span>TIMELINE · one block per tool call / claim</span><span id="picount"></span></div>
+    <div class="strip" id="pistrip"></div><div class="legend" id="pilegend"></div>
+    <div id="pievents" class="evlist"></div></section>
+</div>
+
+<div id="view-synth" class="view" hidden>
+  <section class="card intro"><b>Independent verifier on synthetic reasoning.</b> <a href="https://huggingface.co/datasets/PleIAs/SYNTH" target="_blank" rel="noopener noreferrer">PleIAs/SYNTH</a> shard 1, <code>exercise = "math exercise"</code>. Every explicit equality like <code>178 × 90 = 16020</code> is recomputed with exact rational arithmetic in Python. This checks <i>local step validity</i>, not whether the problem was modelled right.
+  <span class="pill" id="synaudit"></span></section>
+  <section class="card stats" id="synstats"></section>
+  <section class="card controls"><label>SHOW<select id="synfilter"><option value="bad">traces with a flagged step</option><option value="clean">traces with no flagged step</option></select></label>
+    <label>TRACE<select id="synsel"></select></label><span class="grow"></span><span class="pill" id="synmeta"></span></section>
+  <section class="card panel"><div class="label"><span>QUERY</span></div><p id="synq" style="font-weight:800;margin:6px 0 12px"></p>
+    <div class="label"><span>SYNTHETIC REASONING · green = checked & correct · red = checked & wrong</span></div><pre id="synr" class="wrap"></pre></section>
+</div>
+
+<footer>A loss function for agent traces based on Ralph Wiggum and Russian Nesting Dolls principles · MIT · <a href="https://github.com/SecurityQQ/nesting-ralphs">source</a></footer>
+
+<script>
+const NAMES = {ralph:'Bounded Ralph', graph_rules:'Graph + rules', graph_learned_adamw:'Graph + critic (AdamW)', graph_learned_muon:'Graph + critic (Muon)'};
+const COL = {ROOT:'#6b7280',CONTINUE:'#3b82f6',BACKTRACK:'#f59e0b','REPLAN(loop)':'#a855f7',FLAG_GAP:'#dc2626',VERIFIED:'#16a34a',STOP_UNRESOLVED:'#111827'};
+const EXPLAIN = {
+  ROOT:'Start from the buggy checkpoint. The executor only sees the visible checks.',
+  CONTINUE:{ralph:'Ralph keeps going in the same loop: propose an edit, apply it, look at the visible checks.', graph:'Expand the most promising checkpoint: execute K=2 candidate edits in isolated branches and score the resulting states.'},
+  BACKTRACK:'The best-scoring state is an older checkpoint, not the current one: restore it and branch from there.',
+  'REPLAN(loop)':'Exact repeat of an artifact already seen: no new evidence, so the branch is dropped. Its call is still charged.',
+  FLAG_GAP:'All visible checks pass, but the independent verifier runs the hidden checks too and says NO. Never stop on the score alone.',
+  VERIFIED:'The independent pytest verifier ran every contract check on this exact artifact: all pass. Done means done.',
+  STOP_UNRESOLVED:'Executor budget exhausted without a verified artifact. Honest failure.'
+};
+const $ = id => document.getElementById(id);
+let D, ep, step = 0, timer = null, layout = null, selected = null;
+
+function vColor(v){v=Math.max(0,Math.min(1,v));const a=v<.5?[220,38,38]:[245,158,11],b=v<.5?[245,158,11]:[22,163,74],t=v<.5?v*2:(v-.5)*2;return `rgb(${a.map((x,i)=>Math.round(x+(b[i]-x)*t)).join(',')})`}
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const art = (task, variant) => variant ? D.artifacts[task + '|' + variant.join(',')] : null;
+
+function computeLayout(events){
+  const depth = {}, order = {}, per = {}, firstIdx = {};
+  events.forEach((e,i) => {
+    if (e.id == null || e.id in depth) return;
+    depth[e.id] = e.parent == null ? 0 : (depth[e.parent] ?? 0) + 1;
+    firstIdx[e.id] = i;
+  });
+  Object.keys(depth).sort((a,b)=>firstIdx[a]-firstIdx[b]).forEach(id => {const d=depth[id]; order[id]=per[d]||0; per[d]=(per[d]||0)+1;});
+  const md = Math.max(1, ...Object.values(depth)), pos = {};
+  for (const id in depth){
+    const d = depth[id], n = per[d];
+    pos[id] = [34 + d/md*(640-68), 20 + (order[id]+.5)/n*(380-40)];
+  }
+  return {pos, firstIdx};
+}
+
+function loadEpisode(){
+  const key = `${$('ctrl').value}|${$('task').value}|${$('seed').value}`;
+  ep = D.episodes[key];
+  layout = computeLayout(ep.events);
+  step = 0; selected = null; stop();
+  $('scrub').max = ep.events.length - 1;
+  $('goal').textContent = D.tasks[ep.task].goal;
+  $('outcome').textContent = ep.success ? `VERIFIED in ${ep.calls} calls` : `UNRESOLVED · ${ep.calls}/${D.budget} calls`;
+  $('outcome').className = 'pill outcome ' + (ep.success ? 'ok' : 'bad');
+  history.replaceState(null, '', `?ep=${encodeURIComponent(key)}`);
+  renderScores(); render();
+}
+
+function nodeEvent(id, upto){ // latest event about node id up to step
+  let found = null;
+  ep.events.forEach((e,i) => { if (i <= upto && e.id === id) found = e; });
+  return found;
+}
+
+function renderTree(){
+  const shown = ep.events.slice(0, step+1), cur = ep.events[step], {pos} = layout;
+  let s = '';
+  const drawn = new Set();
+  shown.forEach(e => {
+    if (e.id == null || e.parent == null || drawn.has('e'+e.id)) return;
+    drawn.add('e'+e.id);
+    const [x1,y1] = pos[e.parent], [x2,y2] = pos[e.id];
+    const first = ep.events.find(f => f.id === e.id);
+    const dash = first.decision === 'REPLAN(loop)' ? ' stroke-dasharray="4 4"' : '';
+    s += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${COL[first.decision]||'#999'}" stroke-width="${e===cur?4:2.5}"${dash}/>`;
+  });
+  const ids = [...new Set(shown.filter(e=>e.id!=null).map(e=>e.id))];
+  ids.forEach(id => {
+    const e = nodeEvent(id, step), first = ep.events.find(f=>f.id===id), [x,y] = pos[id];
+    if (first.decision === 'REPLAN(loop)'){
+      s += `<g class="node" data-id="${id}"><circle cx="${x}" cy="${y}" r="10" fill="transparent"/><path d="M${x-6} ${y-6}L${x+6} ${y+6}M${x+6} ${y-6}L${x-6} ${y+6}" stroke="${COL['REPLAN(loop)']}" stroke-width="3.5" stroke-linecap="round"/></g>`;
+      return;
+    }
+    const fill = typeof e.score === 'number' ? vColor(e.score) : (e.vis != null ? vColor(e.vis) : '#ccc');
+    let rings = '';
+    if (e.decision === 'FLAG_GAP') rings += `<circle cx="${x}" cy="${y}" r="17" fill="none" stroke="${COL.FLAG_GAP}" stroke-width="3.5"/>`;
+    if (e.decision === 'VERIFIED') rings += `<circle cx="${x}" cy="${y}" r="19" fill="none" stroke="${COL.VERIFIED}" stroke-width="4.5"/>`;
+    const isCur = cur.id === id, isSel = selected === id;
+    if (isCur) rings += `<circle cx="${x}" cy="${y}" r="24" fill="none" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="3 3"/>`;
+    if (isSel && !isCur) rings += `<circle cx="${x}" cy="${y}" r="24" fill="none" stroke="#e8352b" stroke-width="2"/>`;
+    s += `<g class="node" data-id="${id}">${rings}<circle class="body" cx="${x}" cy="${y}" r="12" fill="${fill}" stroke="#fff" stroke-width="2.5"><title>node ${id} · ${e.decision}${typeof e.score==='number'?' · V='+e.score.toFixed(2):''}</title></circle></g>`;
+  });
+  if (cur.decision === 'STOP_UNRESOLVED') s += `<text x="320" y="370" text-anchor="middle" font-family="Luckiest Guy" font-size="22" fill="#111827">BUDGET EXHAUSTED</text>`;
+  $('tree').innerHTML = s;
+  $('treemeta').textContent = `${ids.length} states · ${shown.filter(e=>e.decision==='REPLAN(loop)').length} loops dropped`;
+}
+
+function renderChart(){
+  const pts = ep.events.map((e,i)=>({i, v: typeof e.score==='number' ? e.score : null, vis: e.vis, d: e.decision}));
+  const n = Math.max(1, pts.length-1), X = i => 12 + i/n*616, Y = v => 80 - v*70;
+  let s = `<line x1="0" x2="640" y1="${Y(.5)}" y2="${Y(.5)}" stroke="#c9d6e3" stroke-dasharray="4 4"/>`;
+  const line = pts.filter(p=>p.v!=null && p.i<=step).map(p=>`${X(p.i)},${Y(p.v)}`).join(' ');
+  if (line) s += `<polyline points="${line}" fill="none" stroke="#9aa5b1" stroke-width="1.5"/>`;
+  pts.forEach(p => {
+    if (p.i > step) return;
+    if (p.vis != null) s += `<rect x="${X(p.i)-3}" y="${Y(p.vis)-3}" width="6" height="6" fill="none" stroke="#1b1b1b" stroke-width="1"/>`;
+    if (p.v != null) s += `<circle cx="${X(p.i)}" cy="${Y(p.v)}" r="${p.i===step?5:3.5}" fill="${COL[p.d]||'#666'}"/>`;
+  });
+  s += `<line x1="${X(step)}" x2="${X(step)}" y1="0" y2="90" stroke="#e8352b" stroke-width="1.5" opacity=".5"/>`;
+  $('vchart').innerHTML = s;
+}
+
+function renderDetail(){
+  const cur = ep.events[step];
+  const inspect = selected != null ? nodeEvent(selected, step) || cur : cur;
+  const isCtrlGraph = ep.controller !== 'ralph';
+  $('evlabel').textContent = selected != null && selected !== cur.id ? `INSPECTING NODE ${selected} (step ${step+1} is ${cur.decision})` : `STEP ${step+1} OF ${ep.events.length}`;
+  $('nodeid').textContent = inspect.id != null ? `node #${inspect.id}` : '';
+  $('decision').textContent = inspect.decision;
+  $('decision').style.background = COL[inspect.decision] || '#666';
+  const ex = EXPLAIN[inspect.decision];
+  $('explain').textContent = typeof ex === 'object' ? ex[isCtrlGraph ? 'graph' : 'ralph'] : (ex || '');
+  $('action').textContent = inspect.action ? `set edit-site ${inspect.action[0]} → option ${inspect.action[1]}` : '—';
+  $('score').textContent = typeof inspect.score === 'number'
+    ? `${ep.controller.startsWith('graph_learned') ? 'critic V ≈ P(verified success)' : 'rule score'} = ${inspect.score.toFixed(2)}`
+    : (isCtrlGraph ? '—' : 'Ralph uses no score');
+  const used = Math.max(0, ...ep.events.slice(0, step+1).map(e => e.calls || 0));
+  $('budgettxt').textContent = `${used}/${D.budget} executor calls (every executed branch is charged)`;
+  $('budgetbar').style.width = `${100*used/D.budget}%`;
+  const variant = inspect.variant || [...ep.events.slice(0, step+1)].reverse().find(e=>e.variant)?.variant;
+  const a = art(ep.task, variant);
+  const verifierRan = inspect.verified != null && inspect.decision !== 'STOP_UNRESOLVED';
+  $('checks').innerHTML = D.tasks[ep.task].criteria.map(c => {
+    const ok = a ? a.checks[c.id] : null;
+    const reveal = c.visible || verifierRan;
+    const cls = reveal && ok != null ? (ok ? 'pass' : 'fail') : '';
+    const mark = !reveal ? '?' : ok ? '✓' : '✗';
+    return `<div class="check ${cls} ${c.visible?'':'hidden'}"><span>${esc(c.id)}</span><small>${c.visible?'visible':'hidden'} ${mark}</small></div>`;
+  }).join('');
+  $('checkhint').textContent = verifierRan
+    ? 'The verifier ran on this artifact, so hidden checks are revealed.'
+    : 'Hidden checks stay "?" until the verifier runs (only when all visible checks pass).';
+  $('hash').textContent = a ? `sha256:${a.hash}` : '';
+  // diff vs parent artifact
+  const parentEv = inspect.parent != null ? ep.events.find(e => e.id === inspect.parent) : null;
+  const pa = parentEv ? art(ep.task, parentEv.variant) : null;
+  const plines = new Set(pa ? pa.src.split('\n') : []);
+  $('src').innerHTML = a ? a.src.split('\n').map(l => `<span class="ln${pa && !plines.has(l) ? ' chg' : ''}">${esc(l) || ' '}</span>`).join('') : '';
+}
+
+function render(){
+  $('scrub').value = step;
+  $('stepno').textContent = `${step+1}/${ep.events.length}`;
+  $('prev').disabled = $('first').disabled = step === 0;
+  $('next').disabled = step === ep.events.length - 1;
+  renderTree(); renderChart(); renderDetail();
+}
+
+function renderScores(){
+  $('scores').innerHTML = '<tr><th>Controller</th><th>Verified success</th><th>95% CI</th><th>Calls / success</th><th>Verify-fail</th></tr>' +
+    Object.entries(D.controllers).map(([k,v]) => `<tr class="${k===ep.controller?'cur':''}"><td>${NAMES[k]||k}</td><td class="n">${v.verified_success_rate.toFixed(3)}</td><td class="n">[${v.success_ci95.map(x=>x.toFixed(2)).join(', ')}]</td><td class="n">${v.calls_per_verified_success.toFixed(1)}</td><td class="n">${v.verify_fail_rate.toFixed(2)}</td></tr>`).join('');
+}
+
+function go(i){ selected = null; step = Math.max(0, Math.min(ep.events.length-1, i)); render(); }
+function stop(){ clearInterval(timer); timer = null; $('play').textContent = '▶ Play'; }
+function play(){
+  if (timer) return stop();
+  if (step >= ep.events.length-1) step = -1;
+  $('play').textContent = '❚❚ Pause';
+  const tick = () => { if (step >= ep.events.length-1) return stop(); go(step+1); };
+  tick(); timer = setInterval(tick, 900);
+}
+
+async function init(){
+  const Q = new URLSearchParams(location.search);
+  D = await (await fetch('data.json')).json();
+  $('simflag').textContent = D.executor.startsWith('sim') ? 'SIMULATED EXECUTOR · NOT AN LLM' : D.executor;
+  const keys = Object.keys(D.episodes).map(k => k.split('|'));
+  const uniq = i => [...new Set(keys.map(k => k[i]))];
+  $('ctrl').innerHTML = uniq(0).map(c => `<option value="${c}">${NAMES[c]||c}</option>`).join('');
+  $('task').innerHTML = uniq(1).map(t => `<option>${t}</option>`).join('');
+  $('seed').innerHTML = uniq(2).sort((a,b)=>a-b).map(s => `<option>${s}</option>`).join('');
+  $('legend').innerHTML = ['CONTINUE','BACKTRACK','REPLAN(loop)','FLAG_GAP','VERIFIED'].map(d=>`<span><i style="border-color:${COL[d]}"></i>${d}</span>`).join('') +
+    `<span>node colour = score<span class="vbar">${[0,.25,.5,.75,1].map(v=>`<b style="background:${vColor(v)}"></b>`).join('')}</span>0..1</span>`;
+  const want = Q.get('ep');
+  const [c,t,s] = (want && D.episodes[want] ? want : 'graph_learned_muon|median|1').split('|');
+  $('ctrl').value = c; $('task').value = t; $('seed').value = s;
+  ['ctrl','task','seed'].forEach(id => $(id).addEventListener('change', loadEpisode));
+  $('first').onclick = () => go(0);
+  $('prev').onclick = () => go(step-1);
+  $('next').onclick = () => go(step+1);
+  $('play').onclick = play;
+  $('scrub').oninput = e => { stop(); go(+e.target.value); };
+  $('tree').addEventListener('click', e => { const g = e.target.closest('.node'); if (!g) return; stop(); selected = +g.dataset.id; render(); });
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'SELECT' || $('view-fixture').hidden) return;
+    if (e.key === 'ArrowRight') { stop(); go(step+1); }
+    else if (e.key === 'ArrowLeft') { stop(); go(step-1); }
+    else if (e.key === 'Home') { stop(); go(0); }
+    else if (e.key === ' ') { e.preventDefault(); play(); }
+  });
+  loadEpisode();
+  initPi(); initSynth();
+  document.querySelectorAll('.tab').forEach(b => b.onclick = () => { setView(b.dataset.view); history.replaceState(null,'','?view='+b.dataset.view); });
+  const v = Q.get('view'); if (v) setView(v);
+  if (Q.get('step')) go(+Q.get('step'));
+  if (Q.has('autoplay')) play();
+}
+
+const PICOL = {USER:'#6b7280',CONTINUE:'#93c5fd',TOOL_ERROR:'#f59e0b','REPLAN(loop)':'#a855f7',CHECK_PASS:'#16a34a',CHECK_FAIL:'#dc2626',CLAIM_DONE:'#0f766e',FLAG_GAP:'#7f1d1d'};
+const PIEXP = {USER:'new user instruction',CONTINUE:'tool call',TOOL_ERROR:'tool returned an error','REPLAN(loop)':'exact repeat, same result: no new evidence',CHECK_PASS:'test/build command passed',CHECK_FAIL:'test/build command failed',CLAIM_DONE:'"done" after a passing check',FLAG_GAP:'"done" with no passing check after the last edit'};
+const pct = x => (100*x).toFixed(1)+'%';
+const stat = (v,l) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`;
+function initPi(){
+  const P = D.pi, S = P.summary;
+  $('pistats').innerHTML = stat(S.sessions,'sessions · '+S.models.length+' models') + stat(S.tool_calls,'tool calls') + stat(pct(S.tool_error_rate),'tool error rate') +
+    stat(S.repeat_calls_same_result,'exact repeats (loops)') + stat(`${S.check_failures}/${S.check_commands}`,'test/build cmds failed') +
+    stat(`${S.done_claims_without_passing_check_after_last_edit}/${S.sessions_ending_with_done_claim}`,'"done" w/o passing check after last edit');
+  $('pisess').innerHTML = P.sessions.map((x,i)=>`<option value="${i}">${x.file.slice(0,19)} · ${x.model||'?'} · ${x.tool_calls} calls${x.done_claim_without_passing_check_after_last_edit?' · ⚑':''}</option>`).join('');
+  $('pilegend').innerHTML = Object.entries(PICOL).map(([k,c])=>`<span><i style="border-color:${c}"></i>${k}</span>`).join('');
+  $('pisess').onchange = renderPi;
+  const flagged = P.sessions.findIndex(x=>x.done_claim_without_passing_check_after_last_edit && x.check_commands>0);
+  $('pisess').value = flagged >= 0 ? flagged : 0;
+  renderPi();
+}
+function renderPi(){
+  const x = D.pi.sessions[+$('pisess').value];
+  $('pimeta').textContent = `${x.edits} edits · ${x.tool_errors} errors · ${x.repeat_calls_same_result} repeats · ${x.check_commands} checks`;
+  $('picount').textContent = `${x.events.length} events`;
+  $('pistrip').innerHTML = x.events.map((e,i)=>`<i data-i="${i}" title="${i}: ${e.decision}${e.tool?' · '+e.tool:''}" style="background:${PICOL[e.decision]||'#ccc'}"></i>`).join('');
+  $('pievents').innerHTML = x.events.map((e,i)=>`<div class="ev" id="pe${i}"><span>#${i}</span><span class="chip" style="background:${PICOL[e.decision]||'#999'}">${e.decision}</span><span><b>${esc(e.tool||'')}</b> ${e.args?`<code>${esc(e.args)}</code>`:''}${e.detail?`<code>${esc(e.detail)}</code>`:''}<br><small>${PIEXP[e.decision]||''}${e.result?' · '+esc(e.result.slice(0,140)):''}</small></span></div>`).join('');
+  $('pistrip').onclick = ev => { const i = ev.target.dataset.i; if (i==null) return; document.querySelectorAll('.ev.hl').forEach(n=>n.classList.remove('hl')); const n=$('pe'+i); n.classList.add('hl'); n.scrollIntoView({block:'center',behavior:'smooth'}); };
+}
+function initSynth(){
+  const S = D.synth.summary, A = D.synth.audit;
+  $('synaudit').textContent = `Manual audit of ${A.n} random flags: ${A.genuine} genuine arithmetic errors, ${A.n-A.genuine} parser false positives`;
+  $('synstats').innerHTML = stat(S.traces,'math traces (shard 1)') + stat(S.arithmetic_steps_checked.toLocaleString(),'equalities checked') +
+    stat(S.arithmetic_steps_wrong,'flagged wrong') + stat(pct(S.step_error_rate),'step error rate') +
+    stat(`${S.traces_with_any_wrong_step}/${S.traces_with_checkable_steps}`,'traces with ≥1 flagged step') + stat(pct(S.mean_relative_position_of_first_error),'mean position of 1st error');
+  $('synfilter').onchange = fillSyn; $('synsel').onchange = renderSyn; fillSyn();
+}
+function fillSyn(){
+  const bad = $('synfilter').value === 'bad';
+  const list = D.synth.traces.map((t,i)=>[t,i]).filter(([t])=>bad ? t.n_bad>0 : t.n_bad===0);
+  $('synsel').innerHTML = list.map(([t,i])=>`<option value="${i}">${t.synth_id} · ${t.steps.length} checks${t.n_bad?' · '+t.n_bad+' wrong':''}</option>`).join('');
+  renderSyn();
+}
+function renderSyn(){
+  const t = D.synth.traces[+$('synsel').value]; if (!t) return;
+  $('synq').textContent = t.query;
+  $('synmeta').textContent = `${t.steps.length} equalities checked · ${t.n_bad} wrong`;
+  const byLine = {}; t.steps.forEach(s => (byLine[s.line] = byLine[s.line] || []).push(s));
+  $('synr').innerHTML = t.reasoning.split('\n').map((l,i) => {
+    const st = byLine[i]; if (!st) return `<span class="ln">${esc(l)||' '}</span>`;
+    const wrong = st.filter(s=>!s.ok);
+    const tag = wrong.length ? wrong.map(s=>`✗ ${esc(s.expr)}: left side = ${+s.lhs.toFixed(6)}`).join(' · ') : '✓ checked';
+    return `<span class="ln ${wrong.length?'bad':'ok'}">${esc(l)}<span class="tag">${tag}</span></span>`;
+  }).join('');
+  const first = $('synr').querySelector('.bad') || $('synr').querySelector('.ok');
+  if (first) $('synr').scrollTop = Math.max(0, first.offsetTop - $('synr').offsetTop - 60);
+}
+function setView(v){
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active', b.dataset.view===v));
+  document.querySelectorAll('.view').forEach(n=>n.hidden = n.id !== 'view-'+v);
+  stop();
+}
+
+let deferred;
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); deferred = e; $('install').style.display = 'inline-block'; });
+$('install').onclick = async () => { if (!deferred) return; deferred.prompt(); await deferred.userChoice; deferred = null; $('install').style.display = 'none'; };
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+init();
+</script>
+</body>
+</html>
